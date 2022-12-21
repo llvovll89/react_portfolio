@@ -8,7 +8,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1200;
     border-right: 1px solid var(--titleColor);
     background: rgba(0, 0, 0, 0.88);
     border-right: 1px solid rgba(255, 255, 255, 0.12);
@@ -185,12 +185,19 @@
         transition: 0.5s all ease;
     }
     .aside .aside-toggle.active {
-        left: 90%;
+        left: 85%;
         top: 10px;
         transition: 0.5s all ease;
     }
+
+    .aside .aside-nav {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .aside .aside-nav li a  {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: 0.5s all ease;
         border-bottom: 1px solid var(--whiteColor);
     }

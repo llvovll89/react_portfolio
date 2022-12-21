@@ -23,6 +23,7 @@ export const Main = () => {
                 </h3>
                 {mainhome.map((item) => (
                   <Typewriter
+                  className="ani-title"
                     key={item.id}
                     options={{
                       strings: [`${item.name}`, `${item.post}`],

@@ -31,11 +31,6 @@ export const Randingpage = () => {
             </div>
             <div
               className="bottom-text"
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-duration="1000"
-              data-aos-delay="1200"
-              data-aos-offset="0"
             >
               <h1 className="bottom_title">KIM GEON HO</h1>
               <span>PORT FOLIO</span>

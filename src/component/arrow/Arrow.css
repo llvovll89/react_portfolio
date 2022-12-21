@@ -42,6 +42,9 @@
     color: #29293F;;
 }
 
-/* @media screen and (max-width:768px) { 
-    
-} */
+@media screen and (max-width:768px) { 
+    .arrow-show {
+        right: 20px;
+        bottom: 20px;
+    }   
+}

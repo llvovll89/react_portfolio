@@ -90,6 +90,18 @@
     .main-container .row {
         flex-direction: column;
     }
+    .main-info {
+        margin-top: 60px;
+    }
+    .main-info.pad15 {
+        padding: 0 5px;
+    }
+    .main-info .info-anitext .info-title {
+        font-size: 20px;
+    }
+    .main-info .info-desc {
+        font-size: 1.1rem;
+    }
     .main .main-container .row .main-info {
         flex: 0 0 100%;
         max-width: 100%;

@@ -32,7 +32,7 @@ export const About = () => {
               </div>
               <div className="row about_row">
                 <div className="about-info pad15">
-                  <div className="row">
+                  <div className="row mobile_row">
                     <AboutItem title="name" info="김건호" />
                     <AboutItem title="AGE" info="29세" />
                     <AboutItem title="Email" info="svvvs5579@naver.com" />
@@ -42,7 +42,7 @@ export const About = () => {
                   </div>
                   <div className="row">
                     <div className="btnbox pad15">
-                      <Link to="/main-contact" className="main-btn">
+                      <Link to="/contact" className="main-btn">
                         CONTACT ME
                       </Link>
                     </div>

@@ -7,7 +7,7 @@ export const Contact = () => {
   return (
     <>
       <section className='contact section hidden'>
-        <div className="section-container container">
+        <div className="section-container container contact-container">
           <div className="row">
             <div className="section-title pad15">
               <h2>CONTACT ME</h2>
@@ -33,7 +33,7 @@ export const Contact = () => {
               sub="https://github.com/llvovll89"
             />
           </div>
-            <div className="contact-box"></div>
+            {/* <div className="contact-box"></div> */}
         </div>
       </section>
     </>
