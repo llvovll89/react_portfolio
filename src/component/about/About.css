@@ -1,0 +1,168 @@
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--titleColor);
+    font-family: 'Chosunilbo_myungjo';
+}
+
+.about .about-content .about-text p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.about .about-content .about-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.about .about-content .about-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .about-info .info-item p {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+}
+
+.about .about-content .about-info .info-item p span {
+    margin-left: 3px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-family: var(--korFont);
+}
+
+.about .about-content .btnbox {
+    margin-top: 50px;
+}
+
+.about .about-content .about-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 40vh;
+    max-height: 40vw;
+    margin-top: 60px;
+}
+
+.about .about-content .about-img .aboutimg-box {
+    max-width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.about .about-content .about-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all ease;
+    opacity: 0.9;
+}
+
+.about .about-content .about-img img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.about .about-content .front,
+.about .about-content .backend {
+    padding: 0.8rem 1rem;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+    background: skyblue;
+    color: var(--whiteColor);
+}
+
+.about .about-content .backend {
+    background: rosybrown;
+}
+
+.about .about-content .front .front-text h4,
+.about .about-content .backend .back-text h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about .about-content .front .front-text,
+.about .about-content .backend .back-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.about .about-content .front .front-text .front-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+}
+
+.about .about-content .backend .back-text .backend-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1.2rem;
+}
+
+.about .about-content .front .front-text .front-content .front-item,
+.about .about-content .backend .back-text .backend-content .back-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.about .about-content .front .front-text .front-content .front-item span:nth-child(1),
+.about .about-content .backend .back-text .backend-content .back-item span:nth-child(1) {
+    font-size: 1.25rem;
+    padding-top: 0.4rem;
+}
+
+.about .about-content .front .front-text .front-content .front-item span:nth-child(2),
+.about .about-content .backend .back-text .backend-content .back-item span:nth-child(2) {
+    font-size: 1rem;
+    font-family: var(--popFont);
+}
+
+
+@media screen and (max-width: 768px) {
+    .about .about-content .about-info .info-item ,
+    .about .about-content .about-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .main-container .about_row {
+        flex-direction: row;
+    }
+
+    .about .about-content .front,
+    .about .about-content .backend {
+        padding: 0.8rem 1rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .backend {
+        margin-top: 5px;
+    }
+}

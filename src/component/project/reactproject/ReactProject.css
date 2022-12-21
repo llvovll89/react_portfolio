@@ -1,0 +1,259 @@
+.react-project {
+    background: #1C1F21;
+    position: relative;
+}
+
+.react-project .section-title h2::after ,
+.react-project .section-title h2::before {
+    background: var(--whiteColor);
+}
+
+.react-project .react-project-container {
+    color: var(--whiteColor);
+}
+
+.react-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.react-content .react-card {
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #000;
+    background: #2A3034;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+.react-content .react-card:hover {
+    background: #5BABAB;
+    transform: translateY(-10px);
+    transition: 0.5s all ease;
+}
+
+.react-content .react-card .react-card-img {
+    height: 250px;
+    overflow: hidden;
+    padding: 1.5rem;
+    transition: 0.4s;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: #fff;
+}
+
+.react-content .react-card .react-card-img img {
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: inherit;
+    transition: 0.4s;
+}
+
+.react-content .react-card .react-card-img:hover img {
+    transform: scale(1.07);
+}
+
+.react-content .react-card .react-card-content {
+    margin: 15px 0 20px 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    color: #EFE99A;
+}
+
+.react-content .react-card .react-card-box {
+    padding: 16px 12px;
+}
+
+.react-content .react-card .react-card-box .react-card-title {
+    color: var(--whiteColor);
+    text-align: center;
+}
+
+.react-content .react-card .react-card-box .react-card-title p:nth-child(1) {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    font-family: var(--korFont);
+}
+
+
+.react-content .react-card .react-card-content span {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.react-content .react-card .react-card-content label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+    line-height: 3px;
+}
+
+/* modal */
+.modal-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f0f3f5;
+    padding: 14px 28px;
+    min-width: 70%;
+    max-width: 85%;
+    z-index: 9999;
+    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.react-card-modal,
+.react-card-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.react-card-overlay {
+    background: #ecf0f3;
+}
+
+.modal-img {
+    padding: 0 10px;
+}
+
+.modal-text {
+    padding: 0 50px;
+    color: #181818;
+}
+
+.modal-text span {
+    display: inline-block;
+    margin: 12px 0;
+    font-size: 2.2rem;
+}
+
+.modal-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-text p {
+    margin: 1em 0;
+    letter-spacing: 0.75px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    font-size: 18px;
+}
+
+.modal-btn .btn-md {
+    margin: 0 2rem;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #000;
+    transition: 0.5s;
+}
+
+.modal-btn .btn-md:hover {
+    background: #ff014f;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.close-modal {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: max-content;
+    height: max-content;
+    font-size: 1.6rem;
+    color: #FFF;
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .react-content {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .modal-content {
+        flex-wrap: wrap;
+    }
+    .modal-content .modal-img {
+        margin: 50px 0 0 0;
+    }
+    .modal-content .left,
+    .modal-content .right {
+        padding: 0;
+    }
+    .modal-text span {
+        font-size: 2rem;   
+        font-weight: 600;
+        font-family: var(--korFont);
+    }
+    .modal-text h3 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        font-family: var(--popFont);
+    }
+    .modal-btn .btn-md {
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+    } 
+
+}
+
+@media screen and (max-width: 768px) {
+    .react-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .react-card-modal,
+    .react-card-overlay {
+        overflow: scroll;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .modal-text {
+        padding: 1rem;
+    }
+    .modal-btn .btn-md {
+        margin: 0 1rem;
+    }
+    .close-modal {
+        top: 10px;
+    }
+
+}

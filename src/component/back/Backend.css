@@ -1,0 +1,24 @@
+.backend {
+    background: #2EB573;
+    color: var(--whiteColor);
+}
+.backend .section-title h2::after,
+.backend .section-title h2::before {
+    background: #008D91;
+}
+
+.back-content {
+    max-width: 90vwpx;
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ccc;
+    margin: auto;
+}
+
+.back-card {
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 100%;
+}
+
