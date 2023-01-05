@@ -13,9 +13,21 @@ export const Backend = () => {
     fade: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
+  
+//   <Slider {...settings}>
+//   {backend.map((item) => (
+//     <BackCard
+//       key={item.id}
+//       img={item.img}
+//       title={item.title}
+//       subtitle={item.subtitle}
+//       desc={item.desc}
+//     />
+//   ))}
+// </Slider>
 
   return (
     <>
@@ -32,17 +44,6 @@ export const Backend = () => {
           </div>
 
             <div className="back-content">
-              <Slider {...settings}>
-                {backend.map((item) => (
-                  <BackCard
-                    key={item.id}
-                    img={item.img}
-                    title={item.title}
-                    subtitle={item.subtitle}
-                    desc={item.desc}
-                  />
-                ))}
-              </Slider>
             </div>
           </div>
 

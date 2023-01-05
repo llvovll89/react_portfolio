@@ -4,6 +4,9 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineContacts,
   AiFillHtml5,
+  AiOutlineInstagram,
+  AiFillGithub,
+
 } from 'react-icons/ai';
 import { CiUser } from 'react-icons/ci';
 import {
@@ -13,6 +16,8 @@ import {
   DiMongodb,
   DiNodejsSmall,
 } from 'react-icons/di';
+import {SiBloglovin} from 'react-icons/si';
+import {RxNotionLogo} from 'react-icons/rx';
 
 export const asidenav = [
   {
@@ -66,6 +71,28 @@ export const mainhome = [
     post: "I'M FRONT_END DEVELOPER",
   },
 ];
+
+export const social = [
+  {
+    id: 1,
+    icon: <AiOutlineInstagram/>,
+    text: "인스타",
+    url: "https://www.instagram.com/ghgh9405",
+  },
+  {
+    id: 2,
+    icon: <AiFillGithub/>,
+    text: "깃허브",
+    url: "https://github.com/llvovll89",
+  },
+  {
+    id: 3,
+    icon: <SiBloglovin/>,
+    text: "벨로그",
+    url: "https://velog.io/@llvovll89"
+  },
+
+]
 
 export const about = [
   {

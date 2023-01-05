@@ -48,16 +48,16 @@
 }
 
 .content .top-img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 .content .top-img img {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.55);
-    border-top-left-radius: 43%;
-    border-top-right-radius: 6%;
-    border-bottom-left-radius: 6%;
-    border-bottom-right-radius: 43%;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 12%);
+    animation: homeImage 12s ease-in-out infinite 1s;
+    transition: all 1s ease;
+    background: #C8E1DC;
 }
 
 .content .bottom-text {
@@ -95,7 +95,7 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: #998FA8;
+    background: #E5989B;
     color: #fff;
     border-radius: 30px;
 }
@@ -109,10 +109,11 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #998FA8;
+    background: #E5989B;
     color: #fff;
     transition: 0.5s;
     transform-origin: bottom;
+    border-radius: 6px;
     transform: translatey(-100%) rotatex(90deg);
 }
 
@@ -133,6 +134,7 @@
     color: #fff;
     transition: 0.5s;
     transform-origin: top;
+    border-radius: 6px;
     transform: translatey(0) rotatex(0deg);
 
 }
@@ -152,7 +154,7 @@
     background-color: #FEEAFA;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.22);
     cursor: pointer;
-    margin: 30px;
+    margin: 15px;
     transition: all 0.3s ease-in;
 }
 
@@ -188,8 +190,6 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
         transition: all 0.4s ease-in;
     }
-    
-    
     .toggle_btn span {
         position: absolute;
         width: 22.5px;
@@ -208,8 +208,8 @@
         row-gap: 0.8rem;
     }
     .content .top-img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
     .content .bottom-text {
         margin: 15px auto;
@@ -221,7 +221,21 @@
         font-size: 1.35rem;
     }
     .toggle_btn {
-        top: -15px;
-        right: -15px;
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes homeImage {
+    0% {
+        border-radius: 30% 60% 30% 70% / 40% 50% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 }

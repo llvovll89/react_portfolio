@@ -1,14 +1,14 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { asidenav } from '../../assets/db/data';
+import { asidenav, social } from '../../assets/db/data';
 import './Aside.css';
 
 export const Asidecontent = () => {
   const [active, setActive] = useState(false);
-  
+
   return (
     <>
-      <div className={active ? "aside show" : "aside"}>
+      <div className={active ? 'aside show' : 'aside'}>
         <div className="aside-logo">
           <Link to="/">
             <span>FRONT_END</span>
@@ -26,7 +26,12 @@ export const Asidecontent = () => {
           <span></span>
           <span></span>
         </div>
-        <ul className="aside-nav">
+        <ul
+          className="aside-nav"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+        >
           {asidenav.map((link) => (
             <li key={link.id}>
               <Link to={link.navurl} data-aos="fade-right" duration="1000">
@@ -36,6 +41,16 @@ export const Asidecontent = () => {
             </li>
           ))}
         </ul>
+
+        <div className="social">
+          <div className="social-box">
+            {social.map((item) => (
+              <a href={item.url} key={item.id} target="_blank">
+                {item.icon}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

@@ -70,27 +70,31 @@
     align-items: center;
     cursor: pointer;
     overflow: hidden;
-    border: 3px solid #FEEAFA;
+    border: 1px solid #FEEAFA;
 }
 
 .aside .aside-toggle span {
     position: absolute;
-    width: 26px;
+    width: 32px;
     height: 2px;
-    background: #dd8686;
+    background: rgba(0, 0, 0, 0.52);
     border-radius: 4px;
     transition: 0.5s;
 }
 
+.aside .aside-toggle.active span {
+    background: #e74646;
+}
+
 .aside .aside-toggle span:nth-child(1) {
     transform: translateY(-10px);
-    width: 13px;
+    width: 16px;
     left: 8px;
 }
 
 .aside .aside-toggle span:nth-child(2) {
     transform: translateY(10px);
-    width: 11px;
+    width: 14px;
     left: 8px;
 }
 
@@ -119,41 +123,123 @@
 }
 
 .aside .aside-nav li {
-    margin-bottom: 20px;
-    display: block;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
     width: max-content;
     text-align: center;
+    border-bottom: 1px solid var(--orangeColor);
 }
 
 .aside .aside-nav li a {
     position: relative;
+    text-align: center;
     letter-spacing: 0.5px;
     font-size: 1rem;
     font-weight: 600;
-    display: block;
-    padding: 8px 15px;
-    overflow: hidden;
-    border-bottom: 1px solid var(--orangeColor);
-    transition: 0.5s all linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* .aside .aside-nav li a .link-icons {
-    
-} */
-
-.aside .aside-nav li a .link-items {
-    position: absolute;
-    bottom: -60%;
-}
-
-.aside .aside-nav li a:hover .link-items {
+.aside .aside-nav li a .link-icons {
     position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: 0.4s linear;
+    color: var(--whiteColor);
 }
 
-.aside .aside-nav li a:hover .link-icons {
+.aside .aside-nav a .link-items {
     position: absolute;
-    bottom: -60%;
+    color: var(--whiteColor);
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    transition: 0.4s linear;
+    transform: translateY(20px);
+    opacity: 0;
 }
+
+.aside .aside-nav li:hover a .link-icons {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.aside .aside-nav li:hover a .link-items {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.aside .social {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    bottom: 0;
+    left : 0;
+    background: #181818;
+    transition: 0.5s all ease;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+}
+
+.aside .social:hover::after {
+    left: -100%;
+    transform: rotateZ(45deg);
+    transition: 0.5s all ease;
+    transition-delay: 0.2s;
+}
+
+.aside .social::after {
+    position: absolute;
+    content: "SOCIAL-ITEM";
+    color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2EB573;
+    cursor: pointer;
+    font-family: var(--popFont);
+    transition: 0.5s all ease;
+}
+
+.aside .social .social-box {
+    width: 100%;
+    height: 50px;
+    background: #19191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .social a{
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: var(--whiteColor);
+    transition: 0.5s all ease;
+}
+
+.aside .social a:hover {
+    color: #F2D7B3;
+    transform: translateX(-5px) scale(1.05);
+    transition: 0.5s all ease;
+}
+
+.aside .social a:nth-child(2):hover {
+    transform: translateX(5px) scale(1.05);
+}
+
 
 @media screen and (max-width: 1190px){
     .aside {
@@ -165,7 +251,7 @@
         width: 100%;
         transition: 0.5s all ease;
         z-index: 1100;
-        background: rgb(74, 198, 247);
+        background: #dfb2b2;
         background-image: url('../../../public/images/bg-cloud.png');
         background-position: center;
         background-size: cover;
@@ -180,6 +266,36 @@
         border-bottom: 3px solid var(--whiteColor);
         border-right: 3px solid var(--whiteColor);
     }
+    .aside .aside-nav 
+    .aside .aside-nav li {
+        border-bottom: 1px solid #FEEAFA;
+    }
+    .aside .aside-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-gap: 0.75rem;
+    }
+    .aside .aside-nav li {
+        width: 100%;
+        border-bottom: 0;
+        background: rgba(255,255,255,0.33);
+        border-radius: 12px;
+        transition: all 0.4s ease;
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11);
+    }
+    .aside .aside-nav li:hover {
+        transform: scale(0.9);
+        transition: all 0.4s ease;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    }
+    .aside .aside-nav li a .link-icons {
+        font-size: 1.8rem;
+    }
+    .aside .aside-nav a .link-items {
+        font-size: 1.25rem;
+    }
     .aside .aside-toggle{
         display: flex;
         transition: 0.5s all ease;
@@ -189,38 +305,9 @@
         top: 10px;
         transition: 0.5s all ease;
     }
-
-    .aside .aside-nav {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .aside .aside-nav li a  {
-        font-size: 1.5rem;
-        transition: 0.5s all ease;
-        border-bottom: 1px solid var(--whiteColor);
-    }
-    
-    .aside .aside-nav li a .link-items {
-        position: absolute;
-        bottom: -70%;
-        opacity: 0;
-        transition: 0.5s all ease;
-    }
-    
-    .aside .aside-nav li a:hover .link-items {
-        position: relative;
-        opacity: 1;
-        font-size: 1.35rem;
-        transition: 0.5s all ease;
-    }
-    
-    .aside .aside-nav li a:hover .link-icons {
-        position: absolute;
-        bottom: -70%;
-        opacity: 0;
-        transition: 0.5s all ease;
+    .aside .social::after {
+        border-top: 1px solid #e9a3a3;
+        background: #ebb3b3;
     }
 }
 

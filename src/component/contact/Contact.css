@@ -1,9 +1,8 @@
-.contact-container {
+.contact {
     position: relative;
-    z-index: 100;
 }
 
-.contact-container::before {
+.contact::before {
     position: absolute;
     content: "";
     top: 0;

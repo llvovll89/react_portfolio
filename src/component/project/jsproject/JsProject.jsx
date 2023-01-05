@@ -32,13 +32,13 @@ export const JsProject = () => {
           </div>
           <div className="row pro_row">
             <ProjectCard
-              title="TYPING_GAME"
+              title="곤충박멸 게임"
               imgurl={insectJS}
               icons={<AiFillApple />}
-              demo="https://llvovll89.github.io/typing-Game/"
-              git="https://github.com/llvovll89/typing-Game"
+              demo="https://llvovll89.github.io/js-insect-catchgame/"
+              git="https://github.com/llvovll89/js-insect-catchgame"
               subtitle="< Toy_Project >"
-              desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
+              desc="Youtube 보다가 감명 받아서 곤충 박멸 만들어 봄"
             />
             <ProjectCard
               title="Login_todo"

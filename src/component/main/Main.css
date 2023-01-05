@@ -6,6 +6,7 @@
 }
 
 .main .main-container {
+    position: relative;
     max-width: 1100px;
     width: 100%;
     margin: auto;
@@ -61,12 +62,13 @@
     border-radius: 6px;
     box-shadow: inset 0 0 0 6px rgb(0 0 0 / 47%);
     animation: homeImage 8s ease-in-out infinite 1s;
-    transition: all 2s ease;
+    transition: all 1s ease;
+    object-fit: cover;
 }
 
 .main .main-img:hover img {
-    transform: scale(1.05) rotate3d(0.5, 1, 1, 180deg);
-    transition: all 2s ease;
+    transform: scale(1.05);
+    transition: all 1s ease;
 }
 
 .main-btn {
@@ -87,8 +89,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main-container .row {
+    .main-container .main_row {
         flex-direction: column;
+        align-items: center;
     }
     .main-info {
         margin-top: 60px;
@@ -117,7 +120,7 @@
         z-index: 10;
     }  
     .main .main-img img {
-        opacity: 0.5;
+        opacity: 0.4;
         transform: rotate3d(0);
     }
 }

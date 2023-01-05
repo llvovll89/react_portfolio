@@ -1,9 +1,9 @@
 import React from 'react'
-import { mainhome } from '../../assets/db/data';
+import { mainhome , social} from '../../assets/db/data';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import { MdTouchApp } from 'react-icons/md';
-import mainhomeIMG from '../../assets/images/info.jpg';
+import mainhomeIMG from '../../assets/images/mainHo.jpg';
 import './Main.css';
 
 export const Main = () => {
@@ -11,7 +11,7 @@ export const Main = () => {
     <>
       <section className="main section hidden">
         <div className="main-container container">
-          <div className="row">
+          <div className="row main_row">
             <div className="main-info pad15">
               <div className="info-anitext">
                 <h3

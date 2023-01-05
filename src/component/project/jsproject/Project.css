@@ -21,7 +21,7 @@
     background: var(--whiteColor);
     color: #29293F;
     border-radius: 10px;
-    padding: 30px 15px;
+    padding: 25px 15px;
     text-align: center;
     overflow: hidden;
     transition: 0.4s all ease;
@@ -71,7 +71,7 @@
 .project .project-contetnt .project-item-in .js_imgbox {
     position: relative;
     height: 250px;
-    padding: 0.5rem;
+    padding: 0.25rem;
     transition: 0.4s ease;
     border-radius: 12px;
     background: #EFE99A;
@@ -145,9 +145,9 @@
     width: 100%;
     transform: rotateZ(90deg);
     height: 100%;
-    background: #FEEAFA;
+    background: var(--whiteColor);
     color: #29293F;
-    border: 1px solid #29293F;
+    border: 4px solid #FCC997;
     border-radius: 12px;
     transition: 1s all ease;
 }
@@ -167,12 +167,13 @@
 
 .project-overlay .overlay-content span {
     display: inline-block;
+    font-family: var(--popFont);
     font-size: 1.3rem;
     font-weight: 600;
 }
 
 .project-overlay .overlay-content p {
-    font-family: var(--korFont);
+    font-family: var(--popFont);
     line-height: 1.5;
     font-size: 1rem;
 }
