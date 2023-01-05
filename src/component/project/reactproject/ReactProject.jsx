@@ -3,8 +3,10 @@ import { reactProject } from '../../../assets/db/data';
 import { ReactCard } from './ReactCard';
 import './ReactProject.css';
 
-export const ReactProject = () => {
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
 
+export const ReactProject = () => {
   return (
     <>
       <section className="react-project section hidden">
@@ -31,7 +33,7 @@ export const ReactProject = () => {
                 subtitle={item.subtitle}
               />
             ))}
-            </div>
+          </div>
         </div>
       </section>
     </>

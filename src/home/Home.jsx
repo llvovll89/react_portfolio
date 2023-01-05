@@ -4,6 +4,7 @@ import { Arrow } from '../component/arrow/Arrow';
 import { Asidecontent } from '../component/aside/Asidecontent';
 import { Backend } from '../component/back/Backend';
 import { Contact } from '../component/contact/Contact';
+import { Footer } from '../component/footer/Footer';
 import { Main } from '../component/main/Main';
 import { JsProject } from '../component/project/jsproject/JsProject';
 import { ReactProject } from '../component/project/reactproject/ReactProject';
@@ -21,6 +22,7 @@ export const Home = () => {
           <Backend />
           <Contact />
           <Arrow />
+          <Footer />
         </div>
       </div>
     </>

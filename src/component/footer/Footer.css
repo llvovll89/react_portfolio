@@ -1,0 +1,25 @@
+.footer {
+    padding: 12px auto;
+    color: var(--whiteColor);
+}
+
+.footer .footer_content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer .footer_content {
+    background: #1F1F1F;
+}
+
+.footer .footer_content .icons {
+    color: var(--whiteColor);
+    margin: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.footer .footer_content .footer_copy {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}

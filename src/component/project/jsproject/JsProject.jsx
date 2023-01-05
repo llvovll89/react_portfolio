@@ -30,7 +30,7 @@ export const JsProject = () => {
               <h2>JS-PROJECT</h2>
             </div>
           </div>
-          <div className="row pro_row">
+          <div className="row pro_row" >
             <ProjectCard
               title="곤충박멸 게임"
               imgurl={insectJS}
