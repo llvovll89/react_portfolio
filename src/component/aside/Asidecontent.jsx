@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { asidenav, social } from '../../assets/db/data';
 import './Aside.css';
 
@@ -34,7 +34,12 @@ export const Asidecontent = () => {
         >
           {asidenav.map((link) => (
             <li key={link.id}>
-              <Link to={link.navurl} data-aos="fade-right" duration="1000">
+              <Link
+                to={link.navurl}
+                data-aos="fade-right"
+                duration="1000"
+                onClick={() => setActive(!active)}
+              >
                 <span className="link-icons">{link.navicon}</span>
                 <span className="link-items"> {link.navtext}</span>
               </Link>

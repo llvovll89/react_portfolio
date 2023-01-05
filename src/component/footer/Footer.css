@@ -23,3 +23,29 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 8px auto;
+    }
+    
+    .footer .footer_content {
+        padding: 1.5rem;
+    }
+    
+    .footer .footer_content {
+        background: #1F1F1F;
+    }
+    
+    .footer .footer_content .icons {
+        color: var(--whiteColor);
+        margin: 0 0.8rem;
+        font-size: 1.3rem;
+    }
+    
+    .footer .footer_content .footer_copy {
+        margin-top: 0.35rem;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+}

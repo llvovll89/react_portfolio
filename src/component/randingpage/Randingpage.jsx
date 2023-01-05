@@ -37,9 +37,6 @@ export const Randingpage = () => {
             </div>
             <div
               className="bottom-text"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-              data-aos-delay="1300"
             >
               <h1 className="bottom_title">KIM GEON HO</h1>
               <span>PORT FOLIO</span>
