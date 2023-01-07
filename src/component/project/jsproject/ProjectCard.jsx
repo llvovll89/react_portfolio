@@ -12,8 +12,8 @@ export const ProjectCard = ({ icons, title, imgurl, demo, git , desc , subtitle}
         data-aos-duration="800"
         data-aos-delay="300"
       >
-        <div className="project-item-in ">
-          <div className="project-icons">{icons}</div>
+          <div className="project-item-in ">
+            <div className="project-icons">{icons}</div>
           <h4>{title}</h4>
           <div className="js_imgbox">
             <img src={imgurl} alt=",,," />

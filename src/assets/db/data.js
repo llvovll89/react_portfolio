@@ -120,7 +120,7 @@ export const reactProject = [
     id: 2,
     category: 'APPLICATION',
     totalLike: '750',
-    title: 'REACT | 타이핑',
+    title: 'REACT_Weather',
     subtitle:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
     desc: `
@@ -177,28 +177,31 @@ export const backend = [
   {
     id: 1,
     title: 'REACT_CHATAPP',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
-    desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+      desc: 'MERN STACK ONLY FRONT + BACK',
     img: './images/project-1.png',
   },
   {
     id: 2,
     title: 'REACT_??APP',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
-    desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+      desc: 'MERN STACK ONLY FRONT + BACK',
     img: './images/project-1.png',
   },
   {
     id: 3,
     title: 'REACT_BOARD ',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
-    desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+      desc: 'MERN STACK ONLY FRONT + BACK',
+    img: './images/insect-game.png',
+  },
+  {
+    id: 4,
+    title: 'REACT_BOARD ',
+      desc: 'MERN STACK ONLY FRONT + BACK',
+    img: './images/insect-game.png',
+  },
+  {
+    id: 5,
+    title: 'REACT_BOARD ',
+      desc: 'MERN STACK ONLY FRONT + BACK',
     img: './images/insect-game.png',
   },
 ];

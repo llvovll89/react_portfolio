@@ -1,23 +1,20 @@
-import React from 'react'
+import React from 'react';
 import './Backend.css';
 
 export const BackCard = (props) => {
   return (
     <>
-        <div className="back-card">
-            <div className="back-img">
-                <img src={props.img} alt="..." />
+      <div className="back-card">
+        <img src={props.img} alt="..." />
+          <div className="back-card-text">
+            <p>{props.title}</p>
+            <p>{props.desc}</p>
+            <div className="back_card_btn">
+                <a href="#" target='_blank'>DEMO</a>
+                <a href="#" target='_blank'>GIT</a>
             </div>
-            <div className="back-overlay">
-                <div className="back-card-content">
-                    <span>{props.title}</span>
-                </div>
-                <div className="back-card-text">
-                    <p>{props.subtitle}</p>
-                    <p>{props.desc}</p>
-                </div>
             </div>
-        </div>
+      </div>
     </>
-  )
-}
+  );
+};

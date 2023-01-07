@@ -3,32 +3,10 @@ import { backend } from '../../assets/db/data';
 import { BackCard } from './BackCard';
 import './Backend.css';
 
-// slick
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 export const Backend = () => {
-  const settings = {
-    fade: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  
-//   <Slider {...settings}>
-//   {backend.map((item) => (
-//     <BackCard
-//       key={item.id}
-//       img={item.img}
-//       title={item.title}
-//       subtitle={item.subtitle}
-//       desc={item.desc}
-//     />
-//   ))}
-// </Slider>
-
   return (
     <>
       <section className="backend section">
@@ -43,10 +21,28 @@ export const Backend = () => {
             </div>
           </div>
 
-            <div className="back-content">
-            </div>
-          </div>
-
+          <Splide
+            options={{
+              perPage: 3,
+              arrows: false,
+              pagination: false,
+              drag: 'free',
+              gap: '1.5rem',
+              mediaQuery: 'max' ,
+              breakpoints : {
+                768: {
+                  perPage: 1
+                }
+              }
+            }}
+          >
+            {backend.map((item) => (
+              <SplideSlide key={item.id} className="slide">
+                <BackCard img={item.img} title={item.title} desc={item.desc} />
+              </SplideSlide>
+            ))}
+          </Splide>
+        </div>
       </section>
     </>
   );

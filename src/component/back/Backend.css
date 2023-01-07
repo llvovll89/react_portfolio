@@ -2,24 +2,101 @@
     background: #2EB573;
     color: var(--whiteColor);
 }
+
 .backend .section-title h2::after,
 .backend .section-title h2::before {
     background: #008D91;
 }
 
-/* .back-content {
-    max-width: 90vw;
-    width: 100%;
-    height: 500px;
-    border: 2px solid #ccc;
-    margin: auto;
-} */
+.backend-container {
+    position: relative;
+}
+
+.backend-container .splide {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 
 .back-card {
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 6px;
-    cursor: pointer;
+    min-height: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.11);
 }
 
+.back-card:hover {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+.back-card img {
+    position: absolute;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    transition: 0.3s all ease;
+}
+
+.back-card img:hover {
+    transform: scale(0.88) rotateZ(12deg);
+    transition: 0.3s all ease;
+}
+
+.back-card .back-card-text {
+    padding: 1rem;
+    font-size: 1.1rem;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    word-break: keep-all;
+    row-gap: 1rem;
+    background: #6ec382;
+}
+
+.back-card .back-card-text p:first-child {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ccc;
+}
+
+.back_card_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.back_card_btn a {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background: #6ec382;
+    margin: 0.25rem 0;
+    border-radius: 6px;
+    color: var(--whiteColor);
+}
+
+/* @media screen and (max-width: 768px) {
+    .back-card {
+        min-height: 16rem;
+    }
+} */
