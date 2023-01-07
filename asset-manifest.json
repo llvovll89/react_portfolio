@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.1d9a2f7d.css",
-    "main.js": "/react_portfolio/static/js/main.6f27c446.js",
+    "main.css": "/react_portfolio/static/css/main.1242e548.css",
+    "main.js": "/react_portfolio/static/js/main.99fd9b08.js",
     "static/media/bg-cloud.png": "/react_portfolio/static/media/bg-cloud.9a15587a50dd17f15b8e.png",
     "static/media/contactimg.png": "/react_portfolio/static/media/contactimg.86ee1c6a22a9e205d973.png",
     "static/media/ho1.jpg": "/react_portfolio/static/media/ho1.3e9c978bce3efafdef4d.jpg",
@@ -12,16 +12,12 @@
     "static/media/insect-game.png": "/react_portfolio/static/media/insect-game.6019842761bdd0c91f24.png",
     "static/media/aram.png": "/react_portfolio/static/media/aram.8218639f80b6d6e007b7.png",
     "static/media/login-todo.png": "/react_portfolio/static/media/login-todo.8af42074d0592ae451b9.png",
-    "static/media/slick.svg": "/react_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/react_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/react_portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/react_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react_portfolio/index.html",
-    "main.1d9a2f7d.css.map": "/react_portfolio/static/css/main.1d9a2f7d.css.map",
-    "main.6f27c446.js.map": "/react_portfolio/static/js/main.6f27c446.js.map"
+    "main.1242e548.css.map": "/react_portfolio/static/css/main.1242e548.css.map",
+    "main.99fd9b08.js.map": "/react_portfolio/static/js/main.99fd9b08.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d9a2f7d.css",
-    "static/js/main.6f27c446.js"
+    "static/css/main.1242e548.css",
+    "static/js/main.99fd9b08.js"
   ]
 }
