@@ -13,7 +13,7 @@ export const Newproject = () => {
           <div className="new_content">
             <div className="content_left flex_item">
               <div className="left_content">
-                <p className="left_text">01 - 06</p>
+                <p className="left_text">01 - 04</p>
                 <h1 className="left-big">Llvovll89</h1>
                 <p className="left-nomal">
                   2022년에 제작한 반응형 웹사이트 입니다. 웹사이트 전체를
