@@ -7,7 +7,7 @@ export const ReactCard = (props) => {
 
   const toggleModal = () => {
     setReactCard(!reactCard);
-  };
+  };  
 
   return (
     <>
@@ -44,8 +44,8 @@ export const ReactCard = (props) => {
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
           <div className="modal-btn">
-            <a href="#" className="btn-md">CODE</a>
-            <a href="#" className="btn-md">DEMO</a>
+            <a href="#" className="btn-md" target='_blank'>CODE</a>
+            <a href="#" className="btn-md" target='_blank'>DEMO</a>
           </div>
           <button className="close-modal" onClick={toggleModal}>
             ❎
