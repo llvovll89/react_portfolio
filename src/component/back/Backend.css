@@ -10,6 +10,7 @@
 
 .backend-container {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .backend-container .splide {
@@ -48,7 +49,7 @@
 }
 
 .back-card .back-card-text {
-    padding: 1rem;
+    padding: 0.75rem;
     font-size: 1.1rem;
     position: absolute;
     z-index: 10;
@@ -90,13 +91,13 @@
     font-size: 1.1rem;
     letter-spacing: 1px;
     background: #6ec382;
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
     border-radius: 6px;
     color: var(--whiteColor);
 }
 
-/* @media screen and (max-width: 768px) {
-    .back-card {
-        min-height: 16rem;
+@media screen and (max-width: 768px) {
+    .backend.section {
+        min-height: auto;
     }
-} */
+}

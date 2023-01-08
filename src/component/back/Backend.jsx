@@ -17,7 +17,7 @@ export const Backend = () => {
               data-aos="flip-right"
               data-aos-duration="1000"
             >
-              <h2>MERN_STACK</h2>
+              <h2>Back_End</h2>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ export const Backend = () => {
                   perPage: 1
                 }
               }
-            }}
+            }}s
           >
             {backend.map((item) => (
               <SplideSlide key={item.id} className="slide">

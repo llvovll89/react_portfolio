@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillGithub, AiFillDownCircle } from 'react-icons/ai';
 import './Project.css';
 
-export const ProjectCard = ({ icons, title, imgurl, demo, git , desc , subtitle}) => {
+export const ProjectCard = ({ icons, title, imgurl, demo, git , desc , }) => {
   
   return (
     <>
@@ -19,7 +19,6 @@ export const ProjectCard = ({ icons, title, imgurl, demo, git , desc , subtitle}
             <img src={imgurl} alt=",,," />
             <div className="project-overlay">
                 <div className="overlay-content">
-                <span>{subtitle}</span>
                 <p>{desc}</p>
                 </div>
             </div>

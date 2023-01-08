@@ -120,7 +120,7 @@
         z-index: 10;
     }  
     .main .main-img img {
-        opacity: 0.4;
+        opacity: 0.5;
         transform: rotate3d(0);
     }
 }

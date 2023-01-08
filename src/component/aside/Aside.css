@@ -25,6 +25,12 @@
     text-transform: capitalize;
 }
 
+.aside .aside-logo:hover {
+    box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .aside .aside-logo a {
     position: relative;
     font-size: 1.6rem;
@@ -32,7 +38,7 @@
 }
 
 .aside .aside-logo a span {
-    font-family: 'Chosunilbo_myungjo';
+    font-family: 'Lobster Two', cursive;
 }
 
 .aside .aside-logo a::before {
@@ -257,6 +263,9 @@
         background-size: cover;
         animation: movebg 40s linear infinite;
     }
+    .aside .aside-logo:hover {
+        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.07);
+    }
     .aside .aside-logo a::before {
         border-top: 3px solid var(--whiteColor);
         border-left: 3px solid var(--whiteColor);
@@ -273,14 +282,14 @@
     .aside .aside-nav {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         place-items: center;
-        grid-gap: 0.75rem;
+        grid-gap: 0.55rem;
     }
     .aside .aside-nav li {
         width: 100%;
         border-bottom: 0;
-        background: rgba(255,255,255,0.33);
+        background: rgba(255,255,255,0.13);
         border-radius: 12px;
         transition: all 0.4s ease;
         box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11);

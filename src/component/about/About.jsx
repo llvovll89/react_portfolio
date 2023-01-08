@@ -24,13 +24,29 @@ export const About = () => {
             <div className="about-content">
               <div className="row">
                 {about.map((item) => (
-                  <div className="about-text pad15" key={item.id}>
+                  <div className="about-text pad15" key={item.id}
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                  >
                     <h3>{item.text}</h3>
-                    <p className='off'>{item.desc}</p>
-                    <ul className='on'>
-                      <li>저는 다양한 <span className='col-1'> "상상력과 아이디어"</span> 를 통해 무엇인가 만드는 것이 즐거운 사람입니다.</li>
-                      <li>디자이너, 백엔드 개발자 또는 의사소통이 필요한 부분에서 다양한 의견과 수렴하는 자세로 <span className='col-1'>"커뮤니케이션"</span> 이 활발 할 수 있게 할 것 입니다.</li>
-                      <li>변화하는 추세에 맞추어 개발 지식을 계속 쌓으며 회사에 실직적으로 도움이 되는 프론트엔드 개발자가 되고 싶습니다.</li>
+                    <p className="off">{item.desc}</p>
+                    <ul className="on">
+                      <li>
+                        저는 다양한
+                        <span className="col-1"> "상상력과 아이디어"</span> 를
+                        통해 무엇인가 만드는 것이 즐거운 사람입니다.
+                      </li>
+                      <li>
+                        디자이너, 백엔드 개발자 또는 의사소통이 필요한 부분에서
+                        다양한 의견과 수렴하는 자세로{' '}
+                        <span className="col-1">"커뮤니케이션"</span> 이 활발 할
+                        수 있게 할 것 입니다.
+                      </li>
+                      <li>
+                        변화하는 추세에 맞추어 개발 지식을 계속 쌓으며 회사에
+                        실직적으로 도움이 되는 프론트엔드 개발자가 되고
+                        싶습니다.
+                      </li>
                     </ul>
                   </div>
                 ))}
@@ -65,7 +81,11 @@ export const About = () => {
               </div>
 
               <div className="row">
-                <div className="front pad15">
+                <div
+                  className="front pad15"
+                  data-aos="fade-left"
+                  data-aos-duration="1100"
+                >
                   <div className="front-text">
                     <h4>FRONT SKILL</h4>
                     <div className="front-content">
@@ -78,18 +98,22 @@ export const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="backend pad15">
+                <div
+                  className="backend pad15"
+                  data-aos="fade-right"
+                  data-aos-duration="1100"
+                >
                   <div className="back-text">
                     <h4>BACKEND SKILL</h4>
                     <div className="backend-content">
-                    {backSkill.map((item) => (
-                      <div className="back-item" key={item.id}>
-                        <span>{item.icons}</span>
-                        <span>{item.text}</span>
-                      </div>
-                    ))}
-                  </div>
+                      {backSkill.map((item) => (
+                        <div className="back-item" key={item.id}>
+                          <span>{item.icons}</span>
+                          <span>{item.text}</span>
+                        </div>
+                      ))}
                     </div>
+                  </div>
                 </div>
               </div>
             </div>

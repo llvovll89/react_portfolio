@@ -233,6 +233,9 @@
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .react-content .react-card {
+        margin: 1% 5%;
+    }
 
     .react-card-modal,
     .react-card-overlay {

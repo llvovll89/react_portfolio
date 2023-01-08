@@ -37,7 +37,7 @@ export const asidenav = [
   {
     id: 3,
     chapnum: '03',
-    navtext: 'MERN_Stack',
+    navtext: 'Backend',
     navicon: <AiOutlineContacts />,
     navurl: '/backend',
   },

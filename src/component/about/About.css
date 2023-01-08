@@ -173,7 +173,7 @@
         color: var(--whiteColor);
     }
     .about .about-container {
-        padding-bottom: 30px;
+        padding-bottom: 0;
     }
     .about .about-content .front .front-text .front-content {
         display: grid;
@@ -198,10 +198,17 @@
     }
 
     .about .about-content .about-info {
-        flex: 0 0 100%;
+        /* flex: 0 0 100%;
         max-width: 100%;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 30px; */
+        display: none;
+    }
+    .about .about-content .about-img .aboutimg-box {
+        border-radius: 0.75rem;
+    }
+    .about .about-content .about-img .aboutimg-box img {
+        object-fit: cover;
     }
 
     .about .about-content .row .off {

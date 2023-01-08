@@ -74,7 +74,6 @@
     padding: 0.25rem;
     transition: 0.4s ease;
     border-radius: 12px;
-    background: #EFE99A;
     overflow: hidden;
 }
 
@@ -146,10 +145,10 @@
     transform: rotateZ(90deg);
     height: 100%;
     background: var(--whiteColor);
-    color: #29293F;
-    border: 4px solid #FCC997;
+    border: 2px solid #ccc;
     border-radius: 12px;
     transition: 1s all ease;
+    background: #191919;
 }
 
 .project-overlay .overlay-content {
@@ -163,6 +162,7 @@
     transform: translate(-50%, -50%);
     transition: 0.5s all linear;
     transition-delay: 0.8s;
+    color: var(--whiteColor);
 }
 
 .project-overlay .overlay-content span {
@@ -173,9 +173,10 @@
 }
 
 .project-overlay .overlay-content p {
-    font-family: var(--popFont);
+    font-family: var(--korFont);
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .project .project-contetnt .project-item-in .js_imgbox:hover .project-overlay {

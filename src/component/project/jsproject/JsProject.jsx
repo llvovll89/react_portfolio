@@ -30,14 +30,13 @@ export const JsProject = () => {
               <h2>JS-PROJECT</h2>
             </div>
           </div>
-          <div className="row pro_row" >
+          <div className="row pro_row">
             <ProjectCard
               title="곤충박멸 게임"
               imgurl={insectJS}
               icons={<AiFillApple />}
               demo="https://llvovll89.github.io/js-insect-catchgame/"
               git="https://github.com/llvovll89/js-insect-catchgame"
-              subtitle="< Toy_Project >"
               desc="Youtube 보다가 감명 받아서 곤충 박멸 만들어 봄"
             />
             <ProjectCard
@@ -46,12 +45,10 @@ export const JsProject = () => {
               icons={<AiFillAliwangwang />}
               demo="https://llvovll89.github.io/login-TodoApp/"
               git="https://github.com/llvovll89/login-TodoApp"
-              subtitle="< Toy_Project >"
               desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
             />
             <ProjectCard
               title="Hozzle_GAME"
-              subtitle="< Toy_Project >"
               desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
               imgurl={hojjelJs}
               icons={<AiFillCodepenCircle />}
@@ -60,7 +57,6 @@ export const JsProject = () => {
             />
             <ProjectCard
               title="local_BOOKMARK"
-              subtitle="< Toy_Project >"
               desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
               imgurl={bookmarkJS}
               icons={<AiFillBug />}
@@ -69,7 +65,6 @@ export const JsProject = () => {
             />
             <ProjectCard
               title="ARAM_JS"
-              subtitle="< Toy_Project >"
               desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
               imgurl={aramJS}
               icons={<AiFillBug />}
@@ -78,7 +73,6 @@ export const JsProject = () => {
             />
             <ProjectCard
               title="10project_js"
-              subtitle="< Toy_Project >"
               desc="ForEach, for , 반복문 공부를 위해 Vanilajs로 만든 앱"
               imgurl={project10}
               icons={<AiFillBug />}
