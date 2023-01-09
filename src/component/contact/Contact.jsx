@@ -1,41 +1,40 @@
-import React from 'react'
-import {AiFillPhone, AiFillMail , AiOutlineIe } from 'react-icons/ai'
+import React from 'react';
+import contactImg from '../../assets/images/info.jpg';
 import './Contact.css';
-import { Contactitem } from './Contactitem';
 
 export const Contact = () => {
   return (
     <>
-      <section className='contact section hidden'>
-        <div className="section-container container contact-container">
-          <div className="row">
-            <div className="section-title pad15">
-              <h2>CONTACT ME</h2>
+      <section className="contact section">
+        <div className="inner">
+          <div className="contact_img">
+            <img src={contactImg} alt="" />
+          </div>
+          <div className="contact_text">
+            <h3 className="contact_title">CONTACT</h3>
+            <div className="contact_list">
+              <ul className="items">
+                <li>
+                  <span>Email</span>
+                  <a href="#">svvvs5579@naver.com</a>
+                </li>
+                <li>
+                  <span>Github</span>
+                  <a href="#">llvovll89/github.com</a>
+                </li>
+                <li>
+                  <span>Velog</span>
+                  <a href="#">llvovll89/velog.com</a>
+                </li>
+                <li>
+                  <span>Phone</span>
+                  <a href="#">010-3333-3333</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <h3 className="contact-title">
-            저의 PORTFOLIO가 마음에 드신다면 연락주세요!
-          </h3>
-          <div className="row row-grid">
-            <Contactitem 
-              icons=<AiFillMail />
-              title="E-mail"
-              sub="svvvs5579@naver.com"
-            />
-            <Contactitem 
-              icons=<AiFillPhone />
-              title="Phone Number"
-              sub="010-0101-0101"
-            />
-            <Contactitem 
-              icons=<AiOutlineIe />
-              title="Wepsite"
-              sub="https://github.com/llvovll89"
-            />
-          </div>
-            {/* <div className="contact-box"></div> */}
         </div>
       </section>
     </>
-  )
-}
+  );
+};

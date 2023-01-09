@@ -1,99 +1,105 @@
 .contact {
+    background: #f9f9f9;
+}
+
+.inner {
+    padding: 60px 0 40px 0;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner .contact_img {
     position: relative;
+    width: 48%;
+    overflow: hidden;
+    transition: 0.3s all ease;
 }
 
-.contact::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../assets/images/contactimg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.4;
-    z-index: -1;
+.inner .contact_img img {
+    border-radius: 6px;
+    transition: 0.3s all ease;
 }
 
-.contact-title {
-    font-family: var(--korFont);
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 0.5px;
-    margin: 40px 0;
+.inner .contact_img:hover {
+    border-radius: 50%;
+    transition: 0.3s all ease;
 }
 
-.contact-item {
-    margin-top: 60px;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    text-align: center;
+.inner .contact_img:hover img {
+    transform: scale(1.3);
+    transition: 0.3s all ease;
 }
 
-.contact-item .contact-icon {
-    display: inline-block;
+.inner .contact_text {
+    position: relative;
+    width: 48%;
 }
 
-.contact-item .contact-icon svg {
-    font-size: var(--mdSize);
+.inner .contact_text .contact_title {
+    font-family: 'Montserrat';
+    letter-spacing: -0.03rem;
+    font-size: 5.2vw;
+    color: #121111;
 }
 
-.contact-item h4 {
-    font-size: 25px;
-    text-transform: capitalize;
-    margin: 14px 0;
+.inner .contact_text .contact_list {
+    padding-top: 3rem;
 }
 
-.contact-item span {
-    display: inline-block;
-    font-size: 20px;
-    letter-spacing: 1px;
+.inner .contact_text .contact_list .items li {
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 0.85rem;
+    flex-flow: column;
 }
 
-/* .contact .contact-box {
-    margin-top: 100px;
-    max-width: 90vw;
-    width: 100%;
-    height: 300px;
-    background-image: url('../../assets/images/contactimg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.8;
+.inner .contact_text .contact_list .items li span {
+    cursor: initial;
+    font-size: 1.6rem;
+}
 
-} */
+.inner .contact_text .contact_list .items li a {
+    font-size: 1.5rem;
+    width: max-content;
+    color: #121111;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
 
-@media screen and (max-width: 824px) {
-    .contact-title {
-        font-size: 1.3rem;
-        line-height: 1.3;
-    }
-    .row .contact-item {
-        max-width: 100%;
-        flex: 0 0 100%;
-        margin-top: 30px;
-    }
-    .row .contact-item:nth-child(2) ,
-    .row .contact-item:nth-child(3) {
-        margin-top: 30px;
-    }
-    .contact-item.pad15 {
-        padding: 0 5px;
+@media screen and (max-width: 768px) {
+    .contact .inner {
+        flex-flow: column;
     }
 
-    .contact-item h4 {
-        font-size: 20px;
-        text-transform: capitalize;
-        margin: 6px 0;
+    .inner .contact_img,
+    .inner .contact_text {
+        position: relative;
+        width: 100%;
     }
-    
-    .contact-item span {
-        display: inline-block;
-        font-size: 1rem;
-        letter-spacing: 0.75px;
-        font-weight: 500;
+
+    .inner .contact_text .contact_title {
+        margin-top: 2vw;
+        padding-left: 0.5rem;
+        font-size: 9vw;
     }
-    
+    .inner .contact_text .contact_list {
+        padding: 1.3rem 1rem 0 1rem;
+    }
+    .inner .contact_text .contact_list .items li {
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    .inner .contact_text .contact_list .items li span {
+        font-size: 1.2rem;
+    }
+    .inner .contact_text .contact_list .items li a {
+        font-size: 1.1rem;
+        width: max-content;
+        color: #121111;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.2rem;
+    }
 }

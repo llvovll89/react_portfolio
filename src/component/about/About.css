@@ -1,3 +1,6 @@
+.about {
+    overflow: hidden;
+}
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -25,7 +28,7 @@
 .about .about-content .about-info {
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +56,24 @@
 }
 
 .about .about-content .row .on {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    font-family: var(--korFont);
+}
+
+.about .about-content .row .on li{
+    line-height: 1.5;
+    word-break: keep-all;
+    cursor: initial;
+    font-size: 1.2rem;
+}
+
+.about .about-content .row .on .col-1 {
+    color: #D3B59D;
+    border-bottom: 1px solid #D3B59D;
+    display: inline-block;
 }
 
 .about .about-content .btnbox {
@@ -65,7 +85,7 @@
     max-width: 50%;
     height: 40vh;
     max-height: 40vw;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .about .about-content .about-img .aboutimg-box {
@@ -196,13 +216,15 @@
     .about .about-content .backend .back-text .backend-content .back-item {
         margin: 0 0.5rem;
     }
+    .about .about-content .about-text h3 {
+        font-size: 20px;
+    }
 
     .about .about-content .about-info {
-        /* flex: 0 0 100%;
-        max-width: 100%;
-        align-items: center;
-        margin-top: 30px; */
         display: none;
+    }
+    .about .about-content .about-img {
+        padding: 0 5px;
     }
     .about .about-content .about-img .aboutimg-box {
         border-radius: 0.75rem;
@@ -210,30 +232,12 @@
     .about .about-content .about-img .aboutimg-box img {
         object-fit: cover;
     }
-
-    .about .about-content .row .off {
-        display: none;
-    }
-
-    .about .about-content .row .on {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        font-family: var(--korFont);
-    } 
-
     .about .about-content .row .on li {
         margin-bottom: 10px;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         line-height: 1.35;
         word-break: keep-all;
         cursor: initial;
-    }
-    .about .about-content .row .on .col-1 {
-        color: #D3B59D;
-        border-bottom: 1px solid #D3B59D;
-        display: inline-block;
     }
     .about .about-content .row .on li:last-child {
         margin-bottom: 0;

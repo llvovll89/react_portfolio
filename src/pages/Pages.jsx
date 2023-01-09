@@ -4,7 +4,6 @@ import { About } from '../component/about/About';
 import { Asidecontent } from '../component/aside/Asidecontent';
 import { Backend } from '../component/back/Backend';
 import { Contact } from '../component/contact/Contact';
-import { Footer } from '../component/footer/Footer';
 import { JsProject } from '../component/project/jsproject/JsProject';
 import { ReactProject } from '../component/project/reactproject/ReactProject';
 import { Randingpage } from '../component/randingpage/Randingpage';
@@ -14,7 +13,7 @@ export const Pages = () => {
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
-        <Asidecontent />
+      <Asidecontent />
         <Routes>
           <Route path="/" element={<Randingpage />} />
           <Route path="/home" element={<Home />} />

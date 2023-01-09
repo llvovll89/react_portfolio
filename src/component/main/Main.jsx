@@ -1,68 +1,54 @@
-import React from 'react'
-import { mainhome , social} from '../../assets/db/data';
+import React from 'react';
+import { mainhome } from '../../assets/db/data';
 import { Link } from 'react-router-dom';
-import Typewriter from 'typewriter-effect';
 import { MdTouchApp } from 'react-icons/md';
+import Typewriter from 'typewriter-effect';
 import mainhomeIMG from '../../assets/images/mainHo.jpg';
 import './Main.css';
 
 export const Main = () => {
   return (
     <>
-      <section className="main section hidden">
-        <div className="main-container container">
-          <div className="row main_row">
-            <div className="main-info pad15">
-              <div className="info-anitext">
-                <h3
-                  className="info-title"
-                  data-aos="zoom-in"
-                  data-aos-delay="600"
-                >
-                  제 포트폴리오에 오신 걸 환영합니다.{' '}
-                </h3>
-                {mainhome.map((item) => (
-                  <Typewriter
-                  className="ani-title"
-                    key={item.id}
-                    options={{
-                      strings: [`${item.name}`, `${item.post}`],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                ))}
+      <section className="section_main">
+        <div className="main_container">
+          <div className="main_content">
+            <div className="main_left flex_item">
+              <div className="left_content">
+                <p className="left_text">제 포트폴리오에 오신 걸 환영합니다.</p>
+                <h2 className="left_big">
+                  {mainhome.map((item) => (
+                    <Typewriter
+                      className="ani-title"
+                      key={item.id}
+                      options={{
+                        strings: [`${item.name}`, `${item.post}`],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  ))}
+                </h2>
+                <p className="left_nomal">
+                     <span>" 현재 React 로 제작중인 </span>
+                     <span> PortFolio Site 입니다. "</span>
+                </p>
+                <Link to="/contact" className="main_btn">
+                  More Me
+                  <span>
+                    <MdTouchApp />
+                  </span>
+                </Link>
               </div>
-              <p
-                className="info-desc"
-                data-aos="zoom-in-right"
-                data-aos-delay="500"
-                data-aos-duration="1200"
-              >
-                I am Gunho Kim, a new front-end developer. Currently, we are
-                steadily planting grass on Github and developing, and we
-                will become a growing developer. Please see my portfolio and
-                contact me if you like it!
-              </p>
-              <Link to="/contact" className="main-btn">
-                More Me
-                <span>
-                  <MdTouchApp />
-                </span>
-              </Link>
             </div>
-
-            <div
-              className="main-img pad15"
-              data-aos="zoom-out"
-              data-aos-delay="900"
-              data-aos-duration="1100"
-            >
-              <img src={mainhomeIMG} alt="" />
+            <div className="right_content flex_item"></div>
+            <img src={mainhomeIMG} alt="main_img" className="main_img" />
+            <div className="logo_title">
+              <span>Front_end</span>
+              <span>Developer</span>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};

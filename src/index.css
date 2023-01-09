@@ -78,6 +78,7 @@ img {
   min-height: 100vh;
   display: block;
   opacity: 1;
+  overflow: hidden;
 }
 
 .row {

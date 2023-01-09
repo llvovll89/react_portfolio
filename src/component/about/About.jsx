@@ -29,7 +29,6 @@ export const About = () => {
                   data-aos-duration="1000"
                   >
                     <h3>{item.text}</h3>
-                    <p className="off">{item.desc}</p>
                     <ul className="on">
                       <li>
                         저는 다양한
