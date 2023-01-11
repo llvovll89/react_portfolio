@@ -20,13 +20,11 @@
 }
 
 .pro_content {
-    max-width: 90vw;
-    height: 67.5vh;
-    margin: 16vh auto;
-    padding: 0 3vh;
+    max-width: 96vw;
+    margin: 14vh auto;
+    padding: 0 2.5vh;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: space-between;
 }
 
@@ -85,14 +83,13 @@
 .pro_content .pro_right {
     width: 58%;
     position: relative;
-    overflow: hidden;
     border-radius: 6px;
 }
 
 .pro_content .pro_left_right {
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: -10%;
+    right: 1%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -106,6 +103,12 @@
     padding: 0.25rem;
     border-radius: 12px;
     z-index: 10;
+}
+
+@media screen and (max-width: 1240px) {
+    .pro_container .pro_wrap {
+        max-width: 1360px;
+    }
 }
 
 @media screen and (max-width: 768px) {

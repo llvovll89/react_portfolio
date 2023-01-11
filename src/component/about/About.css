@@ -1,5 +1,7 @@
 .about {
     overflow: hidden;
+    background: #181818;
+    color: var(--whiteColor);
 }
 .about .about-content {
     flex: 0 0 100%;

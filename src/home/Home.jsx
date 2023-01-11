@@ -17,8 +17,8 @@ export const Home = () => {
         <div className="main-content">
           <Main />
           <About />
-          <JsProject />
           <ReactProject />
+          <JsProject />
           <BackProject />
           <Contact />
           <Arrow />

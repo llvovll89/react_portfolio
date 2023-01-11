@@ -9,7 +9,7 @@ export const ProCard = ({ title, desc, imgUrl }) => {
   return (
     <>
       <div className="pro_content">
-        <div className="pro_left">
+        <div className="pro_left" data-aos="flip-left" data-aos-duration="1000">
           <h2 className="pro_title">{title}</h2>
           <p className="pro_desc">{desc}</p>
           <span className="pro_icons">
@@ -22,9 +22,9 @@ export const ProCard = ({ title, desc, imgUrl }) => {
             <a href="#">CODE</a>
           </div>
         </div>
-        <div className="pro_right">
+        <div className="pro_right" data-aos="flip-right" data-aos-duration="1000">
           <img src={imgUrl} alt="bookmark.." />
-          <div className="pro_left_right">
+          <div className="pro_left_right" data-aos="zoom-in-down" data-aos-duration="1000">
           <span>옆으로</span>
           <span>밀어주세요</span>
           <span>
