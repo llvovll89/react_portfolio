@@ -25,22 +25,31 @@
     color: #000;
     background: #2A3034;
     border-radius: 10px;
-    transition: 0.5s all ease;
+    transition: 0.4s all ease;
 }
 
 .react-content .react-card:hover {
-    background: #5BABAB;
+    background: rgb(240, 236, 236);
     transform: translateY(-10px);
-    transition: 0.5s all ease;
+    transition: 0.4s all ease;
+}
+
+.react-content .react-card:hover .react-card-content {
+    color: #d2c621ce;
+} 
+
+.react-content .react-card:hover p {
+    color: #2A3034;
+    font-weight: 500;
 }
 
 .react-content .react-card .react-card-img {
     height: 250px;
     overflow: hidden;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: 0.4s;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     background: #fff;
 }
 
@@ -48,7 +57,7 @@
     height: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    object-fit: inherit;
+    object-fit: cover;
     transition: 0.4s;
 }
 

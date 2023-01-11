@@ -25,8 +25,8 @@
 }
 
 .inner .contact_img:hover {
-    border-radius: 50%;
     transition: 0.3s all ease;
+    transform: scale(1.05);
 }
 
 .inner .contact_img:hover img {

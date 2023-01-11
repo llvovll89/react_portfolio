@@ -66,6 +66,7 @@
     margin-bottom: 15px;
     text-transform: capitalize;
     font-weight: 600;
+    font-family: var(--korFont);
 }
 
 .project .project-contetnt .project-item-in .js_imgbox {
@@ -145,7 +146,6 @@
     transform: rotateZ(90deg);
     height: 100%;
     background: var(--whiteColor);
-    border: 2px solid #ccc;
     border-radius: 12px;
     transition: 1s all ease;
     background: #191919;

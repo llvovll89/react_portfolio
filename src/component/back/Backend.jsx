@@ -40,7 +40,7 @@ export const Backend = () => {
                   perPage: 1
                 }
               }
-            }}s
+            }}
           >
             {backend.map((item) => (
               <SplideSlide key={item.id} className="slide">

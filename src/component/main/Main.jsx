@@ -14,8 +14,18 @@ export const Main = () => {
           <div className="main_content">
             <div className="main_left flex_item">
               <div className="left_content">
-                <p className="left_text" data-aos="zoom-in" data-aos-duration="2000">제 포트폴리오에 오신 걸 환영합니다.</p>
-                <h2 className="left_big" data-aos="zoom-out" data-aos-duration="1500">
+                <p
+                  className="left_text"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  제 포트폴리오에 오신 걸 환영합니다.
+                </p>
+                <h2
+                  className="left_big"
+                  data-aos="zoom-out"
+                  data-aos-duration="1500"
+                >
                   {mainhome.map((item) => (
                     <Typewriter
                       className="ani-title"
@@ -28,11 +38,21 @@ export const Main = () => {
                     />
                   ))}
                 </h2>
-                <p className="left_nomal" data-aos="fade-up" data-aos-duration="2000">
-                     <span>" 현재 React 로 제작중인 </span>
-                     <span> PortFolio Site 입니다. "</span>
+                <p
+                  className="left_nomal"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <span>" 꿈의 프로젝트를 만들기 위해 전진하는</span>
+                  <span> 신입 프론트엔드 개발자 김건호 입니다."</span>
                 </p>
-                <Link to="/contact" className="main_btn" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500">
+                <Link
+                  to="/contact"
+                  className="main_btn"
+                  data-aos="zoom-out-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   More Me
                   <span>
                     <MdTouchApp />
@@ -40,9 +60,21 @@ export const Main = () => {
                 </Link>
               </div>
             </div>
-            <div className="right_content flex_item"></div>
-            <img src={mainhomeIMG} alt="main_img" className="main_img" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500" />
-            <div className="logo_title" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="right_content flex_item">
+              <img
+                src={mainhomeIMG}
+                alt="main_img"
+                className="main_img"
+                data-aos="zoom-out-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              />
+            </div>
+            <div
+              className="logo_title"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <span>Front_end</span>
               <span>Developer</span>
             </div>

@@ -10,8 +10,8 @@ import {
 } from 'react-icons/ai';
 import { CiUser } from 'react-icons/ci';
 import {
-  DiCss3,
   DiReact,
+  DiCss3,
   DiJavascript1,
   DiMongodb,
   DiNodejsSmall,
@@ -107,11 +107,11 @@ export const about = [
 export const reactProject = [
   {
     id: 1,
-    category: 'DEVELOPMENT',
+    category: 'WEBSITE',
     totalLike: '600',
     title: 'React_MOVIE',
     subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+      'OMDB API를 이용해 React로 만든 react_movieapp',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/project-1.png',
@@ -119,24 +119,24 @@ export const reactProject = [
   {
     id: 2,
     category: 'APPLICATION',
-    totalLike: '750',
-    title: 'REACT_Weather',
+    totalLike: '433',
+    title: 'REACT_RecipeApp',
     subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+      'spoonacular Api 를 이용해 react로 만든 Recipe app',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/project-1.png',
   },
   {
     id: 3,
-    category: 'PHOTOSHOP',
-    totalLike: '630',
-    title: 'Logo design creativity & Application ',
+    category: 'APPLICATION',
+    totalLike: '210',
+    title: 'React_weatherApp',
     subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+      'React fetch Api를 이용한 weather App',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/project-1.png',
+    image: './images/react_weather.jpg',
   },
   {
     id: 4,

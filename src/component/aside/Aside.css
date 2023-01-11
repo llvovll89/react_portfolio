@@ -70,8 +70,8 @@
     left: 15px;
     top: 15px;
     border-radius: 6px;
-    background: transparent;
-    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.08);
+    background: rgba(52, 57, 61, 0.8);
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
     display: none;
     align-items: center;
     cursor: pointer;
@@ -81,7 +81,7 @@
 
 .aside .aside-toggle span {
     position: absolute;
-    width: 32px;
+    width: 30px;
     height: 2px;
     background: rgba(255, 255, 255, 0.52);
     border-radius: 4px;
@@ -89,7 +89,7 @@
 }
 
 .aside .aside-toggle.active span {
-    background: #181818;
+    background: var(--whiteColor);
 }
 
 .aside .aside-toggle span:nth-child(1) {
@@ -105,7 +105,7 @@
 }
 
 .aside .aside-toggle span:nth-child(3) {
-    left: 2px;
+    left: 5px;
 }
 
 .aside .aside-toggle.active span:nth-child(1) {
@@ -125,7 +125,7 @@
 }
 
 .aside .aside-nav {
-    margin:-top 50px;
+    margin: -top 50px;
 }
 
 .aside .aside-nav li {
@@ -186,7 +186,7 @@
     width: 100%;
     height: max-content;
     bottom: 0;
-    left : 0;
+    left: 0;
     background: #181818;
     transition: 0.5s all ease;
     overflow: hidden;
@@ -228,7 +228,7 @@
     justify-content: center;
 }
 
-.aside .social a{
+.aside .social a {
     margin: 0 auto;
     padding-top: 10px;
     font-size: 1.2rem;
@@ -247,11 +247,12 @@
 }
 
 
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1240px) {
     .aside {
         transition: 0.5s all ease;
         left: -270px;
     }
+
     .aside.show {
         left: 0;
         width: 100%;
@@ -263,19 +264,21 @@
         background-size: cover;
         animation: movebg 40s linear infinite;
     }
+
     .aside .aside-logo a::before {
         border-top: 3px solid var(--whiteColor);
         border-left: 3px solid var(--whiteColor);
     }
-    
+
     .aside .aside-logo a::after {
         border-bottom: 3px solid var(--whiteColor);
         border-right: 3px solid var(--whiteColor);
     }
-    .aside .aside-nav 
-    .aside .aside-nav li {
+
+    .aside .aside-nav .aside .aside-nav li {
         border-bottom: 1px solid #FEEAFA;
     }
+
     .aside .aside-nav {
         width: 100%;
         display: grid;
@@ -283,36 +286,44 @@
         place-items: center;
         grid-gap: 0.55rem;
     }
+
     .aside .aside-nav li {
         width: 100%;
         border-bottom: 0;
-        background: rgba(255,255,255,0.13);
+        background: rgba(255, 255, 255, 0.13);
         border-radius: 12px;
         transition: all 0.4s ease;
         box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11);
     }
+
     .aside .aside-nav li:hover {
         transform: scale(0.9);
         transition: all 0.4s ease;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
     }
+
     .aside .aside-nav li a .link-icons {
         font-size: 1.8rem;
     }
+
     .aside .aside-nav a .link-items {
         font-size: 1.25rem;
     }
-    .aside .aside-toggle{
+
+    .aside .aside-toggle {
         display: flex;
-        transition: 0.5s all ease;
+        transition: 0.4s all ease;
     }
+
     .aside .aside-toggle.active {
         left: 85%;
         top: 10px;
         border: none;
-        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.07);
-        transition: 0.5s all ease;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22);
+        transition: 0.4s all ease;
+        background: rgba(0, 0, 0, 0.17);
     }
+
     .aside .social::after {
         border-top: 1px solid #e9a3a3;
         background: #ebb3b3;
@@ -323,9 +334,23 @@
 } */
 
 @keyframes movebg {
-    0% {background-position:0 top; }
-    25% {background-position: -150% top; }
-    50% {background-position: -300% top; }
-    75% {background-position: -450% top;}
-    100% {background-position:-600% top; }
+    0% {
+        background-position: 0 top;
+    }
+
+    25% {
+        background-position: -150% top;
+    }
+
+    50% {
+        background-position: -300% top;
+    }
+
+    75% {
+        background-position: -450% top;
+    }
+
+    100% {
+        background-position: -600% top;
+    }
 }
