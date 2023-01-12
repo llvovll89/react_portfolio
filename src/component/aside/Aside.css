@@ -285,6 +285,7 @@
         width: max-content;
         place-items: center;
         grid-gap: 0.55rem;
+        margin-top: 20px;
     }
 
 
@@ -340,6 +341,30 @@
     .aside .social::after {
         border-top: 1px solid rgba(0, 0, 0, 0.07);
         background: rgb(136, 208, 237);
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .aside .aside-logo a {
+        font-family: var(--mainFont);
+        font-size: 1.5rem;
+    }
+    .aside .aside-nav li a .link-icons {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    .aside .aside-nav a .link-items {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .aside .aside-nav li {
+            align-items: center;
+        }
     }
 }
 

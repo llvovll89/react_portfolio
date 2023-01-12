@@ -83,6 +83,7 @@
 .react_content .react_left .react_icons svg:nth-child(3) {
     background: rgb(219, 219, 98);
 }
+
 .react_content .react_left .react_icons svg:nth-child(4) {
     color: var(--whiteColor);
     background: rgb(92, 195, 235);
@@ -167,14 +168,17 @@
         margin: 10vh auto;
         padding: 0;
     }
-    .react_content .react_right ,
+
+    .react_content .react_right,
     .react_content .react_left {
         width: 100%;
         height: 100%;
     }
+
     .react_content .react_left {
         margin-top: 1.6rem;
     }
+
     .react_content .react_left .react_title {
         font-size: 2.5rem;
         font-family: var(--korFont);
@@ -182,22 +186,53 @@
         padding-top: 0.6rem;
         font-weight: 600;
     }
+
     .react_content .react_left .react_desc {
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
+
     .react_content .react_left .react_icons {
         display: inline-block;
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
+
     .react_content .react_left .link_btn a {
         font-size: 1rem;
         padding: 10px 26px;
         letter-spacing: 1px;
     }
+
     .react_content .react_left_right {
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .react_content .react_left .react_title {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .react_content .react_left .react_desc {
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .react_content .react_left .react_icons {
+        margin: 0.5rem auto;
+    }
+
+    .react_content .react_left_right {
+        line-height: 1.2;
+        font-size: 0.8rem;
+        padding: 0.1rem;
+    }
+
+    .react_content .react_left .link_btn a {
+        padding: 10px 36px;
     }
 }
 
@@ -206,6 +241,7 @@
         opacity: 1;
         transform: translateX(0);
     }
+
     100% {
         opacity: 0.76;
         background: rgba(0, 0, 0, 0.08);

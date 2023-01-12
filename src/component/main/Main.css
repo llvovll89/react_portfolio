@@ -222,6 +222,9 @@
     .main_content .main_left .left_content .left_big{
         color: var(--whiteColor);
     } */
+    .main_content .main_left {
+        justify-content: center;
+    }
     .main_content .main_left .left_content .left_big {
         font-weight: 400;
     }
@@ -230,6 +233,8 @@
         font-size: 1.2rem;
         letter-spacing: 0.05rem;
         font-family: var(--korFont);
+        padding-bottom: 0.7rem;
+        font-weight: 500;
         border-bottom: 1px solid #ccc;
     }
     .main_content .right_content.flex_item {
