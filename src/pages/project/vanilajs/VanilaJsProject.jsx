@@ -1,12 +1,11 @@
 import React from 'react';
 import { reactProject } from '../../../assets/db/data';
-import { ReactCard } from './ReactCard';
-import './ReactProject.css';
+import { VanilaJs } from './VnilaJs';
+import './Vanilajs.css';
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
-export const ReactProject = () => {
+export const VanilaJsProject = () => {
   return (
     <>
       <section className="react-project section hidden">
@@ -17,13 +16,13 @@ export const ReactProject = () => {
               data-aos="zoom-in"
               data-aos-duration="800"
             >
-              <h2>REACT-PROJECT</h2>
+              <h2>Vanila_Js</h2>
             </div>
           </div>
 
           <div className="react-content">
             {reactProject.map((item) => (
-              <ReactCard
+              <VanilaJs
                 key={item.id}
                 image={item.image}
                 category={item.category}

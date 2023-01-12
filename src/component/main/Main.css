@@ -56,6 +56,7 @@
 
 .main_content .main_left .left_content .left_text {
     font-size: 1.6rem;
+    width: max-content;
     letter-spacing: 0.2rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -67,7 +68,7 @@
 
 .main_content .main_left .left_content .left_big {
     font-family: 'Montserrat';
-    font-size: 2.5vw;
+    font-size: 2vw;
     padding-left: 1.2%;
     letter-spacing: -0.03rem;
     font-weight: 700;
@@ -85,6 +86,12 @@
     display: flex;
     flex-flow: column;
     font-size: 1.5rem;
+}
+
+.color {
+    color: #e49a5d;
+    border-bottom: 1px solid #D3B59D;
+    display: inline-block;
 }
 
 .main_content .main_left .left_content .main_btn {
@@ -188,7 +195,7 @@
 
     .main_content .main_left .left_content .main_btn {
         margin: 1.2rem 1rem 1rem 0;
-        font: 200 1.22rem/3rem var(--korFont);
+        font: 200 1.22rem/3rem var(--mainFont);
         padding: 0 2rem;
         height: 3.2rem;
     }
@@ -206,15 +213,15 @@
 }
 
 @media screen and (max-width: 624px) {
-    .section_main {
+    /* .section_main {
         background-color: #141414;
         color: var(--whiteColor);
-    }
-    .main_content .main_left .left_content .left_nomal ,
+    } */
+    /* .main_content .main_left .left_content .left_nomal ,
     .main_content .main_left .left_content .left_text ,
     .main_content .main_left .left_content .left_big{
         color: var(--whiteColor);
-    }
+    } */
     .main_content .main_left .left_content .left_big {
         font-weight: 400;
     }
@@ -236,9 +243,9 @@
         max-width: 73vw;
     }
     .main_content .main_left .left_content .main_btn:hover {
-        background: transparent;
+        background: #EFFEFF;
         border: 0;
-        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.11);
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
     }
 }
 

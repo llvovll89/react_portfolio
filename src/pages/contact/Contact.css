@@ -1,0 +1,243 @@
+.contact {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: var(--korFont);
+}
+
+.inner {
+    padding: 30px 0;
+    max-width: 1240px;
+    width: 100%;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner .contact_img {
+    position: relative;
+    width: 44%;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    border-radius: 12px;
+}
+
+.inner .contact_img img {
+    border-radius: 6px;
+    transition: 0.3s all ease;
+}
+
+.inner .contact_img:hover {
+    transition: 0.3s all ease;
+}
+
+.inner .contact_img:hover img {
+    transform: scale(0.93);
+    transition: 0.3s all ease;
+    border-radius: 22px;
+}
+
+.inner .contact_text {
+    position: relative;
+    width: 52%;
+    margin-left: 2rem;
+    padding: 1rem;
+    background: #EFFFFF;
+}
+
+.inner .contact_text .contact_title {
+    font-family: 'Montserrat';
+    letter-spacing: -0.03rem;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #121111;
+}
+
+.inner .contact_text .contact_list {
+    padding-top: 2rem;
+}
+
+.inner .contact_text .contact_list .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inner .contact_text .contact_list .items li {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.6rem;
+    flex-flow: column;
+}
+
+.inner .contact_text .contact_list .items li span {
+    cursor: initial;
+    font-size: 1.3rem;
+}
+
+.inner .contact_text .contact_list .items li span:nth-child(2) {
+    font-size: 1.15rem;
+    width: max-content;
+    color: #121111;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.contact .inner .contact_msg {
+    margin-top: 1rem;
+}
+
+.contact .inner .contact_msg .contact_left {
+    display: flex;
+    flex-flow: column;
+    vertical-align: top;
+}
+
+.contact .inner .contact_msg .contact_left label {
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
+
+.contact .inner .contact_msg .contact_left input[type="text"] {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.3rem;
+    padding: 6px 8px;
+    font-size: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: 0.2s all ease;
+}
+
+.contact .inner .contact_msg .contact_left textarea {
+    height: 10rem;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    resize: none;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: 0.2s all ease;
+}
+
+.contact .contact_msg .contact_left .contact_btnbox {
+    text-align: center;
+    margin-top: 1.4rem;
+    border-radius: 3px;
+}
+
+.contact .contact_msg .contact_left .contact_btnbox .contact_btn {
+    position: relative;
+    display: inline-block;
+    font-size: 1.15rem;
+    width: 100%;
+    font-weight: 300;
+    padding: 0.8rem 3.5rem;
+    border: 1px solid #20c997;
+    overflow: hidden;
+    vertical-align: top;
+    z-index: 100;
+    transition: 0.4s all linear;
+}
+
+.contact .contact_msg .contact_left .contact_btnbox .contact_btn span {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #6d85c5;
+    transition: 0.4s all linear;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover {
+    color: #EFFFFF;
+    transition: 0.4s all linear;
+}
+
+.contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover span {
+    transform: translateX(0);
+    transition: 0.4s all linear;
+}
+
+/* .contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover {
+    background: ;
+} */
+
+.contact .inner .contact_msg .contact_left input[type="text"]:focus,
+.contact .inner .contact_msg .contact_left input[type="text"]:not(:disabled):hover,
+.contact .inner .contact_msg .contact_left textarea:not(:disabled):hover,
+.contact .inner .contact_msg .contact_left textarea:focus {
+    border-color: #4460aa;
+    transition: 0.2s all ease;
+}
+
+@media screen and (max-width: 768px) {
+    .contact .inner {
+        flex-flow: column;
+        margin: 0 auto;
+    }
+
+    .inner .contact_img {
+        height: 45vh;
+    }
+
+    .inner .contact_img img {
+        object-fit: cover;
+    }
+
+    .contact .inner .contact_msg .contact_left {
+        padding-left: 1rem;
+    }
+
+    .contact .inner .contact_msg .contact_left label {
+        font-size: 1.1rem;
+    }
+
+    .contact .inner .contact_msg .contact_left input[type="text"] {
+        height: 2.5rem;
+        line-height: 2.3rem;
+    }
+
+    .inner .contact_img, .inner .contact_text {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .inner .contact_img,
+    .inner .contact_text {
+        position: relative;
+        width: 100%;
+    }
+
+    .inner .contact_text .contact_title {
+        margin-top: 0;
+        padding-left: 0.5rem;
+    }
+
+    .inner .contact_text .contact_list {
+        padding: 1.3rem 1rem 0 1rem;
+    }
+
+    .inner .contact_text .contact_list .items li {
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .inner .contact_text .contact_list .items li span {
+        font-size: 1.1rem;
+    }
+
+    .inner .contact_text .contact_list .items li a {
+        font-size: 1rem;
+        width: max-content;
+        color: #121111;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.2rem;
+    }
+}

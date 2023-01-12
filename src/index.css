@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
+
 @font-face {
   font-family: 'Chosunilbo_myungjo';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
@@ -12,13 +13,13 @@
   /* color */
   --whiteColor: #FEFEFE;
   --orangeColor: #CB9106;
-  
+
   /* box-shadow */
 
   /* font-size */
-  --nmSize : 20px;
-  --mdSize : 30px;
-  --lgSize : 40px;
+  --nmSize: 20px;
+  --mdSize: 30px;
+  --lgSize: 40px;
 
   /* font-family */
   --korFont: 'Chosunilbo_myungjo';
@@ -45,9 +46,12 @@ textarea {
   border: none;
   background: none;
   outline: none;
-  cursor: pointer;
   text-decoration: none;
   list-style-type: none;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 img {
@@ -141,7 +145,7 @@ img {
 
 ::-webkit-scrollbar-track {
   border-radius: 100vw;
-  background: linear-gradient(to bottom , rgba(0,0,0,0.17), #Fccfc3);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.17), #Fccfc3);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -151,14 +155,14 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.17);
+  background: rgba(0, 0, 0, 0.17);
 }
 
 
-@media screen and (max-width: 1240px) {
-    .main-content {
-      padding-left: 0;
-    }
+@media screen and (max-width: 1280px) {
+  .main-content {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

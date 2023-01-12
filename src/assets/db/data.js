@@ -1,11 +1,10 @@
 import {
   AiOutlineHome,
-  AiOutlineSetting,
-  AiOutlineFundProjectionScreen,
   AiOutlineContacts,
   AiFillHtml5,
   AiOutlineInstagram,
   AiFillGithub,
+  AiOutlineAntDesign,
 
 } from 'react-icons/ai';
 import { CiUser } from 'react-icons/ci';
@@ -17,7 +16,6 @@ import {
   DiNodejsSmall,
 } from 'react-icons/di';
 import {SiBloglovin} from 'react-icons/si';
-import {RxNotionLogo} from 'react-icons/rx';
 
 export const asidenav = [
   {
@@ -37,27 +35,20 @@ export const asidenav = [
   {
     id: 3,
     chapnum: '03',
-    navtext: 'Backend',
-    navicon: <AiOutlineContacts />,
-    navurl: '/backend',
+    navtext: 'React',
+    navicon: <DiReact />,
+    navurl: '/react',
   },
   {
     id: 4,
     chapnum: '04',
-    navtext: 'JS_PRO',
-    navicon: <AiOutlineSetting />,
-    navurl: '/javascript',
+    navtext: 'vanila_js',
+    navicon: <DiJavascript1 />,
+    navurl: '/vanilajs',
   },
   {
     id: 5,
     chapnum: '05',
-    navtext: 'REACT_PRO',
-    navicon: <AiOutlineFundProjectionScreen />,
-    navurl: '/react',
-  },
-  {
-    id: 6,
-    chapnum: '06',
     navtext: 'CONTACT',
     navicon: <AiOutlineContacts />,
     navurl: '/contact',
@@ -107,102 +98,71 @@ export const about = [
 export const reactProject = [
   {
     id: 1,
-    category: 'WEBSITE',
-    totalLike: '600',
-    title: 'React_MOVIE',
+    category: '<VanilaJs/>',
+    totalLike: '120',
+    title: 'Js_portfolio',
     subtitle:
-      'OMDB API를 이용해 React로 만든 react_movieapp',
+      '전 포트폴리오',
     desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/project-1.png',
+    앞전에 HTML , CSS3 , JS 만으로 만든 포트폴리오 사이트입니다.
+  `,
+    image: './images/img_JS/js_portfolio.png',
   },
   {
     id: 2,
-    category: 'APPLICATION',
-    totalLike: '433',
-    title: 'REACT_RecipeApp',
+    category: '<VanilaJs/>',
+    totalLike: '333',
+    title: 'BookMark',
     subtitle:
-      'spoonacular Api 를 이용해 react로 만든 Recipe app',
+      'CRUD 연습을 위해 만들어본 Bookmark',
     desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/project-1.png',
+    javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage에 get 되기 때문에 저장도 가능합니다. 
+  `,
+    image: './images/img_JS/bookmark.png',
   },
   {
     id: 3,
-    category: 'APPLICATION',
+    category: '<VanilaJs/>',
     totalLike: '210',
     title: 'React_weatherApp',
     subtitle:
       'React fetch Api를 이용한 weather App',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/react_weather.jpg',
+    image: './images/img_JS/hozzle-01.png',
   },
   {
     id: 4,
-    category: 'FIGMA',
+    category: '<VanilaJs/>',
     totalLike: '360',
-    title: 'Mobile app landing design & Services',
+    title: '타자검정연습',
     subtitle:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/project-1.png',
+    image: './images/img_JS/typing-game.png',
   },
   {
     id: 5,
-    category: 'WEB DESIGN',
+    category: '<VanilaJs/>',
     totalLike: '280',
-    title: 'Design for tecnology & services',
+    title: 'VanilaJS - 10Project',
     subtitle:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/typing-game.png',
+    image: './images/img_JS/10project.png',
   },
   {
     id: 6,
-    category: 'WEB DESIGN',
+    category: '<VanilaJs/>',
     totalLike: '690',
     title: 'App for tecnology & services',
     subtitle:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/insect-game.png',
-  },
-];
-
-export const backend = [
-  {
-    id: 1,
-    title: 'REACT_CHATAPP',
-      desc: 'MERN STACK ONLY FRONT + BACK',
-    img: './images/project-1.png',
-  },
-  {
-    id: 2,
-    title: 'REACT_??APP',
-      desc: 'MERN STACK ONLY FRONT + BACK',
-    img: './images/project-1.png',
-  },
-  {
-    id: 3,
-    title: 'REACT_BOARD ',
-      desc: 'MERN STACK ONLY FRONT + BACK',
-    img: './images/insect-game.png',
-  },
-  {
-    id: 4,
-    title: 'REACT_BOARD ',
-      desc: 'MERN STACK ONLY FRONT + BACK',
-    img: './images/insect-game.png',
-  },
-  {
-    id: 5,
-    title: 'REACT_BOARD ',
-      desc: 'MERN STACK ONLY FRONT + BACK',
-    img: './images/insect-game.png',
+    image: './images/img_JS/login-todo.png',
   },
 ];
 

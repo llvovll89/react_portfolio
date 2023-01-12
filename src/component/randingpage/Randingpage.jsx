@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import randingImg from '../../assets/images/aisdeImg.png';
 import { Link } from 'react-router-dom';
 import './Randingpage.css';
 
 export const Randingpage = () => {
-  const [dark, setDark] = useState(false);
-
-  const handelClick = () => {
-    setDark(!dark);
-  };
 
   return (
     <>
@@ -18,10 +13,10 @@ export const Randingpage = () => {
           data-aos="fade-right"
           data-aos-duration="900"
           data-aos-delay="500"
-            className={dark ? 'left active' : 'left'}
+            className='left'
           ></div>
           <div
-            className={dark ? 'right active' : 'right'}
+            className='right'
             data-aos="fade-left"
             data-aos-duration="900"
             data-aos-delay="500"
@@ -47,12 +42,6 @@ export const Randingpage = () => {
                 PORTFOLIO_GO
               </Link>
             </div>
-          </div>
-          <div
-            className={dark ? 'toggle_btn active' : 'toggle_btn'}
-            onClick={handelClick}
-          >
-            <span></span>
           </div>
         </div>
       </section>

@@ -21,18 +21,8 @@
     background: #DEE2FF;
 }
 
-.randing .container .left.active {
-    background: #FEEAFA;
-    opacity: 1;
-}
-
 .randing .container .right {
     background: #FEEAFA;
-}
-
-.randing .container .right.active {
-    background: #DEE2FF;
-    opacity: 1;
 }
 
 .randing .content {
@@ -61,10 +51,10 @@
 }
 
 .content .bottom-text {
-    margin: 20px 0;
+    margin: 20px auto;
     color: #181818;
     text-align: center;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .content .bottom-text .bottom_title {
@@ -143,67 +133,7 @@
     transform: translatey(100%) rotatex(90deg);
 }
 
-.toggle_btn {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 90px;
-    height: 40px;
-    display: block;
-    border-radius: 30px;
-    background-color: #FEEAFA;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-    margin: 15px;
-    transition: all 0.3s ease-in;
-}
-
-
-.toggle_btn span {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 4px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: #DEE2FF;
-    transition: all 0.3s ease-in;
-    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.16);
-}
-
-.toggle_btn.active {
-    background: #DEE2FF;
-}
-
-.toggle_btn.active span {
-    left: calc(100% - 44px);
-    background: #FEEAFA;
-    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.16);
-}
-
 @media screen and (max-width:768px) {
-    .toggle_btn {
-        width: 70px;
-        height: 32px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
-        transition: all 0.4s ease-in;
-    }
-    .toggle_btn span {
-        position: absolute;
-        width: 22.5px;
-        height: 22px;
-        top: 50%;
-        left: 4px;
-        transform: translateY(-50%);
-        transition: all 0.4s ease-in;
-    }
-    .toggle_btn.active span {
-        left: calc(100% - 28px);
-        background: #FEEAFA;
-        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.16);
-    }
     .randing .content {
         row-gap: 0.8rem;
     }

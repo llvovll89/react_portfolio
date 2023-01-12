@@ -34,7 +34,7 @@
 }
 
 .react-content .react-card:hover {
-    background: rgb(243, 231, 231);
+    background: #484f53;
     transform: translateY(-10px);
     transition: 0.4s all ease;
 }
@@ -44,7 +44,6 @@
 } 
 
 .react-content .react-card:hover p {
-    color: #2A3034;
     font-weight: 500;
 }
 
@@ -86,6 +85,7 @@
 .react-content .react-card .react-card-box .react-card-title {
     color: var(--whiteColor);
     text-align: center;
+    margin: 0.25rem;
 }
 
 .react-content .react-card .react-card-box .react-card-title p:nth-child(1) {
@@ -119,13 +119,12 @@
     transform: translate(-50%, -50%);
     line-height: 1.4;
     background: #f0f3f5;
-    padding: 14px 28px;
-    min-width: 70%;
-    max-width: 85%;
+    max-width: 94%;
     z-index: 9999;
     box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
     padding: 40px;
     border-radius: 12px;
+    margin: auto;
 }
 
 .react-card-modal,
@@ -138,6 +137,12 @@
     bottom: 0;
     position: fixed;
     z-index: 999;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .react-card-overlay {
@@ -146,11 +151,22 @@
 
 .modal-img {
     padding: 0 10px;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-img img {
+    border-radius: 12px;
 }
 
 .modal-text {
-    padding: 0 50px;
+    padding-left: 3rem;
     color: #181818;
+    width: 43%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .modal-text span {
@@ -175,12 +191,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px auto 0;
     font-size: 18px;
 }
 
 .modal-btn .btn-md {
-    margin: 0 2rem;
+    margin-right: 2rem;
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
     border-radius: 10px;
@@ -203,10 +218,10 @@
     bottom: 10px;
     width: max-content;
     height: max-content;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #FFF;
     text-align: center;
-    
+    border-radius: 12px;
 }
 
 
@@ -250,20 +265,25 @@
         margin: 1% 5%;
     }
 
-    .react-card-modal,
-    .react-card-overlay {
-        overflow: scroll;
-    }
-
     .modal-content {
-        max-width: 90%;
+        width: 100%;
+        max-width: 80%;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
         padding: 1.5rem;
+    }
+    .modal-img ,
+    .modal-text {
+        width: 100%;
     }
 
     .modal-text {
+        margin-top: 10px;
         padding: 1rem;
+    }
+    .modal-btn {
+        margin-top: 1rem;
     }
     .modal-btn .btn-md {
         margin: 0 1rem;

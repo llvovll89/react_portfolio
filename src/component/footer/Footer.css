@@ -1,10 +1,10 @@
 .footer {
-    padding: 12px auto;
     color: var(--whiteColor);
+    font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
 }
 
 .footer .footer_content {
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -15,13 +15,25 @@
 .footer .footer_content .icons {
     color: var(--whiteColor);
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
+}
+
+footer .footer_content .icons:hover {
+    color: rgb(111, 185, 214);
 }
 
 .footer .footer_content .footer_copy {
     margin-top: 0.5rem;
     font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+.footer .footer_content .footer_subtext {
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 0.74rem;
+    font-weight: 300;
+    color: #8c8c8c;
 }
 
 @media screen and (max-width: 768px) {

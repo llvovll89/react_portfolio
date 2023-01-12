@@ -1,4 +1,4 @@
-.pro_container {
+.react_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,14 +12,14 @@
     border-bottom: 1px solid #ccc;
 }
 
-.pro_container .pro_wrap {
+.react_container .react_wrap {
     max-width: 1240px;
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
-.pro_content {
+.react_content {
     max-width: 96vw;
     margin: 14vh auto;
     padding: 0 2.5vh;
@@ -28,65 +28,114 @@
     justify-content: space-between;
 }
 
-.pro_content .pro_left {
+.react_content .react_left {
     position: relative;
     height: 100%;
     width: 35%;
 }
 
-.pro_content .pro_left .pro_title {
+.react_content .react_left .react_number {
+    display: inline-block;
+    font-size: 2.2rem;
+}
+
+.react_content .react_left .react_title {
     font-size: 3.2rem;
-    font-family: var(--korFont);
+    font-family: var(--popFont);
     margin-bottom: 2rem;
     padding-bottom: 0.8rem;
+    font-weight: 500;
     border-bottom: 1px solid #ccc;
     width: max-content;
     color: #272626;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
 }
 
-.pro_content .pro_left .pro_desc {
+.react_content .react_left .react_desc {
     font-size: 1.3rem;
+    font-weight: 600;
     margin-bottom: 2rem;
     font-family: var(--korFont);
     line-height: 1.5;
 }
 
-.pro_content .pro_left .pro_icons {
+.react_content .react_left .react_icons {
     display: inline-block;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    line-height: 2rem;
+    margin: 1rem auto;
+    /* border: 1px solid #ccc; */
+    width: 100%;
 }
 
-.pro_content .pro_left .link_btn {
+.react_content .react_left .react_icons svg {
+    margin-right: 0.75rem;
+}
+
+.react_content .react_left .react_icons svg:nth-child(1) {
+    color: rgb(248, 42, 42);
+}
+
+.react_content .react_left .react_icons svg:nth-child(2) {
+    color: rgb(28, 149, 28);
+}
+
+.react_content .react_left .react_icons svg:nth-child(3) {
+    background: rgb(219, 219, 98);
+}
+.react_content .react_left .react_icons svg:nth-child(4) {
+    color: var(--whiteColor);
+    background: rgb(92, 195, 235);
+}
+
+.react_content .react_left .link_btn {
     display: block;
-    padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
-.pro_content .pro_left .link_btn a {
+.react_content .react_left .link_btn a {
     font-size: 1.1rem;
     line-height: 1.5;
-    margin: 0 1rem;
+    margin-right: 1.2rem;
     padding: 14px 30px;
     letter-spacing: 1px;
-}
-
-.pro_content .pro_left .link_btn a:first-child {
-    background: #ccc;
-}
-
-.pro_content .pro_left .link_btn a:last-child {
-    background: #Fec2c1;
-}
-
-.pro_content .pro_right {
-    width: 58%;
-    position: relative;
+    color: #272626;
+    font-weight: 500;
     border-radius: 6px;
 }
 
-.pro_content .pro_left_right {
+.react_content .react_left .link_btn a:first-child:hover {
+    background: transparent;
+    border: 1px solid #ccc;
+    transition: 0.3s all linear;
+}
+
+.react_content .react_left .link_btn a:last-child:hover {
+    background: transparent;
+    border: 1px solid #ccc;
+    transition: 0.3s all linear;
+}
+
+.react_content .react_left .link_btn a:first-child {
+    background: #ccc;
+    transition: 0.3s all linear;
+}
+
+.react_content .react_left .link_btn a:last-child {
+    background: #Fec2c1;
+    transition: 0.3s all linear;
+}
+
+.react_content .react_right {
+    width: 58%;
+    position: relative;
+}
+
+.react_content .react_right img {
+    border-radius: 12px;
+}
+
+.react_content .react_left_right {
     position: absolute;
     top: -10%;
     right: 1%;
@@ -106,52 +155,48 @@
 }
 
 @media screen and (max-width: 1240px) {
-    .pro_container .pro_wrap {
+    .react_container .react_wrap {
         max-width: 1360px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .pro_content {
+@media screen and (max-width: 1024px) {
+    .react_content {
         flex-flow: column-reverse;
         max-width: 90%;
         margin: 10vh auto;
         padding: 0;
     }
-    .pro_content .pro_right ,
-    .pro_content .pro_left {
+    .react_content .react_right ,
+    .react_content .react_left {
         width: 100%;
         height: 100%;
     }
-    .pro_content .pro_left {
+    .react_content .react_left {
         margin-top: 1.6rem;
     }
-    .pro_content .pro_left .pro_title {
+    .react_content .react_left .react_title {
         font-size: 2.5rem;
         font-family: var(--korFont);
         margin-bottom: 1.5rem;
         padding-top: 0.6rem;
+        font-weight: 600;
     }
-    .pro_content .pro_left .pro_desc {
+    .react_content .react_left .react_desc {
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
-    .pro_content .pro_left .pro_icons {
+    .react_content .react_left .react_icons {
         display: inline-block;
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
-    .pro_content .pro_left .link_btn {
-        padding: 1rem;
-    }
-    
-    .pro_content .pro_left .link_btn a {
+    .react_content .react_left .link_btn a {
         font-size: 1rem;
         padding: 10px 26px;
         letter-spacing: 1px;
-        margin: 0 1rem 0 0;
     }
-    .pro_content .pro_left_right {
+    .react_content .react_left_right {
         font-size: 0.9rem;
     }
 }

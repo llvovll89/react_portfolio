@@ -9,9 +9,7 @@
     top: 0;
     left: 0;
     z-index: 1200;
-    border-right: 1px solid var(--titleColor);
     background: rgba(0, 0, 0, 0.88);
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .aside a {
@@ -34,11 +32,12 @@
 .aside .aside-logo a {
     position: relative;
     font-size: 1.6rem;
+    font-weight: 600;
     letter-spacing: 3px;
 }
 
 .aside .aside-logo a span {
-    font-family: 'Lobster Two', cursive;
+    font-family: var(--popFont);
 }
 
 .aside .aside-logo a::before {
@@ -70,8 +69,8 @@
     left: 15px;
     top: 15px;
     border-radius: 6px;
-    background: rgba(52, 57, 61, 0.8);
-    box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+    background: rgba(35, 37, 39, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
     display: none;
     align-items: center;
     cursor: pointer;
@@ -89,7 +88,7 @@
 }
 
 .aside .aside-toggle.active span {
-    background: var(--whiteColor);
+    background: #525451c2;
 }
 
 .aside .aside-toggle span:nth-child(1) {
@@ -247,7 +246,7 @@
 }
 
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1280px) {
     .aside {
         transition: 0.5s all ease;
         left: -270px;
@@ -258,7 +257,7 @@
         width: 100%;
         transition: 0.5s all ease;
         z-index: 1100;
-        background: #dfb2b2;
+        background: #EFFEFF;
         background-image: url('../../../public/images/bg-cloud.png');
         background-position: center;
         background-size: cover;
@@ -282,32 +281,31 @@
     .aside .aside-nav {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        width: max-content;
         place-items: center;
         grid-gap: 0.55rem;
     }
 
+
     .aside .aside-nav li {
         width: 100%;
         border-bottom: 0;
-        background: rgba(255, 255, 255, 0.13);
         border-radius: 12px;
         transition: all 0.4s ease;
-        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11);
-    }
-
-    .aside .aside-nav li:hover {
-        transform: scale(0.9);
-        transition: all 0.4s ease;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+        /* background: rgba(255, 255, 255, 0.63); */
+        /* box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11); */
     }
 
     .aside .aside-nav li a .link-icons {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
+        color: #525451c2;
     }
 
     .aside .aside-nav a .link-items {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #525451c2;
     }
 
     .aside .aside-toggle {
@@ -315,23 +313,35 @@
         transition: 0.4s all ease;
     }
 
+    .aside .aside-toggle:hover,
+    .aside .aside-toggle.active:hover {
+        border: 0;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.12);
+        transform: scale(0.9);
+    }
+
+    .aside .aside-toggle.active:hover {
+        background: transparent;
+    }
+
+    .aside-toggle.active:hover span {
+        background: #EFFEFF;
+    }
+
     .aside .aside-toggle.active {
         left: 85%;
         top: 10px;
         border: none;
-        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
+        background: #e4ebec;
         transition: 0.4s all ease;
-        background: rgba(0, 0, 0, 0.17);
     }
 
     .aside .social::after {
-        border-top: 1px solid #e9a3a3;
-        background: #ebb3b3;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+        background: rgb(136, 208, 237);
     }
 }
-
-/* @media screen and (max-width: 768px) {
-} */
 
 @keyframes movebg {
     0% {

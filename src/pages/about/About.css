@@ -116,7 +116,7 @@
     padding: 0.8rem 1rem;
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 40px;
+    margin-top: 45px;
     background: skyblue;
     color: var(--whiteColor);
 }
@@ -183,9 +183,9 @@
 }
 
 .about_btn:hover {
-    background: transparent;
-    color: #181818;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
+    background: #202020;
+    color: var(--whiteColor);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.091);
     transition: 0.4s all ease;
 }
 

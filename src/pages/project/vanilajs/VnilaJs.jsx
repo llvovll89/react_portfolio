@@ -1,8 +1,8 @@
 import React , {useState} from 'react'
 import { AiOutlineHeart } from 'react-icons/ai';
-import './ReactProject.css';
+import './Vanilajs.css';
 
-export const ReactCard = (props) => {
+export const VanilaJs = (props) => {
   const [reactCard, setReactCard] = useState(false);
 
   const toggleModal = () => {
@@ -40,12 +40,11 @@ export const ReactCard = (props) => {
           <img src={props.image} alt={props.alt} />
         </div>
         <div className="modal-text right">
-          <span>New Project</span>
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
           <div className="modal-btn">
-            <a href="#" className="btn-md" target='_blank'>CODE</a>
-            <a href="#" className="btn-md" target='_blank'>DEMO</a>
+          <a href="#" className="btn-md" target='_blank'>VIEW</a>
+          <a href="#" className="btn-md" target='_blank'>CODE</a>
           </div>
           <button className="close-modal" onClick={toggleModal}>
             ❎
