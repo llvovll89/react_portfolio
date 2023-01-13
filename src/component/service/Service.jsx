@@ -7,7 +7,6 @@ export const Service = () => {
   return (
     <>
       <div className="service">
-        <div className="service_container">
           <div className="service_content">
             {serviceData.map((item) => (
               <Typewriter
@@ -20,7 +19,6 @@ export const Service = () => {
                 }}
               />
             ))}
-          </div>
         </div>
       </div>
     </>
