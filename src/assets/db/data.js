@@ -122,14 +122,14 @@ export const reactProject = [
   },
   {
     id: 3,
-    category: '<VanilaJs/>',
-    totalLike: '210',
-    title: 'React_weatherApp',
+    category: '<VanilaJs/> + <WebGame/>',
+    totalLike: '520',
+    title: 'Insect_Kill Game',
     subtitle:
-      'React fetch Api를 이용한 weather App',
+      '자바스크립트 콜백함수 / 반복문 공부를 위해 제작',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/img_JS/hozzle-01.png',
+    image: './images/img_JS/JS_insect.png',
   },
   {
     id: 4,
@@ -155,14 +155,14 @@ export const reactProject = [
   },
   {
     id: 6,
-    category: '<VanilaJs/>',
-    totalLike: '690',
-    title: 'App for tecnology & services',
+    category: '<VanilaJs/> + <WebGame/>',
+    totalLike: '620',
+    title: 'HozzleGame',
     subtitle:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/img_JS/login-todo.png',
+    image: './images/img_JS/hozzle-01.png',
   },
 ];
 

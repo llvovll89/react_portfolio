@@ -82,6 +82,7 @@
     color: #121111;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
+    font-family: var(--korFont);
 }
 
 .contact .inner .contact_msg {
@@ -175,7 +176,7 @@
     transition: 0.2s all ease;
 }
 
-textarea ,input {
+textarea, input {
     font-family: var(--popFont);
 }
 
@@ -240,7 +241,7 @@ textarea ,input {
         gap: 0.3rem;
         margin-bottom: 1rem;
     }
-    
+
 
     .inner .contact_text .contact_list .items li span {
         font-size: 1.1rem;

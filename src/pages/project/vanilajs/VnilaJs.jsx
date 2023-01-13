@@ -3,20 +3,20 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import './Vanilajs.css';
 
 export const VanilaJs = (props) => {
-  const [reactCard, setReactCard] = useState(false);
+  const [vanilaCard, setVinaliCard] = useState(false);
 
   const toggleModal = () => {
-    setReactCard(!reactCard);
+    setVinaliCard(!vanilaCard);
   };  
 
   return (
     <>
-    <div className="react-card" data-aos="flip-left" data-aos-duration="1000">
-    <div className="react-card-img">
+    <div className="vanila-card" data-aos="flip-left" data-aos-duration="1000">
+    <div className="vanila-card-img">
       <img src={props.image} alt={props.alt} onClick={toggleModal} />
     </div>
-    <div className="react-card-box" p onClick={toggleModal}>
-    <div className="react-card-content">
+    <div className="vanila-card-box" p onClick={toggleModal}>
+    <div className="vanila-card-content">
       <span onClick={toggleModal}>{props.category}</span>
       <label>
         <span>
@@ -25,16 +25,16 @@ export const VanilaJs = (props) => {
         {props.totallike}
       </label>
     </div>
-    <div className="react-card-title">
+    <div className="vanila-card-title">
       <p>{props.title}</p>
       <p>{props.subtitle}</p>
     </div>
     </div>
   </div>
 
-  {reactCard && (
-    <div className="react-card-modal">
-      <div className="react-card-overlay"></div>
+  {vanilaCard && (
+    <div className="vanila-card-modal">
+      <div className="vanila-card-overlay"></div>
       <div className="modal-content">
         <div className="modal-img left">
           <img src={props.image} alt={props.alt} />

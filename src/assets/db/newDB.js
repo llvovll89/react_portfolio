@@ -56,3 +56,17 @@ export const dataNew = [
     github: '#',
   },
 ];
+
+
+export const serviceData = [
+    {
+      id: 1,
+      text: '이 포트폴리오는 현재,,진행중입니다.',
+      post: "Project section 수정 중입니다.",
+    },
+    {
+      id:2 ,
+      text: '발전하는 PortFolio를 기대해 주세요.',
+      post: "와주셔서 감사합니다.",
+    }
+]

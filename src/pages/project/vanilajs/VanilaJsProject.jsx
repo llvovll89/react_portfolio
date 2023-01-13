@@ -8,8 +8,8 @@ import '@splidejs/splide/dist/css/splide.min.css';
 export const VanilaJsProject = () => {
   return (
     <>
-      <section className="react-project section hidden">
-        <div className="react-project-container container">
+      <section className="vanila-project section hidden">
+        <div className="vanila-project-container container">
           <div className="row">
             <div
               className="section-title pad15"
@@ -20,7 +20,7 @@ export const VanilaJsProject = () => {
             </div>
           </div>
 
-          <div className="react-content">
+          <div className="vanila-content">
             {reactProject.map((item) => (
               <VanilaJs
                 key={item.id}

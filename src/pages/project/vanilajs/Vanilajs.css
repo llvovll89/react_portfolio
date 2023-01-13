@@ -1,28 +1,28 @@
-.react-project {
+.vanila-project {
     background: #373636;
     position: relative;
 }
 
-.react-project .section-title h2{
+.vanila-project .section-title h2{
     color: var(--whiteColor);
 }
 
-.react-project .section-title h2::after ,
-.react-project .section-title h2::before {
+.vanila-project .section-title h2::after ,
+.vanila-project .section-title h2::before {
     background: var(--whiteColor);
 }
 
-.react-project .react-project-container {
+.vanila-project .vanila-project-container {
     color: var(--whiteColor);
 }
 
-.react-content {
+.vanila-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.react-content .react-card {
+.vanila-content .vanila-card {
     border-radius: 6px;
     transition: 0.3s all ease;
     cursor: pointer;
@@ -33,42 +33,42 @@
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22);
 }
 
-.react-content .react-card:hover {
+.vanila-content .vanila-card:hover {
     background: #484f53;
     transform: translateY(-10px);
     transition: 0.4s all ease;
 }
 
-.react-content .react-card:hover .react-card-content {
+.vanila-content .vanila-card:hover .vanila-card-content {
     color: #d2c621ce;
 } 
 
-.react-content .react-card:hover p {
+.vanila-content .vanila-card:hover p {
     font-weight: 500;
 }
 
-.react-content .react-card .react-card-img {
+.vanila-content .vanila-card .vanila-card-img {
     height: 250px;
     overflow: hidden;
     padding: 1rem;
     transition: 0.4s;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background: #fff;
+    /* background: #FFFFFF; */
 }
 
-.react-content .react-card .react-card-img img {
+.vanila-content .vanila-card .vanila-card-img img {
     height: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    transition: 0.4s;
+    border-radius: 6px;
+    transition: 0.4s all ease;
 }
 
-.react-content .react-card .react-card-img:hover img {
-    transform: scale(1.07);
+.vanila-content .vanila-card .vanila-card-img:hover img {
+    transform: scale(1.15);
+    transition: 0.4s all ease;
 }
 
-.react-content .react-card .react-card-content {
+.vanila-content .vanila-card .vanila-card-content {
     margin: 15px 0 20px 0;
     text-transform: uppercase;
     display: flex;
@@ -78,30 +78,30 @@
     color: #EFE99A;
 }
 
-.react-content .react-card .react-card-box {
+.vanila-content .vanila-card .vanila-card-box {
     padding: 16px 12px;
 }
 
-.react-content .react-card .react-card-box .react-card-title {
+.vanila-content .vanila-card .vanila-card-box .vanila-card-title {
     color: var(--whiteColor);
     text-align: center;
     margin: 0.25rem;
 }
 
-.react-content .react-card .react-card-box .react-card-title p:nth-child(1) {
+.vanila-content .vanila-card .vanila-card-box .vanila-card-title p:nth-child(1) {
     font-size: 1.2rem;
     margin: 12px 0;
     font-family: var(--korFont);
 }
 
 
-.react-content .react-card .react-card-content span {
+.vanila-content .vanila-card .vanila-card-content span {
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 600;
 }
 
-.react-content .react-card .react-card-content label {
+.vanila-content .vanila-card .vanila-card-content label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,8 +127,8 @@
     margin: auto;
 }
 
-.react-card-modal,
-.react-card-overlay {
+.vanila-card-modal,
+.vanila-card-overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -145,7 +145,7 @@
     overflow: hidden;
 }
 
-.react-card-overlay {
+.vanila-card-overlay {
     background: #ecf0f3;
 }
 
@@ -226,7 +226,7 @@
 
 
 @media screen and (max-width: 1024px) {
-    .react-content {
+    .vanila-content {
         grid-template-columns: repeat(2, 1fr);  
     }
     .modal-content {
@@ -257,11 +257,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .react-content {
+    .vanila-content {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .react-content .react-card {
+    .vanila-content .vanila-card {
         margin: 1% 2%;
     }
 
