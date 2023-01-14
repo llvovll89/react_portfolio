@@ -61,3 +61,28 @@ footer .footer_content .icons:hover {
         letter-spacing: 1px;
     }
 }
+
+@media screen and (max-width: 564px) {
+    .footer {
+        padding: 6px auto;
+    }
+    
+    .footer .footer_content {
+        padding: 1.25rem;
+    }
+    .footer .footer_content .icons {
+        color: var(--whiteColor);
+        margin: 0 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .footer .footer_content .footer_copy {
+        margin-top: 0.35rem;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+    .footer .footer_content .footer_subtext {
+        font-size: 0.7rem;
+        margin-top: 0.66rem;
+    }
+}

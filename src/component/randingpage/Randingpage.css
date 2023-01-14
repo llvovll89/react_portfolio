@@ -47,7 +47,7 @@
     box-shadow: inset 0 0 0 1px rgb(0 0 0 / 12%);
     animation: homeImage 12s ease-in-out infinite 1s;
     transition: all 1s ease;
-    background: #C8E1DC;
+    background: #dbe5e3;
 }
 
 .content .bottom-text {

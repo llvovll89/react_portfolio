@@ -6,7 +6,6 @@ import { ReactProject } from '../pages/project/react/ReactProject';
 import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../component/footer/Footer';
 import { Arrow } from '../component/arrow/Arrow';
-import { Service } from '../component/service/Service';
 
 export const Home = () => {
   return (
@@ -14,7 +13,6 @@ export const Home = () => {
       <div className="main-container">
         <div className="main-content">
           <Main />
-          <Service />
           <About />
           <VanilaJsProject />
           <ReactProject />

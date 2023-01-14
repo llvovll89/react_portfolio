@@ -48,3 +48,10 @@
         bottom: 20px;
     }   
 }
+
+@media screen and (max-width: 564px) {
+    .arrow {
+        width: 52px;
+        height: 52px;
+    }
+}

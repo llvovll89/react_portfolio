@@ -1,5 +1,5 @@
 import React from 'react';
-import { reactProject } from '../../../assets/db/data';
+import { vanilaProject } from '../../../assets/db/data';
 import { VanilaJs } from './VnilaJs';
 import './Vanilajs.css';
 
@@ -21,7 +21,7 @@ export const VanilaJsProject = () => {
           </div>
 
           <div className="vanila-content">
-            {reactProject.map((item) => (
+            {vanilaProject.map((item) => (
               <VanilaJs
                 key={item.id}
                 image={item.image}

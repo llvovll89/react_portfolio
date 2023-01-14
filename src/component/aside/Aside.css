@@ -257,7 +257,7 @@
         width: 100%;
         transition: 0.5s all ease;
         z-index: 1100;
-        background: #EFFEFF;
+        background: #f0f9f9;
         background-image: url('../../../public/images/bg-cloud.png');
         background-position: center;
         background-size: cover;
@@ -299,7 +299,11 @@
 
     .aside .aside-nav li a .link-icons {
         font-size: 2.1rem;
-        color: #181818;
+        color: #060000;
+    }
+
+    .aside .aside-nav li a .link-icons svg {
+        border-radius: 35%;
     }
 
     .aside .aside-nav li:nth-child(1) a .link-icons svg {

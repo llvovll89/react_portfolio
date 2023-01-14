@@ -4,8 +4,6 @@ import {
   AiFillHtml5,
   AiOutlineInstagram,
   AiFillGithub,
-  AiOutlineAntDesign,
-
 } from 'react-icons/ai';
 import { CiUser } from 'react-icons/ci';
 import {
@@ -15,7 +13,7 @@ import {
   DiMongodb,
   DiNodejsSmall,
 } from 'react-icons/di';
-import {SiBloglovin} from 'react-icons/si';
+import { SiBloglovin } from 'react-icons/si';
 
 export const asidenav = [
   {
@@ -58,32 +56,31 @@ export const asidenav = [
 export const mainhome = [
   {
     id: 1,
-    name: 'HELLO, MY NAME IS KIM GEON HO..',
-    post: "I'M FRONT_END DEVELOPER",
+    name: '저의 포트폴리오를 방문해 주셔서',
+    post: "진심으로 감사드립니다.",
   },
 ];
 
 export const social = [
   {
     id: 1,
-    icon: <AiOutlineInstagram/>,
-    text: "인스타",
-    url: "https://www.instagram.com/ghgh9405",
+    icon: <AiOutlineInstagram />,
+    text: '인스타',
+    url: 'https://www.instagram.com/ghgh9405',
   },
   {
     id: 2,
-    icon: <AiFillGithub/>,
-    text: "깃허브",
-    url: "https://github.com/llvovll89",
+    icon: <AiFillGithub />,
+    text: '깃허브',
+    url: 'https://github.com/llvovll89',
   },
   {
     id: 3,
-    icon: <SiBloglovin/>,
-    text: "벨로그",
-    url: "https://velog.io/@llvovll89"
+    icon: <SiBloglovin />,
+    text: '벨로그',
+    url: 'https://velog.io/@llvovll89',
   },
-
-]
+];
 
 export const about = [
   {
@@ -91,18 +88,17 @@ export const about = [
     text: '저는 프론트엔드 개발자 입니다.',
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi error enim dolor. 
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi error enim dolor. Incidunt, beatae est! Cumque veritatis rem ad officiis voluptas magni quasi soluta ea, eos similique nulla iste.
-      Incidunt, beatae est! Cumque veritatis rem ad officiis voluptas magni quasi soluta ea, eos similique nulla iste..`
+      Incidunt, beatae est! Cumque veritatis rem ad officiis voluptas magni quasi soluta ea, eos similique nulla iste..`,
   },
 ];
 
-export const reactProject = [
+export const vanilaProject = [
   {
     id: 1,
     category: '<VanilaJs/>',
     totalLike: '120',
     title: 'Js_portfolio',
-    subtitle:
-      '전 포트폴리오',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
     앞전에 HTML , CSS3 , JS 만으로 만든 포트폴리오 사이트입니다.
   `,
@@ -113,8 +109,7 @@ export const reactProject = [
     category: '<VanilaJs/>',
     totalLike: '333',
     title: 'BookMark',
-    subtitle:
-      'CRUD 연습을 위해 만들어본 Bookmark',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
     javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage에 get 되기 때문에 저장도 가능합니다. 
   `,
@@ -125,10 +120,8 @@ export const reactProject = [
     category: '<VanilaJs/> + <WebGame/>',
     totalLike: '520',
     title: 'Insect_Kill Game',
-    subtitle:
-      '자바스크립트 콜백함수 / 반복문 공부를 위해 제작',
-    desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+    subtitle: '< HTML5 / CSS3 / Javascript />',
+    desc: '랜덤 값을 부여하여 화면에 곤충 표시, 콜백 함수를 공부하기 위해 제작',
     image: './images/img_JS/JS_insect.png',
   },
   {
@@ -136,8 +129,7 @@ export const reactProject = [
     category: '<VanilaJs/>',
     totalLike: '360',
     title: '타자검정연습',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/img_JS/typing-game.png',
@@ -147,8 +139,7 @@ export const reactProject = [
     category: '<VanilaJs/>',
     totalLike: '280',
     title: 'VanilaJS - 10Project',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/img_JS/10project.png',
@@ -158,8 +149,7 @@ export const reactProject = [
     category: '<VanilaJs/> + <WebGame/>',
     totalLike: '620',
     title: 'HozzleGame',
-    subtitle:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusantium quos blanditiis!',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/img_JS/hozzle-01.png',

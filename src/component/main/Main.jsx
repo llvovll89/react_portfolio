@@ -19,7 +19,7 @@ export const Main = () => {
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                 >
-                  포트폴리오에 오신 걸 환영합니다.
+                  WELCOME TO MY PORTFOLIO
                 </p>
                 <h2
                   className="left_big"
@@ -41,7 +41,7 @@ export const Main = () => {
                 <p
                   className="left_nomal"
                   data-aos="fade-up"
-                  data-aos-duration="2000"
+                  data-aos-duration="1500"
                 >
                   <span>" 꿈의 프로젝트를 실현하기 위해 증진하는</span>
                   <span> <span className='color'>신입 프론트엔드 개발자 김건호</span> 입니다."</span>
