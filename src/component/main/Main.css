@@ -98,6 +98,7 @@
     display: flex;
     flex-flow: column;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .color {
@@ -110,7 +111,7 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
-    margin: 0 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0;
     padding: 0 2.5rem;
     height: 3.6rem;
     letter-spacing: 0.03rem;

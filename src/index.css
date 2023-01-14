@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+html {
+  cursor: url(./assets/images/cursor.png)2 2 , pointer;
+}
+
 :root {
   /* background-color */
   /* color */
