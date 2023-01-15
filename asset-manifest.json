@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.228ea049.css",
-    "main.js": "/react_portfolio/static/js/main.307d098b.js",
+    "main.css": "/react_portfolio/static/css/main.e3f55043.css",
+    "main.js": "/react_portfolio/static/js/main.db21db58.js",
     "static/media/hojjang.png": "/react_portfolio/static/media/hojjang.a1952edae017fb33383b.png",
     "static/media/bg-cloud.png": "/react_portfolio/static/media/bg-cloud.9a15587a50dd17f15b8e.png",
     "static/media/ho1.jpg": "/react_portfolio/static/media/ho1.3e9c978bce3efafdef4d.jpg",
-    "static/media/mainHo.jpg": "/react_portfolio/static/media/mainHo.b981161cf94fb47c4e45.jpg",
     "static/media/aisdeImg.png": "/react_portfolio/static/media/aisdeImg.3853ab1c9aa873075ab1.png",
     "index.html": "/react_portfolio/index.html",
-    "main.228ea049.css.map": "/react_portfolio/static/css/main.228ea049.css.map",
-    "main.307d098b.js.map": "/react_portfolio/static/js/main.307d098b.js.map"
+    "main.e3f55043.css.map": "/react_portfolio/static/css/main.e3f55043.css.map",
+    "main.db21db58.js.map": "/react_portfolio/static/js/main.db21db58.js.map"
   },
   "entrypoints": [
-    "static/css/main.228ea049.css",
-    "static/js/main.307d098b.js"
+    "static/css/main.e3f55043.css",
+    "static/js/main.db21db58.js"
   ]
 }
