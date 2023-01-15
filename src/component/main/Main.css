@@ -38,7 +38,7 @@
 
 .main_content .main_left {
     position: relative;
-    width: 43%;
+    width: 47%;
     display: flex;
     align-items: center;
     transform-origin: left bottom;
@@ -134,7 +134,7 @@
 .main_content .right_content {
     position: relative;
     background: #EFFEFF;
-    width: 57%;
+    width: 52%;
     transform-origin: right center;
     transition: transform 0.1s linear 0s;
 }
@@ -249,7 +249,21 @@
     }
     .main_content .right_content.flex_item {
         height: 60vh;
-        margin-top: 6vh;
+        margin-top: 0;
+        background-image: url('../../../public/images/bg-cloud.png');
+        background-position: center;
+        background-size: cover;
+        animation: movebg 40s linear infinite;
+        transition: transform 0.2s linear 0.4s;
+        z-index: 10;
+    }
+    .logo_title {
+        z-index: 100;
+        border-top: 1px solid #EFFEFF;
+    }
+    .logo_title span {
+        color: #EFFEFF;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
     }
     .main_content .main_img {
         left: 14%;
@@ -265,19 +279,5 @@
         background: #EFFEFF;
         border: 0;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
-    }
-}
-
-@keyframes homeImage {
-    0% {
-        border-radius: 30% 60% 30% 70% / 40% 50% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 }

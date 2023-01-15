@@ -326,8 +326,8 @@
     }
 
     100% {
-        opacity: 0.84;
-        background: rgba(0, 0, 0, 0.18);
+        opacity: 0.9;
+        background: rgba(0, 0, 0, 0.065);
         transform: translateX(-9%);
     }
 }

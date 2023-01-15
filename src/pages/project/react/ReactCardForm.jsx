@@ -26,13 +26,6 @@ export const ReactCardForm = ({ text, title, desc, imgUrl , link , github }) => 
         </div>
         <div className="react_right" data-aos="flip-right" data-aos-duration="1000">
           <img src={imgUrl} alt="bookmark.." />
-          <div className="react_left_right" data-aos="zoom-in-down" data-aos-duration="1000">
-          <span>옆으로</span>
-          <span>밀어주세요</span>
-          <span>
-            <FaArrowsAltH />
-          </span>
-        </div>
         </div>
       </div>
     </>

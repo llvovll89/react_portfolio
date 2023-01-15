@@ -23,17 +23,12 @@
     text-transform: capitalize;
 }
 
-.aside .aside-logo:hover {
-    box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.07);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
 .aside .aside-logo a {
     position: relative;
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 3px;
+    transition: 0.3s all ease;
 }
 
 .aside .aside-logo a span {
@@ -49,6 +44,7 @@
     border-left: 3px solid var(--orangeColor);
     top: -7%;
     left: -7%;
+    transition: 0.3s all linear;
 }
 
 .aside .aside-logo a::after {
@@ -60,6 +56,30 @@
     border-right: 3px solid var(--orangeColor);
     bottom: -4%;
     right: -7%;
+    transition: 0.3s all linear;
+}
+
+.aside .aside-logo:hover a {
+    cursor: pointer;
+    color: #2EB573;
+    transition: 0.3s all linear;
+}
+
+.aside .aside-logo:hover a::before {
+    top: 71%;
+    border-bottom: 3px solid #a1fbd0;
+    border-left: 3px solid #a1fbd0;
+    border-top: none;
+    transition: 0.3s all linear;
+}
+
+.aside .aside-logo:hover a::after {
+    bottom: 77%;
+    right: -12%;
+    border-top: 3px solid #a1fbd0;
+    border-bottom: none;
+    border-right: 3px solid #a1fbd0;
+    transition: 0.3s all linear;
 }
 
 .aside .aside-toggle {
@@ -252,6 +272,16 @@
         left: -270px;
     }
 
+    .aside .aside-logo:hover a {
+        cursor: pointer;
+        color: #2d2d30;
+    }
+
+    .aside .aside-logo:hover a::after,
+    .aside .aside-logo:hover a::before {
+        border-color: #2d2d30;
+    }
+
     .aside.show {
         left: 0;
         width: 100%;
@@ -307,21 +337,23 @@
     }
 
     .aside .aside-nav li:nth-child(1) a .link-icons svg {
-        background:rgb(155, 185, 239);
+        background: rgb(155, 185, 239);
     }
+
     .aside .aside-nav li:nth-child(2) a .link-icons svg {
-        background:rgb(165, 236, 180);
+        background: rgb(165, 236, 180);
     }
 
     .aside .aside-nav li:nth-child(3) a .link-icons svg {
-        background:rgb(171, 214, 231);
+        background: rgb(171, 214, 231);
     }
 
     .aside .aside-nav li:nth-child(4) a .link-icons svg {
-        background:rgb(236, 236, 165);
+        background: rgb(236, 236, 165);
     }
+
     .aside .aside-nav li:nth-child(5) a .link-icons svg {
-        background:rgb(214, 183, 183);
+        background: rgb(214, 183, 183);
     }
 
     .aside .aside-nav a .link-items {
@@ -370,6 +402,7 @@
         font-family: var(--mainFont);
         font-size: 1.5rem;
     }
+
     .aside .aside-nav li a .link-icons {
         font-size: 1.7rem;
         font-weight: 500;

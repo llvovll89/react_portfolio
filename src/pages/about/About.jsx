@@ -9,7 +9,7 @@ import './About.css';
 export const About = () => {
   return (
     <>
-      <section className="about section hidden">
+      <section className="about section hidden" id='about'>
         <div className="about-container container">
           <div className="row">
             <div

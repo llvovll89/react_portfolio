@@ -20,7 +20,6 @@ export const Pages = () => {
           <Route path="/vanilajs" element={<VanilaJsProject />} />
           <Route path="/react" element={<ReactProject />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/randing" element={<Randingpage />} />
         </Routes>
       </Router>
     </>
