@@ -2,7 +2,8 @@ import React from 'react';
 import { mainhome } from '../../assets/db/data';
 import { MdTouchApp } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import mainhomeIMG from '../../assets/images/hojjang.png';
+import mainhomeIMG from '../../assets/images/mainHo.jpg';
+// import mainhomeIMG from '../../assets/images/kimgeonho.png';
 import './Main.css';
 
 export const Main = () => {
@@ -44,12 +45,14 @@ export const Main = () => {
                 >
                   <span>" 꿈의 프로젝트를 실현하기 위해 증진하는</span>
                   <span>
-                    <span className="color">신입 프론트엔드 개발자 김건호</span>
+                    <span className="color">
+                      신입 프론트엔드 개발자 김건호
+                    </span>
                     &nbsp;입니다."
                   </span>
                 </p>
                 <a
-                  href="#about"
+                  href='#about'
                   className="main_btn"
                   data-aos="zoom-out-up"
                   data-aos-duration="1000"

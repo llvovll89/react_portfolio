@@ -237,6 +237,10 @@
     .react_content .react_left .link_btn a {
         padding: 10px 36px;
     }
+    .react_content .react_right::after {
+        font-weight: 400;
+        top: -10%;
+    }
 }
 
 @keyframes leftright {

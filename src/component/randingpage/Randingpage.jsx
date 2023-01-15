@@ -33,8 +33,8 @@ export const Randingpage = () => {
             <div
               className="bottom-text"
             >
-              <h1 className="bottom_title">KIM GEON HO</h1>
-              <span>PORT FOLIO</span>
+              <h1 className="bottom_title">WELCOME TO MY</h1>
+              <span>PORTFOLIO</span>
             </div>
 
             <div className="start">

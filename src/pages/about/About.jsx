@@ -2,7 +2,7 @@ import React from 'react';
 import { AboutItem } from './AboutItem';
 import { about, backSkill } from '../../assets/db/data';
 import { Link } from 'react-router-dom';
-import aboutImg from '../../assets/images/hojjang.png'
+import aboutImg from '../../assets/images/kimgeonho.jpg'
 import { frontSkill } from '../../assets/db/data';
 import './About.css';
 

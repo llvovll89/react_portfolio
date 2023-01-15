@@ -250,6 +250,7 @@
     .main_content .right_content.flex_item {
         height: 60vh;
         margin-top: 0;
+        padding-top: 6vh;
         background-image: url('../../../public/images/bg-cloud.png');
         background-position: center;
         background-size: cover;
