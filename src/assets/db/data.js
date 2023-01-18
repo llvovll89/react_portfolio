@@ -99,8 +99,7 @@ export const vanilaProject = [
     totalLike: '120',
     title: 'Js_portfolio',
     subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: `
-    앞전에 HTML , CSS3 , JS 만으로 만든 포트폴리오 사이트입니다.
+    desc: ` 리액트 포트폴리오 제작전에 만들어 사용하던 < HTML , CSS3 , JS > 만으로 만든 포트폴리오 사이트입니다.
   `,
     image: './images/img_JS/js_portfolio.png',
   },
@@ -111,7 +110,7 @@ export const vanilaProject = [
     title: 'BookMark',
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
-    javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage에 get 되기 때문에 저장도 가능합니다. 
+    javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage를 이용하여 저장 기능을 구현하였습니다. 
   `,
     image: './images/img_JS/bookmark.png',
   },
@@ -121,31 +120,21 @@ export const vanilaProject = [
     totalLike: '520',
     title: 'Insect_Kill Game',
     subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: '랜덤 값을 부여하여 화면에 곤충 표시, 콜백 함수를 공부하기 위해 제작',
+    desc: '곤충 이미지에 랜덤 값(+ 랜덤시간)을 부여하여 화면에 곤충 표시, vanilaJS를 이용해 게임 관심이 생겨 제작 YOUTUBE를 보며 영감받아 만든 TOY프로젝트 입니다.',
     image: './images/img_JS/JS_insect.png',
   },
   {
     id: 4,
     category: '<VanilaJs/>',
-    totalLike: '360',
-    title: '타자검정연습',
-    subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-    image: './images/img_JS/typing-game.png',
-  },
-  {
-    id: 5,
-    category: '<VanilaJs/>',
     totalLike: '280',
     title: 'VanilaJS - 10Project',
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+    Vanila 자바스크립트를 공부하기 위해 10가지 작은 프로젝트를 진행하여 한 폴더에 담아둔 파일입니다.`,
     image: './images/img_JS/10project.png',
   },
   {
-    id: 6,
+    id: 5,
     category: '<VanilaJs/> + <WebGame/>',
     totalLike: '620',
     title: 'HozzleGame',
@@ -154,6 +143,16 @@ export const vanilaProject = [
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
     image: './images/img_JS/hozzle-01.png',
   },
+    // {
+  //   id: 4,
+  //   category: '<VanilaJs/>',
+  //   totalLike: '360',
+  //   title: '타자검정연습',
+  //   subtitle: '< HTML5 / CSS3 / Javascript />',
+  //   desc: `
+  // Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+  //   image: './images/img_JS/typing-game.png',
+  // },
 ];
 
 export const frontSkill = [

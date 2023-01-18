@@ -143,6 +143,7 @@
     position: absolute;
     bottom: 26%;
     right: 13.5%;
+    background: #c0e5f0;
     max-height: 33vw;
     max-width: 30vw;
     height: 502px;
@@ -235,22 +236,21 @@
     }
     .main_content .main_left .left_content .left_big {
         font-weight: 400;
-        padding-top: 0.75rem;
+        padding-top: 0.35rem;
         font-family: var(--korFont);
     }
     .main_content .main_left .left_content .left_text {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 1.4rem;
         letter-spacing: 0.035rem;
         font-family: var(--korFont);
-        padding-bottom: 0.7rem;
+        padding-bottom: 0.6rem;
         font-weight: 500;
         border-bottom: 1px solid #ccc;
     }
     .main_content .right_content.flex_item {
         height: 60vh;
         margin-top: 0;
-        padding-top: 6vh;
         background-image: url('../../../public/images/bg-cloud.png');
         background-position: center;
         background-size: cover;
@@ -267,14 +267,21 @@
         text-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
     }
     .main_content .main_img {
+        margin-top: 4vh;
         left: 14%;
         top: 16%;
         max-height: 71vw;
         max-width: 73vw;
+        background: rgba(243, 246, 248, 0.478);
     }
     .main_content .main_left .left_content .left_nomal {
         font-size: 1.1rem;
-        line-height: 1.7;
+        margin: 0.9rem 0 0.9rem 0;
+        padding-bottom: 0.75rem;
+    }
+    .main_content .main_left .left_content .main_btn {
+        margin: 1rem 0.75rem 0.75rem 0;
+        padding: 0 2.5rem;
     }
     .main_content .main_left .left_content .main_btn:hover {
         background: #EFFEFF;

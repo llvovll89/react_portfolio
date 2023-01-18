@@ -2,8 +2,8 @@ import React from 'react';
 import { mainhome } from '../../assets/db/data';
 import { MdTouchApp } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import mainhomeIMG from '../../assets/images/mainHo.jpg';
-// import mainhomeIMG from '../../assets/images/kimgeonho.png';
+import mainhomeIMG from '../../assets/images/hojjang.png';
+// import mainhomeIMG from '../../assets/images/mainHo.jpg';
 import './Main.css';
 
 export const Main = () => {
