@@ -8,17 +8,19 @@ export const Contact = () => {
   const [mail , setMail] = useState('');
   const [textArea , setTextArea] = useState('')
   const form = useRef();
+  const serviceKey = process.env.REACT_APP_SERVICE_KEY;
+  const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
+  const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // emailjs.sendForm(process.env.REACT_APP_SERVICE_KEY , process.env.REACT_APP_TEMPLATE_KEY , form.current , process.env.REACT_APP_PUBLIC_KEY)
+    
     emailjs
       .sendForm(
-        'service_t4rv8m9',
-        'template_hkherrj',
+        serviceKey,
+        templateKey,
         e.target,
-        'Y_SISkxycj9EQ5EcM'
+        publicKey
       )
       .then(
         (result) => {

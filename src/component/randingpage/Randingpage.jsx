@@ -1,25 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import randingImg from '../../assets/images/aisdeImg.png';
 import { Link } from 'react-router-dom';
+import { UseContext } from '../../context/useContext';
 import './Randingpage.css';
 
 export const Randingpage = () => {
+  const [darkMode, setDarkMode] = useContext(UseContext);
 
   return (
     <>
       <section className="randing section">
         <div className="container">
           <div
-          data-aos="fade-right"
-          data-aos-duration="900"
-          data-aos-delay="500"
-            className='left'
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="500"
+            className="left"
+            style={{ background: darkMode ? '#FFEFFF' : '#1B1B1F' }}
           ></div>
           <div
-            className='right'
+            className="right"
             data-aos="fade-left"
             data-aos-duration="900"
             data-aos-delay="500"
+            style={{ background: darkMode ? '#1B1B1F' : '#FFEFFF' }}
           ></div>
           <div className="content">
             <div
@@ -30,9 +34,7 @@ export const Randingpage = () => {
             >
               <img src={randingImg} alt="..." />
             </div>
-            <div
-              className="bottom-text"
-            >
+            <div className="bottom-text">
               <h1 className="bottom_title">WELCOME TO MY</h1>
               <span>PORTFOLIO</span>
             </div>

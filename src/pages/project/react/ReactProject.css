@@ -8,7 +8,6 @@
     overflow: hidden;
     background-color: #f9f9f9;
     padding: 0 1rem;
-    border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
@@ -48,7 +47,7 @@
     font-weight: 500;
     border-bottom: 1px solid #ccc;
     width: max-content;
-    color: #272626;
+
     letter-spacing: 0.75px;
 }
 
@@ -101,7 +100,7 @@
     margin-right: 1.2rem;
     padding: 14px 30px;
     letter-spacing: 1px;
-    color: #272626;
+
     font-weight: 500;
     border-radius: 6px;
 }
@@ -148,7 +147,7 @@
     top: -6%;
     font-family: var(--korFont);
     right: 0;
-    animation: moveText 1s infinite alternate;
+    animation: leftright 1s infinite alternate;
     border-radius: 12px;
 }
 
@@ -237,6 +236,7 @@
     .react_content .react_left .link_btn a {
         padding: 10px 36px;
     }
+
     .react_content .react_right::after {
         font-weight: 400;
         top: -10%;
@@ -251,7 +251,6 @@
 
     100% {
         opacity: 0.76;
-        background: rgba(0, 0, 0, 0.08);
         transform: translateX(-9%);
     }
 }

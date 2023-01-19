@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     transform-origin: left bottom;
+    transition: 0.4s all linear;
 }
 
 .main_content .main_left::before {
@@ -73,7 +74,6 @@
     margin-bottom: 1rem;
     font-family: var(--mainFont);
     border-bottom: 1px solid #121111;
-    color: #121111;
     font-weight: 500;
 }
 
@@ -87,14 +87,12 @@
     line-height: 1.5;
     margin-left: -0.5rem;
     position: relative;
-    color: #121111;
 }
 
 .main_content .main_left .left_content .left_nomal {
     font-family: 'Chosunilbo_myungjo';
     line-height: 1.7;
     margin: 2.5rem 0 1.6rem 0;
-    color: #121111;
     display: flex;
     flex-flow: column;
     font-size: 1.5rem;
@@ -260,11 +258,9 @@
     }
     .logo_title {
         z-index: 100;
-        border-top: 1px solid #EFFEFF;
     }
     .logo_title span {
-        color: #EFFEFF;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.27);
     }
     .main_content .main_img {
         margin-top: 4vh;
@@ -272,7 +268,6 @@
         top: 16%;
         max-height: 71vw;
         max-width: 73vw;
-        background: rgba(243, 246, 248, 0.478);
     }
     .main_content .main_left .left_content .left_nomal {
         font-size: 1.1rem;

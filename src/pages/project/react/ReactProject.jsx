@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ReactProject.css';
 import { dataNew } from '../../../assets/db/newDB';
 import { ReactCardForm } from './ReactCardForm';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
+import { UseContext } from '../../../context/useContext';
 
 export const ReactProject = () => {
+  const [darkMode, setDarkMode] = useContext(UseContext);
+
   return (
     <>
-      <div className="react_container">
-      <div className="react_wrap">
+      <div
+        className="react_container"
+        style={{
+          background: darkMode ? '#181818' : '#FFF',
+          color: darkMode ? '#FFFFFF' : '#272626',
+          borderTop: "1px solid rgba(255,255,255,0.32)",
+          transition: '0.4s all linear'
+        }}
+      >
+        <div className="react_wrap">
           <Splide
             options={{
               perPage: 1,

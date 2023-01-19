@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { Pages } from './pages/Pages';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { UseItem } from './context/useContext';
 
 function App() {
   useEffect(() => {
@@ -11,7 +12,9 @@ function App() {
   });
   return (
     <>
-      <Pages />
+    <UseItem>
+        <Pages />
+        </UseItem>
     </>
   );
 }

@@ -10,17 +10,13 @@ import { Arrow } from '../component/arrow/Arrow';
 export const Home = () => {
   return (
     <>
-      <div className="main-container">
-        <div className="main-content">
-          <Main />
-          <About />
-          <VanilaJsProject />
-          <ReactProject />
-          <Contact />
-          <Arrow />
-          <Footer />
-        </div>
-      </div>
+      <Main />
+      <About />
+      <VanilaJsProject />
+      <ReactProject />
+      <Contact />
+      <Arrow />
+      <Footer />
     </>
   );
 };
