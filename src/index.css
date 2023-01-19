@@ -181,7 +181,7 @@ img {
   justify-content: center;
   border: 1px solid #CECECE;
   overflow: hidden;
-  z-index: 100;
+  z-index: 600;
   border-radius: 20% 12% 20% 12%;
   transition: 0.3s all ease;
 }
@@ -217,6 +217,6 @@ img {
   }
   .dark_container {
     left: 18%;
-    top: 1.5%;
+    top: 1.6%;
   }
 }

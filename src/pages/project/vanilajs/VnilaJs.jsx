@@ -7,7 +7,8 @@ export const VanilaJs = (props) => {
 
   const toggleModal = () => {
     setVinaliCard(!vanilaCard);
-  };  
+  }; 
+   
 
   return (
     <>
@@ -33,7 +34,7 @@ export const VanilaJs = (props) => {
   </div>
 
   {vanilaCard && (
-    <div className="vanila-card-modal">
+    <div className="vanila-card-modal" >
       <div className="vanila-card-overlay"></div>
       <div className="modal-content">
         <div className="modal-img left">

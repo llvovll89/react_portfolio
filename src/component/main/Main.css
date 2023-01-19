@@ -257,9 +257,11 @@
         z-index: 10;
     }
     .logo_title {
+        width: 30%;
         z-index: 100;
     }
     .logo_title span {
+        font-size: 0.9rem;
         text-shadow: 0 0 2px rgba(0, 0, 0, 0.27);
     }
     .main_content .main_img {

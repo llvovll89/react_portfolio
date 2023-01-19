@@ -133,7 +133,7 @@
     line-height: 1.4;
     background: #f0f3f5;
     max-width: 94%;
-    z-index: 9999;
+    z-index: 550;
     box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
     padding: 40px;
     border-radius: 12px;
@@ -149,13 +149,14 @@
     right: 0;
     bottom: 0;
     position: fixed;
-    z-index: 999;
+    z-index: 500;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .vanila-card-overlay {

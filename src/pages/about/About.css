@@ -147,6 +147,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.2rem;
+    width: 100%;
 }
 
 .about .about-content .backend .back-text .backend-content {
@@ -160,6 +161,29 @@
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    justify-content: center;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.about .about-content .front .front-text .front-content .front-item:nth-child(1) {
+    background: rgb(217, 136, 136);
+}
+
+.about .about-content .front .front-text .front-content .front-item:nth-child(2) ,
+.about .about-content .backend .back-text .backend-content .back-item:nth-child(2) {
+    background: rgb(124, 214, 124);
+}
+
+.about .about-content .front .front-text .front-content .front-item:nth-child(3) ,
+.about .about-content .backend .back-text .backend-content .back-item:nth-child(1)
+ {
+    background: rgb(237, 237, 129);
+    color: #181818;
+}
+
+.about .about-content .front .front-text .front-content .front-item:nth-child(4) {
+    background: rgb(79, 181, 222);
 }
 
 .about .about-content .front .front-text .front-content .front-item span:nth-child(1),
@@ -218,10 +242,6 @@
         box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.11);
     }
 
-    .about .about-content .front .front-text .front-content .front-item,
-    .about .about-content .backend .back-text .backend-content .back-item {
-        margin: 0 0.5rem;
-    }
     .about .about-content .about-text h3 {
         font-size: 20px;
     }

@@ -61,7 +61,7 @@ export const Main = () => {
                 <a
                   href="#about"
                   className="main_btn"
-                  data-aos="zoom-out-up"
+                  data-aos="flip-left"
                   data-aos-duration="1000"
                   data-aos-delay="500"
                 >
@@ -75,7 +75,7 @@ export const Main = () => {
             <div
               className="right_content flex_item"
               style={{
-                background: darkMode ? '#181818' : '#FFEFFF',
+                background: darkMode ? '#181818' : 'rgb(254, 255, 239)',
                 borderLeft: darkMode ? '1px solid rgba(255,255,255,0.11)' : 'none',
                 transition: '0.4s all ease'
               }}
