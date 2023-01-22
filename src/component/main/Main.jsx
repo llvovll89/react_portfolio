@@ -21,7 +21,8 @@ export const Main = () => {
       >
         <div className="main_container">
           <div className="main_content">
-            <div className="main_left flex_item" style={{background : darkMode ? "#FEFFEF" : "#FFFFFF" , color: darkMode ? "rgb(100, 93, 93)" : "#121111"}}>
+            <div className="main_left flex_item" 
+            style={{background : darkMode ? "#FEFFEF" : "#EFFEFF" , color: darkMode ? "rgb(100, 93, 93)" : "#121111"}}>
               <div className="left_content">
                 <p
                   className="left_text"
@@ -75,7 +76,7 @@ export const Main = () => {
             <div
               className="right_content flex_item"
               style={{
-                background: darkMode ? '#181818' : 'rgb(254, 255, 239)',
+                background: darkMode ? '#212222' : '#FFFFFF',
                 borderLeft: darkMode ? '1px solid rgba(255,255,255,0.11)' : 'none',
                 transition: '0.4s all ease'
               }}

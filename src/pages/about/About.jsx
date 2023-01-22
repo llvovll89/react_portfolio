@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { AboutItem } from './AboutItem';
 import { about, backSkill } from '../../assets/db/data';
 import { Link } from 'react-router-dom';
-import aboutImg from '../../assets/images/kimgeonho.jpg'
+import aboutImg from '../../assets/images/kimgeonho.jpg';
 import { frontSkill } from '../../assets/db/data';
+import { UseContext } from '../../context/useContext';
 import './About.css';
 
 export const About = () => {
+  const [darkMode, setDarkMode] = useContext(UseContext);
+
   return (
     <>
-      <section className="about section hidden" id='about'>
+      <section
+        className="about section hidden"
+        id="about"
+        style={{
+          background: darkMode ? '#181818' : '#EFFEFF',
+          color: darkMode ? '#FFFFFF' : '#212222',
+        }}
+      >
         <div className="about-container container">
           <div className="row">
             <div
@@ -24,20 +34,22 @@ export const About = () => {
             <div className="about-content">
               <div className="row">
                 {about.map((item) => (
-                  <div className="about-text pad15" key={item.id}
-                  data-aos="flip-left"
-                  data-aos-duration="1000"
+                  <div
+                    className="about-text pad15"
+                    key={item.id}
+                    data-aos="flip-left"
+                    data-aos-duration="1000"
                   >
                     <h3>{item.text}</h3>
                     <ul className="on">
                       <li>
-                        저는 다양한&nbsp; 
+                        저는 다양한&nbsp;
                         <span className="col-1"> "상상력과 아이디어"</span> 를
                         통해 무엇인가 만드는 것을 좋아하는 사람입니다.
                       </li>
                       <li>
                         디자이너, 백엔드 개발자 또는 의사소통이 필요한 부분에서
-                        &nbsp;  
+                        &nbsp;
                         <span className="col-1">"커뮤니케이션"</span> 이 활발 할
                         수 있게 할 것 입니다.
                       </li>
