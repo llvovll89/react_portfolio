@@ -218,9 +218,9 @@ img {
     padding: 0 18px;
   }
   .dark_container {
-    left: 15%;
-    top: 1.5%;
-    width: 42px;
-    height: 42px;
+    left: 75px;
+    top: 15px;
+    width: 45px;
+    height: 40px;
   }
 }

@@ -13,17 +13,17 @@ export const Randingpage = () => {
         <div className="container">
           <div
             data-aos="fade-right"
-            data-aos-duration="900"
+            data-aos-duration="1000"
             data-aos-delay="500"
             className="left"
-            style={{ background: darkMode ? '#FFEFFF' : '#1B1B1F' }}
+            style={{ background: darkMode ? '#1B1B1F' : '#FFFFFF' }}
           ></div>
           <div
             className="right"
             data-aos="fade-left"
-            data-aos-duration="900"
+            data-aos-duration="1000"
             data-aos-delay="500"
-            style={{ background: darkMode ? '#1B1B1F' : '#FFEFFF' }}
+            style={{ background: darkMode ? '#1B1B1F' : '#FFFFFF' }}
           ></div>
           <div className="content">
             <div
@@ -34,7 +34,10 @@ export const Randingpage = () => {
             >
               <img src={randingImg} alt="..." />
             </div>
-            <div className="bottom-text">
+            <div
+              className="bottom-text"
+              style={{ color: darkMode ? '#fff' : '#000' }}
+            >
               <h1 className="bottom_title">WELCOME TO MY</h1>
               <span>PORTFOLIO</span>
             </div>

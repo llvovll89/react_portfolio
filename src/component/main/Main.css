@@ -1,6 +1,6 @@
 .section_main {
+    border-bottom: 1px solid #ccc;
     width: 100%;
-    border-bottom: 1px solid rgb(107, 107, 107);
 }
 
 .main_container {

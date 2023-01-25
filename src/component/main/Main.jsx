@@ -22,7 +22,8 @@ export const Main = () => {
         <div className="main_container">
           <div className="main_content">
             <div className="main_left flex_item" 
-            style={{background : darkMode ? "#FEFFEF" : "#EFFEFF" , color: darkMode ? "rgb(100, 93, 93)" : "#121111"}}>
+            style={{background : darkMode ? "#212222" : "#EFFEFF" , 
+            color: darkMode ? "#FEFFFE" : "#121111"}}>
               <div className="left_content">
                 <p
                   className="left_text"

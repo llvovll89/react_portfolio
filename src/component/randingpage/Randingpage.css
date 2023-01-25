@@ -47,6 +47,7 @@
     color: var(--whiteColor);
     text-align: center;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 0.4s all ease;
 }
 
 .content .bottom-text .bottom_title {
