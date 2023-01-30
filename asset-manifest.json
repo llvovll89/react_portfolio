@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.478c1d65.css",
-    "main.js": "/react_portfolio/static/js/main.bb90b2a3.js",
+    "main.css": "/react_portfolio/static/css/main.fed61547.css",
+    "main.js": "/react_portfolio/static/js/main.627d341c.js",
     "static/media/kimgeonho.jpg": "/react_portfolio/static/media/kimgeonho.c8fb9cf0940dca7e4bcb.jpg",
     "static/media/hojjang.png": "/react_portfolio/static/media/hojjang.a1952edae017fb33383b.png",
     "static/media/bg-cloud.png": "/react_portfolio/static/media/bg-cloud.9a15587a50dd17f15b8e.png",
     "static/media/ho1.jpg": "/react_portfolio/static/media/ho1.3e9c978bce3efafdef4d.jpg",
     "static/media/aisdeImg.png": "/react_portfolio/static/media/aisdeImg.3853ab1c9aa873075ab1.png",
     "index.html": "/react_portfolio/index.html",
-    "main.478c1d65.css.map": "/react_portfolio/static/css/main.478c1d65.css.map",
-    "main.bb90b2a3.js.map": "/react_portfolio/static/js/main.bb90b2a3.js.map"
+    "main.fed61547.css.map": "/react_portfolio/static/css/main.fed61547.css.map",
+    "main.627d341c.js.map": "/react_portfolio/static/js/main.627d341c.js.map"
   },
   "entrypoints": [
-    "static/css/main.478c1d65.css",
-    "static/js/main.bb90b2a3.js"
+    "static/css/main.fed61547.css",
+    "static/js/main.627d341c.js"
   ]
 }
