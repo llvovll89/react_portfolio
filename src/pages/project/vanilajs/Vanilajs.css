@@ -40,19 +40,20 @@
     transition: 0.3s all ease;
     cursor: pointer;
     color: #000;
-    background: #2A3034;
+    background: #212121;
     border-radius: 10px;
     transition: 0.4s all ease;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22);
 }
 
 .vanila-content .vanila-card:hover {
-    background: #484f53;
+    background: #181818;
     transform: translateY(-10px);
     transition: 0.4s all ease;
 }
 
 .vanila-content .vanila-card:hover .vanila-card-content {
+    transition: 0.3s all ease;
     color: #d2c621ce;
 } 
 

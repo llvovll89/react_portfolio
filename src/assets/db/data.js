@@ -57,7 +57,7 @@ export const mainhome = [
   {
     id: 1,
     name: '저의 포트폴리오를 방문해 주셔서',
-    post: "진심으로 감사드립니다.",
+    post: '진심으로 감사드립니다.',
   },
 ];
 
@@ -101,18 +101,22 @@ export const vanilaProject = [
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: ` 리액트 포트폴리오 제작전에 만들어 사용하던 < HTML , CSS3 , JS > 만으로 만든 포트폴리오 사이트입니다.
   `,
+    codeLink: 'https://llvovll89.github.io/Kim-geon-ho/',
+    gitLink: 'https://github.com/llvovll89/Kim-geon-ho',
     image: './images/img_JS/js_portfolio.png',
   },
   {
     id: 2,
     category: '<VanilaJs/>',
-    totalLike: '333',
-    title: 'BookMark',
+    totalLike: '192',
+    title: 'PaintApp',
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
-    javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage를 이용하여 저장 기능을 구현하였습니다. 
+    HTML canvas 와 JS로 canvas 동작을 연습하기 위해 제작, 복잡한 코드 구조와 분배를 공부하기 위해 Mozlia , mdn 등 사이트를 뒤져가며 만들어 보았습니다.
   `,
-    image: './images/img_JS/bookmark.png',
+    image: './images/img_JS/js_drawingapp.png',
+    codeLink: 'https://llvovll89.github.io/new_paintapp/',
+    gitLink: "https://github.com/llvovll89/new_paintapp",
   },
   {
     id: 3,
@@ -122,6 +126,8 @@ export const vanilaProject = [
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: '곤충 이미지에 랜덤 값(+ 랜덤시간)을 부여하여 화면에 곤충 표시, vanilaJS를 이용해 게임 관심이 생겨 제작 YOUTUBE를 보며 영감받아 만든 TOY프로젝트 입니다.',
     image: './images/img_JS/JS_insect.png',
+    codeLink: 'https://llvovll89.github.io/js-insect-catchgame/',
+    gitLink: 'https://github.com/llvovll89/js-insect-catchgame',
   },
   {
     id: 4,
@@ -132,6 +138,8 @@ export const vanilaProject = [
     desc: `
     Vanila 자바스크립트를 공부하기 위해 10가지 작은 프로젝트를 진행하여 한 폴더에 담아둔 파일입니다.`,
     image: './images/img_JS/10project.png',
+    codeLink: '',
+    gitLink: 'https://github.com/llvovll89/js-10project',
   },
   {
     id: 5,
@@ -140,18 +148,23 @@ export const vanilaProject = [
     title: 'HozzleGame',
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
+          카드 맞추기 게임, 게임시작시 화면에 사진을 띄우고 3초의 시간 후 랜덤으로 뒤죽박죽 섞어서 원본 사진과 같게 만들어야 돼는 게임입니다.`,
     image: './images/img_JS/hozzle-01.png',
+    codeLink: "https://llvovll89.github.io/hozzleGame/",
+    gitLink: "https://github.com/llvovll89/hozzleGame",
   },
-    // {
-  //   id: 4,
+  // {
+  //   id: 2,
   //   category: '<VanilaJs/>',
-  //   totalLike: '360',
-  //   title: '타자검정연습',
+  //   totalLike: '333',
+  //   title: 'BookMark',
   //   subtitle: '< HTML5 / CSS3 / Javascript />',
   //   desc: `
-  // Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur neque enim recusandae soluta magnam facilis sapiente accusamus maxime, sit magni quidem blanditiis maiores, cum ab dignissimos consequatur, architecto beatae.`,
-  //   image: './images/img_JS/typing-game.png',
+  //   javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage를 이용하여 저장 기능을 구현하였습니다. 
+  // `,
+  //   image: './images/img_JS/bookmark.png',
+  //   codeLink: 'https://llvovll89.github.io/js-bookmark/',
+  //   gitLink: "https://github.com/llvovll89/js-bookmark",
   // },
 ];
 

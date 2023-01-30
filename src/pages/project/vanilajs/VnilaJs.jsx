@@ -44,8 +44,8 @@ export const VanilaJs = (props) => {
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
           <div className="modal-btn">
-          <a href="#" className="btn-md" target='_blank'>VIEW</a>
-          <a href="#" className="btn-md" target='_blank'>CODE</a>
+          <a href={props.codeLink} className="btn-md" target='_blank'>VIEW</a>
+          <a href={props.gitLink} className="btn-md" target='_blank'>CODE</a>
           </div>
           <button className="close-modal" onClick={toggleModal}>
             ❎

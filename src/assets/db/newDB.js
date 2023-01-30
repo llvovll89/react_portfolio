@@ -55,4 +55,13 @@ export const dataNew = [
     link: '#',
     github: '#',
   },
+  {
+    id: 7,
+    text: '< 07 />',
+    title: 'React_CRUD',
+    desc: `간단하게 Table 형태에 CRUD 기능이 들어간 버튼 , dummy모듈을 만들어 CRUD 진행 `,
+    imgUrl: './images/react_crud.png',
+    link: '#',
+    github: '#',
+  },
 ];

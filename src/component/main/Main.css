@@ -113,20 +113,15 @@
     padding: 0 2.5rem;
     height: 3.6rem;
     letter-spacing: 0.03rem;
-    color: #fff;
     font-weight: 500;
-    background: #121111;
     border: solid 1px #ccc;
     font: 200 1.44rem/3.6rem var(--mainFont);
     border-radius: 6px;
 }
 
 .main_content .main_left .left_content .main_btn:hover {
-    background: transparent;
-    color: #141414;
     border: 1px solid #ccc;
-    transition: 0.3s all linear;
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.11);
+    transform: rotateZ(12deg);
 }
 
 .main_content .right_content {

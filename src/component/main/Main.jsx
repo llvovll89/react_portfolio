@@ -7,23 +7,27 @@ import './Main.css';
 import { UseContext } from '../../context/useContext';
 
 export const Main = () => {
-  const [darkMode, setDarkMode] = useContext(UseContext);
+  const [darkMode] = useContext(UseContext);
 
   return (
     <>
       <section
         className="section_main"
         style={{
-          background: darkMode ? '#181818' : '#FFEFFF',
+          background: darkMode ? '#1A1819' : '#FFEFFF',
           color: darkMode ? '#FFFFFF' : '#121111',
-          transition: '0.4s all ease'
+          transition: '0.4s all ease',
         }}
       >
         <div className="main_container">
           <div className="main_content">
-            <div className="main_left flex_item" 
-            style={{background : darkMode ? "#212222" : "#EFFEFF" , 
-            color: darkMode ? "#FEFFFE" : "#121111"}}>
+            <div
+              className="main_left flex_item"
+              style={{
+                background: darkMode ? '#1A1819' : '#EFFEFF',
+                color: darkMode ? '#FEFFFE' : '#121111',
+              }}
+            >
               <div className="left_content">
                 <p
                   className="left_text"
@@ -61,11 +65,14 @@ export const Main = () => {
                   </span>
                 </p>
                 <a
+                style={{
+                  background : darkMode ? "#F3FFFF" : "#121212",
+                  color: darkMode ? "#000" : "#FFFFFF"
+                }}
                   href="#about"
                   className="main_btn"
                   data-aos="flip-left"
                   data-aos-duration="1000"
-                  data-aos-delay="500"
                 >
                   More Me
                   <span>
@@ -77,9 +84,8 @@ export const Main = () => {
             <div
               className="right_content flex_item"
               style={{
-                background: darkMode ? '#212222' : '#FFFFFF',
-                borderLeft: darkMode ? '1px solid rgba(255,255,255,0.11)' : 'none',
-                transition: '0.4s all ease'
+                background: darkMode ? '#1A1819' : '#FFFFFF',
+                transition: '0.4s all ease',
               }}
             >
               <img
@@ -89,7 +95,7 @@ export const Main = () => {
                 data-aos="zoom-out-up"
                 data-aos-duration="1000"
                 data-aos-delay="500"
-                style={{background: darkMode ? "transparent" : "transparent"}}
+                style={{ background: darkMode ? 'transparent' : 'transparent' }}
               />
             </div>
             <div

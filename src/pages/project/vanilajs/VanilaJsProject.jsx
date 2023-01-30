@@ -30,6 +30,8 @@ export const VanilaJsProject = () => {
                 title={item.title}
                 desc={item.desc}
                 subtitle={item.subtitle}
+                codeLink={item.codeLink}
+                gitLink={item.gitLink}
               />
             ))}
           </div>
