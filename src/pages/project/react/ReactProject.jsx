@@ -8,7 +8,7 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import { UseContext } from '../../../context/useContext';
 
 export const ReactProject = () => {
-  const [darkMode, setDarkMode] = useContext(UseContext);
+  const [darkMode] = useContext(UseContext);
 
   return (
     <>
@@ -17,8 +17,8 @@ export const ReactProject = () => {
         style={{
           background: darkMode ? '#181818' : '#FFF',
           color: darkMode ? '#FFFFFF' : '#272626',
-          borderTop: "1px solid rgba(255,255,255,0.32)",
-          transition: '0.4s all linear'
+          borderTop: '1px solid rgba(255,255,255,0.32)',
+          transition: '0.4s all linear',
         }}
       >
         <div className="react_wrap">

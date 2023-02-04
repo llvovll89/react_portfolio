@@ -139,6 +139,7 @@
     padding: 40px;
     border-radius: 12px;
     margin: auto;
+    transition: 0.4s all ease;
 }
 
 .vanila-card-modal,
@@ -245,6 +246,21 @@
     transform: translateY(-4%);
 }
 
+@media screen and (max-width: 1280px) {
+    .modal-content {
+        padding: 25px;
+        width: 100%;
+        max-width: 90%;
+    }
+    .modal-text  {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .modal-text h3 {
+        font-size: 1.5rem;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .vanila-content {
@@ -267,7 +283,6 @@
     }
     .modal-text h3 {
         font-weight: 500;
-        font-size: 1.2rem;
         font-family: var(--popFont);
     }
     .modal-btn .btn-md {

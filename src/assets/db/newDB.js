@@ -21,7 +21,7 @@ export const dataNew = [
   },
   {
     id: 3,
-    text: '< 03 />',
+    text: '< 03 /> [준비중]',
     title: 'ChatHoTalk',
     desc: `Mern stack에 관심이 생겨 Client 와 server로 나누어 Client는 React / server 는 exporess 와 socket.io 로 구현하였습니다. (실행하려면 서버연결해야함)`,
     imgUrl: './images/react_chat.png',
@@ -48,7 +48,7 @@ export const dataNew = [
   },
   {
     id: 6,
-    text: '< 06 />',
+    text: '< 06 /> [준비중]',
     title: 'ShoppingCart',
     desc: `우연히 Vite를 알게되어 Vite-react를 이용해 제작 , TypeScript 기반으로 장바구니에 담는건 커스텀 hooks로 localstorage에 저장하도록 구현하였습니다.`,
     imgUrl: './images/react_shoping.png',
@@ -59,7 +59,7 @@ export const dataNew = [
     id: 7,
     text: '< 07 />',
     title: 'React_CRUD',
-    desc: `간단하게 Table 형태에 CRUD 기능이 들어간 버튼 , dummy모듈을 만들어 CRUD 진행 `,
+    desc: `간단하게 Table 형태에 CRUD 기능이 들어간 버튼 , dummy모듈을 만들어 CRUD 진행 ,, (dummy모듈에 json 서버 or express 등을 이용해 담아 넣을 server 폴더를 만들 예정)`,
     imgUrl: './images/react_crud.png',
     link: '#',
     github: '#',

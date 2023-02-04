@@ -195,7 +195,7 @@ export const backSkill = [
   {
     id: 1,
     icons: <DiNodejsSmall />,
-    text: 'NODE.JS',
+    text: 'NODE.JS / express',
   },
   {
     id: 2,
