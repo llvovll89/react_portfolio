@@ -32,14 +32,14 @@ export const Main = () => {
                 <p
                   className="left_text"
                   data-aos="zoom-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                 >
                   WELCOME TO MY PORTFOLIO
                 </p>
                 <h2
                   className="left_big"
                   data-aos="zoom-out"
-                  data-aos-duration="1500"
+                  data-aos-duration="1000"
                 >
                   {mainhome.map((item) => (
                     <Typewriter

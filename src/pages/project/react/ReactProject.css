@@ -254,3 +254,17 @@
         transform: translateX(-9%);
     }
 }
+
+@media(hover: hover) and (pointer: fine) {
+    .react_content .react_left .link_btn a:first-child:hover {
+        background: transparent;
+        border: 1px solid #ccc;
+        transition: 0.3s all linear;
+    }
+    
+    .react_content .react_left .link_btn a:last-child:hover {
+        background: transparent;
+        border: 1px solid #ccc;
+        transition: 0.3s all linear;
+    }
+}

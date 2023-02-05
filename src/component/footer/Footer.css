@@ -1,5 +1,4 @@
 .footer {
-    color: var(--whiteColor);
     font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
 }
 
@@ -8,12 +7,7 @@
     text-align: center;
 }
 
-.footer .footer_content {
-    background: #1F1F1F;
-}
-
 .footer .footer_content .icons {
-    color: var(--whiteColor);
     margin: 0 1rem;
     font-size: 2rem;
 }
@@ -45,12 +39,7 @@ footer .footer_content .icons:hover {
         padding: 1.5rem;
     }
     
-    .footer .footer_content {
-        background: #1F1F1F;
-    }
-    
     .footer .footer_content .icons {
-        color: var(--whiteColor);
         margin: 0 0.8rem;
         font-size: 1.3rem;
     }

@@ -91,7 +91,7 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row mobile_row">
                 <div
                   className="front pad15"
                   data-aos="fade-left"
