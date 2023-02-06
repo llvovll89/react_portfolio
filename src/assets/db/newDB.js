@@ -12,12 +12,11 @@ export const dataNew = [
   {
     id: 2,
     text: '< 02 />',
-    title: 'Movie_App',
-    desc: `API 를 받아와 프로젝트 구축을 위한 연습 중 평소 영화보는 것을 좋아하여 TMDB MoiveAPI 로 만들어 본 영화 사이트 입니다.
-    시간이 지나며 계속 업데이트 할 에정입니다.`,
-    imgUrl: './images/react_movie.png',
-    link: 'https://llvovll89.github.io/react-movie/',
-    github: 'https://github.com/llvovll89/react-movie',
+    title: 'DiaryApp',
+    desc: `추가하기 버튼을 클릭하면 Main(왼쪽 section)에 빈 노트 활성화 오른쪽 sidebar에서 수정하기 버튼 클릭하면 다이어리를 적을 수 있는 textarea / input 화면이 나옵니다.`,
+    imgUrl: './images/react_diaryapp.png',
+    link: 'https://llvovll89.github.io/diaryapp/',
+    github: 'https://github.com/llvovll89/diaryapp',
   },
   {
     id: 3,
@@ -33,7 +32,7 @@ export const dataNew = [
     text: '< 04 />',
     title: 'BMI 측정 사이트',
     desc: `최근에 살이찌며 다이어트에 관심을 가지게 되다 , 우연히 구글링을 통해 BMI를 알게되어 직접 제작 해보았습니다. `,
-    imgUrl: './images/react_weather.png',
+    imgUrl: './images/react_bmi.png',
     link: 'https://llvovll89.github.io/reactapp-bmi/',
     github: 'https://github.com/llvovll89/reactapp-bmi',
   },
@@ -49,10 +48,11 @@ export const dataNew = [
   {
     id: 6,
     text: '< 06 />',
-    title: 'DiaryApp',
-    desc: `추가하기 버튼을 클릭하면 Main(왼쪽 section)에 빈 노트 활성화 오른쪽 sidebar에서 수정하기 버튼 클릭하면 다이어리를 적을 수 있는 textarea / input 화면이 나옵니다.`,
-    imgUrl: './images/react_diaryapp.png',
-    link: 'https://llvovll89.github.io/diaryapp/',
-    github: 'https://github.com/llvovll89/diaryapp',
+    title: 'Movie_App',
+    desc: `API 를 받아와 프로젝트 구축을 위한 연습 중 평소 영화보는 것을 좋아하여 TMDB MoiveAPI 로 만들어 본 영화 사이트 입니다.
+    시간이 지나며 계속 업데이트 할 에정입니다.`,
+    imgUrl: './images/react_movie.png',
+    link: 'https://llvovll89.github.io/react-movie/',
+    github: 'https://github.com/llvovll89/react-movie',
   },
 ];
