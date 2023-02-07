@@ -116,7 +116,7 @@ export const vanilaProject = [
   `,
     image: './images/img_JS/js_drawingapp.png',
     codeLink: 'https://llvovll89.github.io/new_paintapp/',
-    gitLink: "https://github.com/llvovll89/new_paintapp",
+    gitLink: 'https://github.com/llvovll89/new_paintapp',
   },
   {
     id: 3,
@@ -131,6 +131,18 @@ export const vanilaProject = [
   },
   {
     id: 4,
+    category: '<VanilaJs/> ',
+    totalLike: '350',
+    title: 'Translate 번역기',
+    subtitle: '< HTML5 / CSS3 / Javascript />',
+    desc: `
+          좌측 <textarea> 영역에 영/각 국가 언어에 맞추어 타이핑 하고 오른쪽 <textarea> 영역에 지정한 언어로 변환되는 App`,
+    image: './images/img_JS/hozzle-01.png',
+    codeLink: 'https://github.com/llvovll89/translatorApp',
+    gitLink: 'https://github.com/llvovll89/translatorApp',
+  },
+  {
+    id: 5,
     category: '<VanilaJs/>',
     totalLike: '280',
     title: 'VanilaJS - 10Project',
@@ -141,31 +153,6 @@ export const vanilaProject = [
     codeLink: '',
     gitLink: 'https://github.com/llvovll89/js-10project',
   },
-  {
-    id: 5,
-    category: '<VanilaJs/> + <WebGame/>',
-    totalLike: '620',
-    title: 'HozzleGame',
-    subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: `
-          카드 맞추기 게임, 게임시작시 화면에 사진을 띄우고 3초의 시간 후 랜덤으로 뒤죽박죽 섞어서 원본 사진과 같게 만들어야 돼는 게임입니다.`,
-    image: './images/img_JS/hozzle-01.png',
-    codeLink: "https://llvovll89.github.io/hozzleGame/",
-    gitLink: "https://github.com/llvovll89/hozzleGame",
-  },
-  // {
-  //   id: 2,
-  //   category: '<VanilaJs/>',
-  //   totalLike: '333',
-  //   title: 'BookMark',
-  //   subtitle: '< HTML5 / CSS3 / Javascript />',
-  //   desc: `
-  //   javascipt로 CRUD 연습을 위해 만들어 본 BookMARK 입니다. 생성 / 삭제 기능이 되고 localstorage를 이용하여 저장 기능을 구현하였습니다. 
-  // `,
-  //   image: './images/img_JS/bookmark.png',
-  //   codeLink: 'https://llvovll89.github.io/js-bookmark/',
-  //   gitLink: "https://github.com/llvovll89/js-bookmark",
-  // },
 ];
 
 export const frontSkill = [

@@ -3,8 +3,7 @@ export const dataNew = [
     id: 1,
     text: '< 01 />',
     title: 'React_Portflio',
-    desc: ` 앞전 만들어 둔 포트폴리오가 오래되어 Html , CSS , JS로 구축하여 기본적인 구조형식을 벗어나
-    React 프레임워크를 이용해 만들어 본 새로운 Portfolio 입니다.`,
+    desc: `앞전 포트폴리오를 리뉴얼 & React 공부를 위해 React로 제작한 포트폴리오 사이트 입니다.`,
     imgUrl: './images/react_pofol.png',
     link: 'https://llvovll89.github.io/react_portfolio/',
     github: 'https://github.com/llvovll89/react_portfolio',
