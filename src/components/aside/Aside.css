@@ -319,12 +319,9 @@
 
 
     .aside .aside-nav li {
-        /* width: 100%; */
         border-bottom: 0;
         border-radius: 12px;
         transition: all 0.4s ease;
-        /* background: rgba(255, 255, 255, 0.63); */
-        /* box-shadow: 0 3px 2px rgba(0, 0, 0, 0.11); */
     }
 
     .aside .aside-nav li a .link-icons {

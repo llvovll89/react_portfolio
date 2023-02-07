@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { mainhome } from '../../assets/db/data';
 import { MdTouchApp } from 'react-icons/md';
+import { UseContext } from '../../context/useContext';
 import Typewriter from 'typewriter-effect';
 import mainhomeIMG from '../../assets/images/hojjang.png';
 import './Main.css';
-import { UseContext } from '../../context/useContext';
 
 export const Main = () => {
   const [darkMode] = useContext(UseContext);

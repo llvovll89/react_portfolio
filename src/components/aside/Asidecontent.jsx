@@ -50,7 +50,7 @@ export const Asidecontent = () => {
         <div className="social">
           <div className="social-box">
             {social.map((item) => (
-              <a href={item.url} key={item.id} target="_blank">
+              <a href={item.url} key={item.id} target="_blank" rel="noreferrer">
                 {item.icon}
               </a>
             ))}

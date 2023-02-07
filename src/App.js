@@ -1,4 +1,3 @@
-import './index.css';
 import React, { useEffect } from 'react';
 import { Pages } from './pages/Pages';
 import AOS from 'aos';

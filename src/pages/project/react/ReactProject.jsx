@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
-import './ReactProject.css';
 import { dataNew } from '../../../assets/db/newDB';
 import { ReactCardForm } from './ReactCardForm';
+import './ReactProject.css';
 
+import { UseContext } from '../../../context/useContext';
+
+// splide
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-import { UseContext } from '../../../context/useContext';
 
 export const ReactProject = () => {
   const [darkMode] = useContext(UseContext);

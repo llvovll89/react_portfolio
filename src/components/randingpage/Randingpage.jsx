@@ -5,12 +5,12 @@ import { UseContext } from '../../context/useContext';
 import './Randingpage.css';
 
 export const Randingpage = () => {
-  const [darkMode, setDarkMode] = useContext(UseContext);
+  const [darkMode] = useContext(UseContext);
 
   return (
     <>
-      <section className="randing section">
-        <div className="container">
+      <section className="randing">
+        <div className="randing_container">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"

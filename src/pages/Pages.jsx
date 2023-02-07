@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from '../home/Home';
 import { About } from './about/About';
-import { Asidecontent } from '../component/aside/Asidecontent';
+import { Asidecontent } from '../components/aside/Asidecontent';
 import { VanilaJsProject } from './project/vanilajs/VanilaJsProject';
 import { ReactProject } from './project/react/ReactProject';
 import { Contact } from './contact/Contact';
-import { Randingpage } from '../component/randingpage/Randingpage';
-import { Darkmode } from '../component/arrow/Darkmode';
+import { Randingpage } from '../components/randingpage/Randingpage';
+import { Darkmode } from '../components/arrow/Darkmode';
 
 export const Pages = () => {
   return (
