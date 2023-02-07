@@ -3,7 +3,6 @@
 ### Description
 > 2023-01 ~ 2023-02
 
---
 
 ## Tech Stack / skill
 <div align="center">
