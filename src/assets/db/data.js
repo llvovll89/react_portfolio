@@ -137,8 +137,8 @@ export const vanilaProject = [
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
           좌측 <textarea> 영역에 영/각 국가 언어에 맞추어 타이핑 하고 오른쪽 <textarea> 영역에 지정한 언어로 변환되는 App`,
-    image: './images/img_JS/hozzle-01.png',
-    codeLink: 'https://github.com/llvovll89/translatorApp',
+    image: './images/img_JS/js_translate.png',
+    codeLink: 'https://llvovll89.github.io/translatorApp/',
     gitLink: 'https://github.com/llvovll89/translatorApp',
   },
   {
