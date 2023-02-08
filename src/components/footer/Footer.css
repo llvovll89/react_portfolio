@@ -5,11 +5,13 @@
 .footer .footer_content {
     padding: 3rem;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .footer .footer_content .icons {
     margin: 0 1rem;
     font-size: 2rem;
+    transition: 0.3s all ease;
 }
 
 footer .footer_content .icons:hover {

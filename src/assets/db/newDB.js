@@ -32,8 +32,8 @@ export const dataNew = [
     title: 'React_CRUD',
     desc: `간단하게 Table 형태에 CRUD 기능이 들어간 버튼 , dummy모듈을 만들어 CRUD 진행 ,, (dummy모듈에 json 서버 or express 등을 이용해 담아 넣을 server 폴더를 만들 예정) / 이후 restful Api 이용한 토이프로젝트 진행 할 것`,
     imgUrl: './images/react_crud.png',
-    link: '#',
-    github: '#',
+    // link: '#',
+    // github: '#',
   },
   {
     id: 5,
