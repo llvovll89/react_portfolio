@@ -5,6 +5,11 @@
 ```
 리액트로 제작된 포트폴리오 사이트 입니다.
 
+```
+1) react hooks 공부를 위해 hook 사용 (useState, useEffect, useContext api , useRef 등)
+2) react-router-dom 을 이용한 spa
+3) db폴더에 data 를 따로 관리하여 map함수로 화면에 뿌리는 방식
+```
 <div align="center">
     <div align="center">
 	<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />

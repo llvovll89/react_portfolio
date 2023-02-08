@@ -74,9 +74,9 @@ export const About = () => {
                   </div>
                   <div className="row btn_row">
                     <div className="btnbox pad15">
-                      <Link to="/contact" className="about_btn">
-                        CONTACT ME
-                      </Link>
+                      <a href='https://velog.io/@llvovll89' className="about_btn" target="_blank" >
+                        Blog Go
+                      </a>
                     </div>
                   </div>
                 </div>

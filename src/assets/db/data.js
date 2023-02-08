@@ -124,7 +124,7 @@ export const vanilaProject = [
     totalLike: '520',
     title: 'Insect_Kill Game',
     subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: '곤충 이미지에 랜덤 값(+ 랜덤시간)을 부여하여 화면에 곤충 표시, vanilaJS를 이용해 게임 관심이 생겨 제작 YOUTUBE를 보며 영감받아 만든 TOY프로젝트 입니다.',
+    desc: 'button클릭하여 게임 실행 시 곤충 이미지에 랜덤 값 (+ setinterval)을 부여하여 화면에 곤충 표시 , vanilaJS를 이용해 게임 관심이 생겨 제작 YOUTUBE를 보며 영감받아 만든 TOY프로젝트 입니다.',
     image: './images/img_JS/JS_insect.png',
     codeLink: 'https://llvovll89.github.io/js-insect-catchgame/',
     gitLink: 'https://github.com/llvovll89/js-insect-catchgame',
@@ -135,7 +135,7 @@ export const vanilaProject = [
     totalLike: '350',
     title: 'Translate 번역기',
     subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: `
+    desc: `각 국가 언어를 countries.js에 오브젝트 형식으로 담고 반복문 , 조건문 , fetchAPI(translated api)이용
           좌측 <textarea> 영역에 영/각 국가 언어에 맞추어 타이핑 하고 오른쪽 <textarea> 영역에 지정한 언어로 변환되는 App`,
     image: './images/img_JS/js_translate.png',
     codeLink: 'https://llvovll89.github.io/translatorApp/',
@@ -143,15 +143,15 @@ export const vanilaProject = [
   },
   {
     id: 5,
-    category: '<VanilaJs/>',
-    totalLike: '280',
-    title: 'VanilaJS - 10Project',
+    category: '<VanilaJs/> / <Muiscic />',
+    totalLike: '380',
+    title: 'musicapp',
     subtitle: '< HTML5 / CSS3 / Javascript />',
     desc: `
-    Vanila 자바스크립트를 공부하기 위해 10가지 작은 프로젝트를 진행하여 한 폴더에 담아둔 파일입니다.`,
-    image: './images/img_JS/10project.png',
-    codeLink: '',
-    gitLink: 'https://github.com/llvovll89/js-10project',
+    자바스크립트 이벤트 핸들링 및 버블링 / dom 처리 방식 / 조건문 연습을 위해 제작, Youtube의 어느 유튜버의 작업을 보며 영감을 받아 코딩을 구조화 하고 만듬 / 만들면서 CSS의 소중함을 느낌`,
+    image: './images/img_JS/js_musicapp.png',
+    codeLink: 'https://llvovll89.github.io/musicApp/',
+    gitLink: 'https://github.com/llvovll89/musicApp',
   },
 ];
 
