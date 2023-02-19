@@ -74,7 +74,7 @@ export const About = () => {
                   </div>
                   <div className="row btn_row">
                     <div className="btnbox pad15">
-                      <a href='https://velog.io/@llvovll89' className="about_btn" target="_blank" >
+                      <a href='https://velog.io/@llvovll89' className="about_btn" target="_blank" rel="noreferrer">
                         Blog Go
                       </a>
                     </div>
@@ -86,7 +86,7 @@ export const About = () => {
                     data-aos="zoom-in-right"
                     data-aos-duration="1000"
                   >
-                    <img src={aboutImg} alt="" />
+                    <img src={aboutImg} alt="aboutimg.." />
                   </div>
                 </div>
               </div>

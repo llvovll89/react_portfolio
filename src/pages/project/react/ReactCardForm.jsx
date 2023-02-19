@@ -1,11 +1,7 @@
 import React from 'react';
 import './ReactProject.css';
 
-// icons
-import { AiFillHtml5 } from 'react-icons/ai';
-import { DiCss3, DiJavascript1, DiReact } from 'react-icons/di';
-
-export const ReactCardForm = ({ text, title, desc, imgUrl, link, github }) => {
+export const ReactCardForm = ({ text, title, desc, imgUrl, link, github , icons }) => {
   return (
     <>
       <div className="react_content">
@@ -18,16 +14,13 @@ export const ReactCardForm = ({ text, title, desc, imgUrl, link, github }) => {
           <h2 className="react_title">{title}</h2>
           <p className="react_desc">{desc}</p>
           <span className="react_icons">
-            <AiFillHtml5 />
-            <DiCss3 />
-            <DiJavascript1 />
-            <DiReact />
+              {icons}
           </span>
           <div className="link_btn">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               VIEW
             </a>
-            <a href={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
               CODE
             </a>
           </div>

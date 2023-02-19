@@ -43,6 +43,7 @@ export const ReactProject = () => {
                   imgUrl={item.imgUrl}
                   link={item.link}
                   github={item.github}
+                  icons={item.icons}
                 />
               </SplideSlide>
             ))}
