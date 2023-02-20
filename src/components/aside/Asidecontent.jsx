@@ -4,6 +4,16 @@ import { asidenav, social } from '../../assets/db/data';
 import './Aside.css';
 
 export const Asidecontent = () => {
+  const border = window.document.querySelectorAll('.border');
+  border.forEach((a) => {
+    a.addEventListener('click' , () => {
+      border.forEach((b) => {
+        b.classList.remove('bt');
+      })
+      a.classList.add('bt');
+    })
+  })
+
   const [active, setActive] = useState(false);
 
   return (
@@ -33,7 +43,7 @@ export const Asidecontent = () => {
           data-aos-delay="600"
         >
           {asidenav.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className="border" >
               <Link
                 to={link.navurl}
                 data-aos="fade-right"

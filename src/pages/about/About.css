@@ -1,5 +1,6 @@
 .about {
     overflow: hidden;
+    transition: 0.3s all linear;
 }
 
 .about .about-content {
@@ -197,9 +198,9 @@
 
 .about_btn {
     background: #D3B59D;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    padding: 12px 35px;
+    padding: 12px 55px;
     color: var(--whiteColor);
     border-radius: 6px;
     display: inline-block;
@@ -297,5 +298,8 @@
 
     .about .about-content .backend {
         margin-top: 0;
+    }
+    .about .about-content .backend .back-text .backend-content .back-item span {
+        
     }
 }

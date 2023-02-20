@@ -147,17 +147,22 @@
     margin: -top 50px;
 }
 
-.aside .aside-nav li {
+.aside .aside-nav .border {
     position: relative;
-    width: 70px;
+    width: max-content;
     height: 70px;
     z-index: 1;
-    width: max-content;
     text-align: center;
     border-bottom: 1px solid var(--orangeColor);
+    transition: 0.3s all linear;
+}
+.aside .aside-nav .border.bt {
+    border-bottom: 1.5px solid #FFF;
+    width: 40px;
+    transition: 0.3s all linear;
 }
 
-.aside .aside-nav li a {
+.aside .aside-nav .border a {
     position: relative;
     text-align: center;
     letter-spacing: 0.5px;
@@ -169,7 +174,7 @@
     flex-direction: column;
 }
 
-.aside .aside-nav li a .link-icons {
+.aside .aside-nav .border a .link-icons {
     position: relative;
     display: block;
     line-height: 75px;
@@ -190,12 +195,12 @@
     opacity: 0;
 }
 
-.aside .aside-nav li:hover a .link-icons {
+.aside .aside-nav .border:hover a .link-icons {
     transform: rotate(180deg);
     opacity: 0;
 }
 
-.aside .aside-nav li:hover a .link-items {
+.aside .aside-nav .border:hover a .link-items {
     transform: translateY(0);
     opacity: 1;
 }
@@ -304,7 +309,7 @@
         border-right: 3px solid var(--whiteColor);
     }
 
-    .aside .aside-nav .aside .aside-nav li {
+    .aside .aside-nav .aside .aside-nav .border {
         border-bottom: 1px solid #FEEAFA;
     }
 
@@ -318,38 +323,38 @@
     }
 
 
-    .aside .aside-nav li {
+    .aside .aside-nav .border {
         border-bottom: 0;
         border-radius: 12px;
         transition: all 0.4s ease;
     }
 
-    .aside .aside-nav li a .link-icons {
+    .aside .aside-nav .border a .link-icons {
         font-size: 2.1rem;
         color: #060000;
     }
 
-    .aside .aside-nav li a .link-icons svg {
+    .aside .aside-nav .border a .link-icons svg {
         border-radius: 35%;
     }
 
-    .aside .aside-nav li:nth-child(1) a .link-icons svg {
+    .aside .aside-nav .border:nth-child(1) a .link-icons svg {
         background: rgb(155, 185, 239);
     }
 
-    .aside .aside-nav li:nth-child(2) a .link-icons svg {
+    .aside .aside-nav .border:nth-child(2) a .link-icons svg {
         background: rgb(165, 236, 180);
     }
 
-    .aside .aside-nav li:nth-child(3) a .link-icons svg {
+    .aside .aside-nav .border:nth-child(3) a .link-icons svg {
         background: rgb(171, 214, 231);
     }
 
-    .aside .aside-nav li:nth-child(4) a .link-icons svg {
+    .aside .aside-nav .border:nth-child(4) a .link-icons svg {
         background: rgb(236, 236, 165);
     }
 
-    .aside .aside-nav li:nth-child(5) a .link-icons svg {
+    .aside .aside-nav .border:nth-child(5) a .link-icons svg {
         background: rgb(214, 183, 183);
     }
 
@@ -400,7 +405,7 @@
         font-size: 1.5rem;
     }
 
-    .aside .aside-nav li a .link-icons {
+    .aside .aside-nav .border a .link-icons {
         font-size: 1.7rem;
         font-weight: 500;
     }
@@ -413,7 +418,7 @@
 
 @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
-        .aside .aside-nav li {
+        .aside .aside-nav .border {
             align-items: center;
         }
     }
