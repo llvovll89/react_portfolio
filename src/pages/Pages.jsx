@@ -12,7 +12,7 @@ import { Darkmode } from '../components/arrow/Darkmode';
 export const Pages = () => {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="react_portfolio">
         <div className="main-container">
           <div className="main-content">
             <Asidecontent />
