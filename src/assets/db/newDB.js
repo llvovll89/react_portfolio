@@ -38,22 +38,25 @@ export const dataNew = [
   {
     id: 4,
     text: '< 04 />',
-    title: 'Auth_Login',
+    title: 'Smiling angel',
     icons: [<AiFillHtml5 /> , <DiCss3 /> , <DiJavascript1 /> , <DiReact /> , <DiFirebase /> , <BsFillBootstrapFill /> ],
-    desc: `Firebase 와 React를 이용하여 제작한 로그인 Page / firebase에서 google 계정 + 사용자 email / password 를 이용하여 로그인가능`,
-    imgUrl: './images/react_img/react_login.png',
+    desc: `Firebase 와 React를 이용하여 제작한 게시판 첫 페이지 -> login & signUp 을 통해 회원 로그인 후 게시판 기능 사용가능
+      Front : React | server+db : firebase
+    `,
+    imgUrl: './images/react_img/react_smile.png',
     link: 'https://llvovll89.github.io/auth_login/',
     github: 'https://github.com/llvovll89/auth_login',
   },
   {
     id: 5,
     text: '< 05 />',
-    title: 'Movie_App',
-    icons: [<AiFillHtml5 /> , <DiCss3 /> , <DiJavascript1 /> , <DiReact />],
-    desc: `API 를 받아와 프로젝트 구축을 위한 연습 중 평소 영화보는 것을 좋아하여 TMDB MoiveAPI를 fetchAPI로 Get하여 만들어 본 영화 사이트 입니다.
-    시간이 지나며 계속 업데이트 할 에정입니다.`,
-    imgUrl: './images/react_img/react_movie.png',
-    link: 'https://llvovll89.github.io/react-movie/',
-    github: 'https://github.com/llvovll89/react-movie',
+    title: 'HOTALK',
+    icons: [<AiFillHtml5 /> , <DiCss3 /> , <DiJavascript1 /> , <DiReact /> , <DiFirebase /> , <BsFillBootstrapFill /> ],
+    desc: `Fron : React / Server+db : Firebase 이용해서 Login + chat 앱 (상태관리 : useContext API)
+    `,
+    imgUrl: './images/react_img/react_chat.png',
+    link: 'https://llvovll89.github.io/react-chat/',
+    github: 'https://github.com/llvovll89/react-chat',
+    velog: 'https://velog.io/@llvovll89/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-chat',
   },
 ];
