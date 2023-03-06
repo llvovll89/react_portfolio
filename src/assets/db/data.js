@@ -96,14 +96,14 @@ export const vanilaProject = [
   {
     id: 1,
     category: '<VanilaJs/>',
-    totalLike: '120',
-    title: 'Js_portfolio',
+    totalLike: '111',
+    title: 'Countryapp',
     subtitle: '< HTML5 / CSS3 / Javascript />',
-    desc: ` 리액트 포트폴리오 제작전에 만들어 사용하던 < HTML , CSS3 , JS > 만으로 만든 포트폴리오 사이트입니다.
+    desc: ` 공공데이터 포털 API 에서 대한민국과 외교관계 API를 받아와서 만든 외교관계 앱
   `,
-    codeLink: 'https://llvovll89.github.io/Kim-geon-ho/',
-    gitLink: 'https://github.com/llvovll89/Kim-geon-ho',
-    image: './images/img_JS/js_portfolio.png',
+    codeLink: 'https://llvovll89.github.io/vanilajs-countryapp/',
+    gitLink: 'https://github.com/llvovll89/vanilajs-countryapp',
+    image: './images/img_JS/js_country.png',
   },
   {
     id: 2,
