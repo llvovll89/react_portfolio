@@ -58,7 +58,7 @@ export const Main = () => {
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
-                  <span>" 꿈의 프로젝트를 실현하기 위해 증진하는</span>
+                  <span>" 항상 공부하고 발전하려고 노력하는</span>
                   <span>
                     <span className="color">신입 프론트엔드 개발자 김건호</span>
                     &nbsp;입니다."
