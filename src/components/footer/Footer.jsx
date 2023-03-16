@@ -29,7 +29,7 @@ export const Footer = () => {
           ))}
           <p className="footer_copy">Copyright ©2023 All rights reserved</p>
           <span className="footer_subtext">
-            🙌 이 사이트는 Chorome 브라우저에 최적화 되어 있습니다.
+            🙌 이 사이트는 Chrome 브라우저에 최적화 되어 있습니다.
           </span>
         </div>
       </footer>
