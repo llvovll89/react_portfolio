@@ -17,6 +17,11 @@
 2) CI/CD 해보기
 ```
 
+```
+이슈 & 해결사항
+1) ReactProject section에 React의 각 프로트젝트를 cardForm으로 관리하는데 Key -> item.id 가 먹질 않음..(이유 찾는중)
+```
+
 <div align="center">
     <div align="center">
 	<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
