@@ -4,6 +4,7 @@ import {
   AiFillHtml5,
   AiOutlineInstagram,
   AiFillGithub,
+  AiOutlineProject
 } from 'react-icons/ai';
 import { CiUser } from 'react-icons/ci';
 import {
@@ -12,6 +13,7 @@ import {
   DiJavascript1,
   DiMongodb,
   DiNodejsSmall,
+  DiFirebase,
 } from 'react-icons/di';
 import { SiBloglovin } from 'react-icons/si';
 
@@ -33,20 +35,13 @@ export const asidenav = [
   {
     id: 3,
     chapnum: '03',
-    navtext: 'React',
-    navicon: <DiReact />,
-    navurl: '/react',
+    navtext: 'project',
+    navicon: <AiOutlineProject />,
+    navurl: '/project',
   },
   {
     id: 4,
     chapnum: '04',
-    navtext: 'vanila_js',
-    navicon: <DiJavascript1 />,
-    navurl: '/vanilajs',
-  },
-  {
-    id: 5,
-    chapnum: '05',
     navtext: 'CONTACT',
     navicon: <AiOutlineContacts />,
     navurl: '/contact',
@@ -189,4 +184,9 @@ export const backSkill = [
     icons: <DiMongodb />,
     text: 'MONGO_DB',
   },
+  {
+    id:3 ,
+    icons: <DiFirebase />,
+    text: "FIREBASE"
+  }
 ];

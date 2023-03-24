@@ -1,12 +1,17 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import contactImg from '../../assets/images/ho1.jpg';
-import emailjs from '@emailjs/browser';
+import { UseContext } from '../../context/useContext';
 import './Contact.css';
 
+import emailjs from '@emailjs/browser';
+import { useEffect } from 'react';
+
 export const Contact = () => {
+  const { darkMode } = useContext(UseContext);
+
   const [message, setMessage] = useState('');
-  const [mail , setMail] = useState('');
-  const [textArea , setTextArea] = useState('')
+  const [mail, setMail] = useState('');
+  const [textArea, setTextArea] = useState('');
   const form = useRef();
   const serviceKey = process.env.REACT_APP_SERVICE_KEY;
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
@@ -14,32 +19,32 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
-    emailjs
-      .sendForm(
-        serviceKey,
-        templateKey,
-        e.target,
-        publicKey
-      )
-      .then(
-        (result) => {
-          alert('전송되었습니다!');
-          setMessage('');
-          setMail('');
-          setTextArea('');
-          console.log(result.text);
-        },
-        (err) => {
-          alert('전송에 실패 하였습니다!');
-          console.log(err.text);
-        }
-      );
+
+    emailjs.sendForm(serviceKey, templateKey, e.target, publicKey).then(
+      (result) => {
+        alert('전송되었습니다!');
+        setMessage('');
+        setMail('');
+        setTextArea('');
+        console.log(result.text);
+      },
+      (err) => {
+        alert('전송에 실패 하였습니다!');
+        console.log(err.text);
+      }
+    );
   };
 
   return (
     <>
-      <section className="contact section">
+      <section
+        className="contact section"
+        style={{
+          background: darkMode ? '#121212' : '#FFFFFF',
+          color: darkMode ? '#fff' : '#000',
+          transition: "0.25s all linear"
+        }}
+      >
         <div className="inner">
           <div
             className="contact_img"
@@ -90,6 +95,7 @@ export const Contact = () => {
               <form ref={form} onSubmit={sendEmail} className="contact_left">
                 <label htmlFor="from_name"> name</label>
                 <input
+                  autoComplete="off"
                   type="text"
                   placeholder="이름입력.."
                   name="from_name"
@@ -98,6 +104,7 @@ export const Contact = () => {
                 />
                 <label htmlFor="e-mail"> E-mail</label>
                 <input
+                  autoComplete="off"
                   type="text"
                   placeholder="E-mail입력.."
                   name="e-mail"
@@ -114,7 +121,10 @@ export const Contact = () => {
                   onChange={(e) => setTextArea(e.target.value)}
                 />
                 <div className="contact_btnbox">
-                  <button className="contact_btn">
+                  <button
+                    className="contact_btn"
+                    style={{ color: darkMode ? '#fff' : '#000' }}
+                  >
                     SEND
                     <span></span>
                   </button>

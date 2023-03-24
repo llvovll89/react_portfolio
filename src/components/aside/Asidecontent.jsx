@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { asidenav, social } from '../../assets/db/data';
 import './Aside.css';
 
 export const Asidecontent = () => {
+
   const border = window.document.querySelectorAll('.border');
   border.forEach((a) => {
-    a.addEventListener('click' , () => {
+    a.addEventListener('click', () => {
       border.forEach((b) => {
         b.classList.remove('bt');
-      })
+      });
       a.classList.add('bt');
-    })
-  })
+    });
+  });
 
   const [active, setActive] = useState(false);
 
@@ -20,7 +21,7 @@ export const Asidecontent = () => {
     <>
       <div className={active ? 'aside show' : 'aside'}>
         <div className="aside-logo">
-          <Link to="/">
+          <Link to="/" title="Home 으로..">
             <span>FRONT_END</span>
             <br />
             <span data-aos="fade-left" duration="1000">

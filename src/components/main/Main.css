@@ -127,7 +127,7 @@
 .main_content .right_content {
     position: relative;
     background: #EFFEFF;
-    width: 52%;
+    width: 53%;
     transform-origin: right center;
     transition: transform 0.1s linear 0s;
 }

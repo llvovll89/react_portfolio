@@ -7,20 +7,20 @@
 }
 
 .inner {
-    padding: 30px 0;
+    padding: 60px 0;
     max-width: 1240px;
     width: 100%;
-    margin: 10vh auto;
+    margin: auto;
+    /* margin: 10vh auto; */
     display: flex;
     justify-content: space-between;
 }
 
 .inner .contact_img {
     position: relative;
-    width: 44%;
+    width: 48%;
     overflow: hidden;
     transition: 0.3s all ease;
-    border-radius: 12px;
 }
 
 .inner .contact_img img {
@@ -35,7 +35,6 @@
 .inner .contact_img:hover img {
     transform: scale(0.93);
     transition: 0.3s all ease;
-    border-radius: 22px;
 }
 
 .inner .contact_text {
@@ -43,15 +42,13 @@
     width: 52%;
     margin-left: 2rem;
     padding: 1rem;
-    background: #EFFFFF;
 }
 
 .inner .contact_text .contact_title {
     font-family: 'Montserrat';
     letter-spacing: -0.03rem;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.5;
-    color: #121111;
 }
 
 .inner .contact_text .contact_list {
@@ -62,6 +59,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    place-items: center;
 }
 
 .inner .contact_text .contact_list .items li {
@@ -79,7 +77,6 @@
 .inner .contact_text .contact_list .items li span:nth-child(2) {
     font-size: 1.15rem;
     width: max-content;
-    color: #121111;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
     font-family: var(--korFont);
@@ -100,17 +97,19 @@
     font-size: 1.3rem;
 }
 
+.contact .inner .contact_msg .contact_left input , textarea, button {
+    border-radius: 6px;
+}
+
 .contact .inner .contact_msg .contact_left input[type="text"] {
     margin-bottom: 0.5rem;
     width: 100%;
-    height: 2.5rem;
+    height: 56px;   
     line-height: 2.3rem;
-    padding: 6px 8px;
+    padding: 6px 12px;
     font-size: 1rem;
     background: #FFFFFF;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    transition: 0.2s all ease;
 }
 
 .contact .inner .contact_msg .contact_left textarea {
@@ -120,7 +119,6 @@
     padding: 0.5rem 1rem;
     resize: none;
     font-size: 1.1rem;
-    border-radius: 3px;
     transition: 0.2s all ease;
 }
 
@@ -140,7 +138,6 @@
     border: 1px solid #20c997;
     overflow: hidden;
     vertical-align: top;
-    color: #121111;
     z-index: 100;
     transition: 0.4s all linear;
 }
@@ -152,14 +149,13 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #6d85c5;
+    background: #08f;
     transition: 0.4s all linear;
     transform: translateX(-100%);
     z-index: -1;
 }
 
 .contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover {
-    color: #EFFFFF;
     transition: 0.4s all linear;
 }
 
@@ -172,8 +168,7 @@
 .contact .inner .contact_msg .contact_left input[type="text"]:not(:disabled):hover,
 .contact .inner .contact_msg .contact_left textarea:not(:disabled):hover,
 .contact .inner .contact_msg .contact_left textarea:focus {
-    border-color: #4460aa;
-    transition: 0.2s all ease;
+    border: 2px solid #08f;
 }
 
 textarea, input {
@@ -183,7 +178,6 @@ textarea, input {
 @media screen and (max-width: 768px) {
     .contact .inner {
         flex-flow: column;
-        margin: 0 auto;
     }
 
     .inner .contact_img {

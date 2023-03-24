@@ -1,9 +1,27 @@
 import React from 'react';
 import './ReactProject.css';
 
-export const ReactCardForm = ({ text, title, desc, imgUrl, link, github , icons }) => {
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import { VelogLink } from '../../../customStyled/styled';
+
+import {
+  AiFillGithub
+} from 'react-icons/ai';
+
+export const ReactCardForm = ({
+  onClick,
+  text,
+  title,
+  desc,
+  imgUrl,
+  link,
+  github,
+  icons,
+  velog,
+}) => {
   return (
-    <>
+    <SplideSlide className="slide">
       <div className="react_content">
         <div
           className="react_left"
@@ -13,17 +31,18 @@ export const ReactCardForm = ({ text, title, desc, imgUrl, link, github , icons 
           <span className="react_number">{text}</span>
           <h2 className="react_title">{title}</h2>
           <p className="react_desc">{desc}</p>
-          <span className="react_icons">
-              {icons}
-          </span>
+          <span className="react_icons">{icons}</span>
           <div className="link_btn">
-            <a href={link} target="_blank" rel="noreferrer">
-              VIEW
+            <a href={link} title="Project 보기" target="_blank" rel="noreferrer">
+              More View
             </a>
-            <a href={github} target="_blank" rel="noreferrer">
-              CODE
+            <a href={github} title="Github Code 보기" target="_blank" rel="noreferrer">
+              <AiFillGithub />
             </a>
           </div>
+          <VelogLink onClick={onClick} href={velog} target="_blnak" rel="noreferrer">
+            프로젝트 과정보기
+          </VelogLink>
         </div>
         <div
           className="react_right"
@@ -33,6 +52,6 @@ export const ReactCardForm = ({ text, title, desc, imgUrl, link, github , icons 
           <img src={imgUrl} alt="bookmark.." />
         </div>
       </div>
-    </>
+    </SplideSlide>
   );
 };

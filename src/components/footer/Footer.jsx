@@ -4,7 +4,7 @@ import { UseContext } from '../../context/useContext';
 import './Footer.css';
 
 export const Footer = () => {
-  const [darkMode] = useContext(UseContext);
+  const { darkMode } = useContext(UseContext);
 
   return (
     <>

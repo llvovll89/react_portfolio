@@ -180,7 +180,9 @@
     color: #181818;
 }
 
-.about .about-content .front .front-text .front-content .front-item:nth-child(4) {
+.about .about-content .front .front-text .front-content .front-item:nth-child(4), 
+.about .about-content .backend .back-text .backend-content .back-item:nth-child(3)
+ {
     background: rgb(79, 181, 222);
 }
 

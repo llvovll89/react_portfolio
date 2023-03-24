@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import { AiOutlineHeart } from 'react-icons/ai';
 import './Vanilajs.css';
 
-export const VanilaJs = (props) => {
+export const VanilaJs = ({image, alt, category, totallike, title, subtitle, desc, codeLink, gitLink}) => {
   const [vanilaCard, setVinaliCard] = useState(false);
 
   const toggleModal = () => {
@@ -14,38 +14,38 @@ export const VanilaJs = (props) => {
     <>
     <div className="vanila-card" data-aos="flip-left" data-aos-duration="1000">
     <div className="vanila-card-img">
-      <img src={props.image} alt={props.alt} onClick={toggleModal} />
+      <img src={image} alt={alt} onClick={toggleModal} />
     </div>
     <div className="vanila-card-box" p onClick={toggleModal}>
     <div className="vanila-card-content">
-      <span onClick={toggleModal}>{props.category}</span>
+      <span onClick={toggleModal}>{category}</span>
       <label>
         <span>
           <AiOutlineHeart className="icon" />
         </span>
-        {props.totallike}
+        {totallike}
       </label>
     </div>
     <div className="vanila-card-title">
-      <p>{props.title}</p>
-      <p>{props.subtitle}</p>
+      <p>{title}</p>
+      <p>{subtitle}</p>
     </div>
     </div>
   </div>
 
-  {vanilaCard && (
+  {vanilaCard ? (
     <div className="vanila-card-modal" >
       <div className="vanila-card-overlay"></div>
       <div className="modal-content">
         <div className="modal-img left">
-          <img src={props.image} alt={props.alt} />
+          <img src={image} alt={alt} />
         </div>
         <div className="modal-text right">
-          <h3>{props.title}</h3>
-          <p>{props.desc}</p>
+          <h3>{title}</h3>
+          <p>{desc}</p>
           <div className="modal-btn">
-          <a href={props.codeLink} className="btn-md" target='_blank'>VIEW</a>
-          <a href={props.gitLink} className="btn-md" target='_blank'>CODE</a>
+          <a href={codeLink} className="btn-md" target='_blank'>VIEW</a>
+          <a href={gitLink} className="btn-md" target='_blank'>CODE</a>
           </div>
           <button className="close-modal" onClick={toggleModal}>
             ❎
@@ -53,7 +53,7 @@ export const VanilaJs = (props) => {
         </div>
       </div>
     </div>
-  )}
+  ) : null}
     </>
   )
 }

@@ -8,7 +8,7 @@ import { UseContext } from '../../context/useContext';
 import './About.css';
 
 export const About = () => {
-  const [darkMode] = useContext(UseContext);
+  const { darkMode } = useContext(UseContext);
 
   return (
     <>

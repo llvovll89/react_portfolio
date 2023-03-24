@@ -5,7 +5,7 @@ import { UseContext } from '../../context/useContext';
 import './Randingpage.css';
 
 export const Randingpage = () => {
-  const [darkMode] = useContext(UseContext);
+  const { darkMode } = useContext(UseContext);
 
   return (
     <>

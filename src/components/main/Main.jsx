@@ -7,27 +7,17 @@ import mainhomeIMG from '../../assets/images/hojjang.png';
 import './Main.css';
 
 export const Main = () => {
-  const [darkMode] = useContext(UseContext);
+  const { darkMode } = useContext(UseContext);
 
   return (
     <>
       <section
         className="section_main"
-        style={{
-          background: darkMode ? '#1A1819' : '#FFEFFF',
-          color: darkMode ? '#FFFFFF' : '#121111',
-          transition: '0.4s all ease',
-        }}
       >
         <div className="main_container">
           <div className="main_content">
             <div
-              className="main_left flex_item"
-              style={{
-                background: darkMode ? '#1A1819' : '#EFFEFF',
-                color: darkMode ? '#FEFFFE' : '#121111',
-              }}
-            >
+              className="main_left flex_item">
               <div className="left_content">
                 <p
                   className="left_text"
@@ -65,10 +55,10 @@ export const Main = () => {
                   </span>
                 </p>
                 <a
-                style={{
-                  background : darkMode ? "#F3FFFF" : "#121212",
-                  color: darkMode ? "#000" : "#FFFFFF"
-                }}
+                  style={{
+                    background: darkMode ? '#F3FFFF' : '#121212',
+                    color: darkMode ? '#000' : '#FFFFFF',
+                  }}
                   href="#about"
                   className="main_btn"
                   data-aos="flip-left"
@@ -95,13 +85,16 @@ export const Main = () => {
                 data-aos="zoom-out-up"
                 data-aos-duration="1000"
                 data-aos-delay="500"
-                style={{ background: darkMode ? 'transparent' : 'transparent' }}
+                style={{ background: darkMode ? '#f3fef3' : 'transparent'  }}
               />
             </div>
             <div
               className="logo_title"
               data-aos="zoom-in"
               data-aos-duration="1000"
+              style={{
+                color: darkMode ? '#FFFFFF' : '#121111',
+              }}
             >
               <span>Front_end</span>
               <span>Developer</span>
