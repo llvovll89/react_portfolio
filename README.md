@@ -20,7 +20,10 @@
 ```
 이슈 & 해결사항
 1) ReactProject section에 React의 각 프로트젝트를 cardForm으로 관리하는데 Key -> item.id 가 먹질 않음..(이유 찾는중)
+2) react-dom.development.js:86 Warning: Received `true` for a non-boolean attribute `p`. Error 발생 -> 이유를 찾아야함..
 ```
+
+<span style="color: #07f">추가사항</span>
 
 <div align="center">
     <div align="center">
