@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { asidenav, social } from '../../assets/db/data';
+import { navItem, social } from '../../assets/db/data';
 import './Aside.css';
 
 export const Asidecontent = () => {
@@ -43,7 +43,7 @@ export const Asidecontent = () => {
           data-aos-duration="1000"
           data-aos-delay="600"
         >
-          {asidenav.map((link) => (
+          {navItem.map((link) => (
             <li key={link.id} className="border" >
               <Link
                 to={link.navurl}

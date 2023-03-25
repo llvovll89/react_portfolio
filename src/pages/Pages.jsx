@@ -6,7 +6,7 @@ import { Asidecontent } from '../components/aside/Asidecontent';
 import { ReactProject } from './project/react/ReactProject';
 import { Contact } from './contact/Contact';
 import { Randingpage } from '../components/randingpage/Randingpage';
-import { Darkmode } from '../components/arrow/Darkmode';
+import { Darkmode } from '../components/toggle/darkmode/Darkmode';
 
 // project 통합을 위해 뺴놓은 project 주석처리
 // import { VanilaJsProject } from './project/vanilajs/VanilaJsProject';

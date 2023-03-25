@@ -109,19 +109,22 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem auto;
     padding: 0 2.5rem;
     height: 3.6rem;
     letter-spacing: 0.03rem;
     font-weight: 500;
-    border: solid 1px #ccc;
+    border: solid 1px var(--lightBlackColor);
     font: 200 1.44rem/3.6rem var(--mainFont);
     border-radius: 6px;
+    transition: 0.2s all linear;
+    color: #fff;
+    background: #181818;
 }
 
 .main_content .main_left .left_content .main_btn:hover {
-    border: 1px solid #ccc;
-    transform: rotateZ(12deg);
+    background: #08f;
+    transform: rotateZ(3.5deg);
 }
 
 .main_content .right_content {

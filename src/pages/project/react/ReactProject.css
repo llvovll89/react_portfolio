@@ -56,6 +56,8 @@
 .react_content .react_left .react_desc {
     font-size: 1.3rem;
     font-weight: 600;
+    display: block;
+    word-break: break-all;
     margin-bottom: 2rem;
     font-family: var(--korFont);
     line-height: 1.5;
@@ -109,9 +111,9 @@
 }
 
 .react_content .react_left .link_btn a {
-    display: block;
-    text-align: center;
-    line-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:100%;
     letter-spacing: 1px;
     color: #FFF;
@@ -134,9 +136,6 @@
 
 .react_content .react_left .link_btn a:last-child {
     background: #Fec2c1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 2rem;
 }
 
@@ -223,6 +222,9 @@
 }
 
 @media screen and (max-width: 620px) {
+    .react_container {
+        padding: 0 6px;
+    }
     .react_content .react_left .react_title {
         font-size: 2.2rem;
         margin-bottom: 0.8rem;
@@ -246,13 +248,21 @@
         padding: 0.1rem;
     }
 
-    .react_content .react_left .link_btn a {
-        padding: 10px 36px;
-    }
-
     .react_content .react_right::after {
         font-weight: 400;
         top: -10%;
+    }
+
+    .react_content .react_left .link_btn {
+        height: 46px;
+    }
+
+    .react_content .react_left .link_btn a:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .react_content .react_left .link_btn a:nth-child(2) {
+        font-size: 28px;
     }
 }
 

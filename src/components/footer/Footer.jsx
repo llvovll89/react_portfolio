@@ -12,17 +12,18 @@ export const Footer = () => {
         <div
           className="footer_content"
           style={{
-            background: darkMode ? '#1A1819' : '#EFFFFF',
-            color: darkMode ? '#FFFFFF' : '#121111',
+            background: darkMode ? '#1A1819' : '#3e3e3e',
+            color: darkMode ? '#FFFFFF' : '#FFFFFF',
           }}
         >
           {social.map((item) => (
             <a
               className="icons"
-              style={{ color: darkMode ? '#FFFFFF' : '#121111' }}
+              style={{ color: darkMode ? '#FFFFFF' : '#FFFFFF' }}
               key={item.id}
               href={item.url}
               target="_blank"
+              rel="noreferrer"
             >
               {item.icon}
             </a>

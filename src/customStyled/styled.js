@@ -23,6 +23,7 @@ const VelogLink = styled.a`
     color: #FFF;
     font-size: 18px;
     letter-spacing: 0.12rem;
+    border: 1px solid var(--lightBlackColor);
     line-height: 56px;
     text-align: center;
     transition: 0.25s all linear;
@@ -32,7 +33,7 @@ const VelogLink = styled.a`
         /* color: #fff; */
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         height: 46px;
         line-height: 46px;
         font-size: 16px;

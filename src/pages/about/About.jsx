@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
+// data
+import { about, backSkill , frontSkill} from '../../assets/db/data';
+// components
 import { AboutItem } from './AboutItem';
-import { about, backSkill } from '../../assets/db/data';
-import { Link } from 'react-router-dom';
+// img
 import aboutImg from '../../assets/images/kimgeonho.jpg';
-import { frontSkill } from '../../assets/db/data';
 import { UseContext } from '../../context/useContext';
 import './About.css';
 

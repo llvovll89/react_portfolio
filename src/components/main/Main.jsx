@@ -55,10 +55,6 @@ export const Main = () => {
                   </span>
                 </p>
                 <a
-                  style={{
-                    background: darkMode ? '#F3FFFF' : '#121212',
-                    color: darkMode ? '#000' : '#FFFFFF',
-                  }}
                   href="#about"
                   className="main_btn"
                   data-aos="flip-left"

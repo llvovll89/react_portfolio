@@ -17,7 +17,7 @@ import {
 } from 'react-icons/di';
 import { SiBloglovin } from 'react-icons/si';
 
-export const asidenav = [
+export const navItem = [
   {
     id: 1,
     chapnum: '01',

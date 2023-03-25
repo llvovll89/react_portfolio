@@ -177,7 +177,7 @@
 .about .about-content .front .front-text .front-content .front-item:nth-child(3),
 .about .about-content .backend .back-text .backend-content .back-item:nth-child(1) {
     background: rgb(237, 237, 129);
-    color: #181818;
+    color: #4c4c4c;
 }
 
 .about .about-content .front .front-text .front-content .front-item:nth-child(4), 
@@ -237,7 +237,7 @@
         color: #181818;
     }
 
-    .mobile_row {
+    .row.mobile_row {
         margin-left: -18px;
         margin-right: -18px;
     }
@@ -301,7 +301,12 @@
     .about .about-content .backend {
         margin-top: 0;
     }
-    .about .about-content .backend .back-text .backend-content .back-item span {
-        
+    .about .about-content .backend .back-text .backend-content {
+        padding: 0.85rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+    /* .about .about-content .backend .back-text .backend-content .back-item span {
+        
+    } */
 }

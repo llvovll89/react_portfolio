@@ -14,7 +14,7 @@
 .randing .randing_container .left,
 .randing .randing_container .right {
     flex: 0 0 50%;
-    transition: 0.3s all linear;
+    transition: 0.1s all ease;
 }
 
 .randing .content {

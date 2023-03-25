@@ -1,8 +1,9 @@
 import React from 'react';
 import './ReactProject.css';
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
+
 import { VelogLink } from '../../../customStyled/styled';
 
 import {

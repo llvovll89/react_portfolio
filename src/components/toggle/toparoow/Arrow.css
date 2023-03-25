@@ -11,10 +11,9 @@
     overflow: visible;
     text-transform: uppercase;
     background: rgba(52, 57, 61, 0.8);
-    transition: 0.5s all ease;
+    transition: 0.35s all ease;
     color: var(--whiteColor);
     opacity: 0;
-    
 }
 
 .arrow-show {

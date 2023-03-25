@@ -17,8 +17,7 @@ html {
   /* color */
   --whiteColor: #FEFEFE;
   --orangeColor: #CB9106;
-
-  /* box-shadow */
+  --lightBlackColor : #8c8c8c;
 
   /* font-size */
   --nmSize: 20px;
@@ -148,12 +147,12 @@ img {
 /* -------------- scrollbar ----------- */
 
 ::-webkit-scrollbar {
-  width: 1.25rem;
+  width: 18px;
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 100vw;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.17), #Fccfc3);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12), #e9e0dd);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -178,7 +177,7 @@ img {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #CECECE;
+  border: 1px solid var(--lightBlackColor);
   overflow: hidden;
   z-index: 600;
   border-radius: 20% 12% 20% 12%;

@@ -95,7 +95,7 @@
     align-items: center;
     cursor: pointer;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid var(--lightBlackColor);
 }
 
 .aside .aside-toggle span {
@@ -158,8 +158,13 @@
 }
 .aside .aside-nav .border.bt {
     border-bottom: 1.5px solid #FFF;
-    width: 40px;
     transition: 0.3s all linear;
+    width: 40px;
+}
+
+.aside .aside-nav .border.bt a .link-icons , 
+.aside .aside-nav .border.bt a .link-items{
+    color: #FFF;
 }
 
 .aside .aside-nav .border a {
@@ -181,12 +186,12 @@
     font-size: 1.6rem;
     text-align: center;
     transition: 0.4s linear;
-    color: var(--whiteColor);
+    color: var(--lightBlackColor);
 }
 
 .aside .aside-nav a .link-items {
     position: absolute;
-    color: var(--whiteColor);
+    color: var(--lightBlackColor);
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.05rem;

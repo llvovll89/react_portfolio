@@ -5,7 +5,7 @@ import { About } from '../pages/about/About';
 import { ReactProject } from '../pages/project/react/ReactProject';
 import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../components/footer/Footer';
-import { Arrow } from '../components/arrow/Arrow';
+import { Arrow } from '../components/toggle/toparoow/Arrow';
 
 export const Home = () => {
   return (
