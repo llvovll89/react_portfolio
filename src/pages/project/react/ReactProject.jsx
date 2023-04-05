@@ -6,23 +6,18 @@ import './ReactProject.css';
 import { UseContext } from '../../../context/useContext';
 
 // splide
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Splide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
 export const ReactProject = () => {
   const { darkMode } = useContext(UseContext);
-  
+  const containerClassName = darkMode
+    ? 'project_container dark_mode'
+    : 'project_container';
+
   return (
-    <div
-      className="react_container"
-      style={{
-        background: darkMode ? '#181818' : '#FFF',
-        color: darkMode ? '#FFFFFF' : '#272626',
-        borderTop: '1px solid rgba(255,255,255,0.32)',
-        transition: '0.4s all linear',
-      }}
-    >
-      <div className="react_wrap">
+    <div className={containerClassName}>
+      <div className="project_wrap">
         <Splide
           options={{
             perPage: 1,
@@ -33,20 +28,31 @@ export const ReactProject = () => {
             focus: 'center',
           }}
         >
-          {reactDB.map((item) => (
-            <ReactCardForm
-              key={item.id}
-              text={item.text}
-              title={item.title}
-              desc={item.desc}
-              imgUrl={item.imgUrl}
-              link={item.link}
-              github={item.github}
-              icons={item.icons}
-              velog={item.contetnLink}
-            />
-          ))}
-
+          {reactDB.map(
+            ({
+              id,
+              text,
+              title,
+              desc,
+              imgUrl,
+              link,
+              github,
+              icons,
+              contentLink,
+            }) => (
+              <ReactCardForm
+                key={id}
+                text={text}
+                title={title}
+                desc={desc}
+                imgUrl={imgUrl}
+                link={link}
+                github={github}
+                icons={icons}
+                velog={contentLink}
+              />
+            )
+          )}
         </Splide>
       </div>
     </div>
