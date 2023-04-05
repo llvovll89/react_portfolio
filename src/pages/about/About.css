@@ -1,6 +1,13 @@
 .about {
     overflow: hidden;
     transition: 0.3s all linear;
+    background: #EFFEFF;
+    color: #212222;
+}
+
+.about.dark_mode {
+    background: #181818;
+    color: #FFFFFF;
 }
 
 .about .about-content {

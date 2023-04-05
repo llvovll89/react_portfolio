@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { social } from '../../assets/db/data';
-import { UseContext } from '../../context/useContext';
+import { DarkContext } from '../../context/darkContext';
 import './Footer.css';
 
 export const Footer = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
 
   return (
     <>
@@ -12,14 +12,13 @@ export const Footer = () => {
         <div
           className="footer_content"
           style={{
-            background: darkMode ? '#1A1819' : '#3e3e3e',
-            color: darkMode ? '#FFFFFF' : '#FFFFFF',
+            background: darkMode ? '#1A1819' : '#2A2B32',
+            color: '#FFFFFF',
           }}
         >
           {social.map((item) => (
             <a
               className="icons"
-              style={{ color: darkMode ? '#FFFFFF' : '#FFFFFF' }}
               key={item.id}
               href={item.url}
               target="_blank"

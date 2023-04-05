@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { CiDark, CiLight } from 'react-icons/ci';
-import { UseContext } from '../../../context/useContext';
+import { DarkContext } from '../../../context/darkContext';
 
 export const Darkmode = () => {
-  const { darkMode, setDarkMode } = useContext(UseContext);
+  const { darkMode, setDarkMode } = useContext(DarkContext);
 
   const handelClick = () => {
     setDarkMode(!false);

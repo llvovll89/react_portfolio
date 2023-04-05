@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Pages } from './pages/Pages';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { UseItem } from './context/useContext';
+import { DarkContextProvider } from './context/darkContext';
 
 function App() {
   useEffect(() => {
@@ -11,9 +11,9 @@ function App() {
   });
   return (
     <>
-      <UseItem>
+      <DarkContextProvider>
         <Pages />
-      </UseItem>
+      </DarkContextProvider>
     </>
   );
 }

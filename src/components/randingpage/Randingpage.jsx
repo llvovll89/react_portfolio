@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import randingImg from '../../assets/images/aisdeImg.png';
 import { Link } from 'react-router-dom';
-import { UseContext } from '../../context/useContext';
+import { DarkContext } from '../../context/darkContext';
 import './Randingpage.css';
 
 export const Randingpage = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
 
   return (
     <>
@@ -43,9 +43,9 @@ export const Randingpage = () => {
             </div>
 
             <div className="start">
-              <Link className="start_btn" to="/home" data-text="PORTFOLIO_GO">
-                PORTFOLIO_GO
-              </Link>
+            <Link className="start_btn" to="/home" data-text="PORTFOLIO_GO">
+            포트폴리오로 이동
+          </Link>
             </div>
           </div>
         </div>

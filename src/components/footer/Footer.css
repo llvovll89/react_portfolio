@@ -12,6 +12,7 @@
     margin: 0 1rem;
     font-size: 2rem;
     transition: 0.3s all ease;
+    color: #FFF;
 }
 
 footer .footer_content .icons:hover {

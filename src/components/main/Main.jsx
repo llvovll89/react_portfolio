@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { mainhome } from '../../assets/db/data';
+import { mainHomeData } from '../../assets/db/data';
 import { MdTouchApp } from 'react-icons/md';
-import { UseContext } from '../../context/useContext';
+import { DarkContext } from '../../context/darkContext';
 import Typewriter from 'typewriter-effect';
 import mainhomeIMG from '../../assets/images/hojjang.png';
 import './Main.css';
 
 export const Main = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
 
   return (
     <>
@@ -31,7 +31,7 @@ export const Main = () => {
                   data-aos="zoom-out"
                   data-aos-duration="1000"
                 >
-                  {mainhome.map((item) => (
+                  {mainHomeData.map((item) => (
                     <Typewriter
                       className="ani-title"
                       key={item.id}

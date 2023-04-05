@@ -3,14 +3,14 @@ import { reactDB } from '../../../assets/db/reactData';
 import { ReactCardForm } from './ReactCardForm';
 import './ReactProject.css';
 
-import { UseContext } from '../../../context/useContext';
+import { DarkContext } from '../../../context/darkContext';
 
 // splide
 import { Splide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
 export const ReactProject = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
   const containerClassName = darkMode
     ? 'project_container dark_mode'
     : 'project_container';

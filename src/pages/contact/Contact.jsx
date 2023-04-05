@@ -1,12 +1,12 @@
 import React, { useContext, useRef, useState } from 'react';
 import contactImg from '../../assets/images/ho1.jpg';
-import { UseContext } from '../../context/useContext';
+import { DarkContext } from '../../context/darkContext';
 import './Contact.css';
 
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
 
   const [message, setMessage] = useState('');
   const [mail, setMail] = useState('');

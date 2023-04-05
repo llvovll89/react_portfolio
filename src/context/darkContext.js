@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
 
-export const UseContext = createContext();
+export const DarkContext = createContext();
 
-export const UseItem = ({children}) => {
+export const DarkContextProvider = ({children}) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modal, setModal] = useState(false);
 
@@ -12,10 +12,8 @@ export const UseItem = ({children}) => {
   }
 
   return (
-    <UseContext.Provider value={{darkMode, setDarkMode, modalOn , modal}}>
+    <DarkContext.Provider value={{darkMode, setDarkMode, modalOn , modal}}>
       {children}
-    </UseContext.Provider>
+    </DarkContext.Provider>
   );
 };
-
-// export default DarkContext

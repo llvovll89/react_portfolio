@@ -73,7 +73,7 @@
     width: 170px;
     height: 60px;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -105,7 +105,7 @@
 }
 
 .start .start_btn::after {
-    content: "Mouse Over";
+    content: "포트폴리오 이동";
     position: absolute;
     top: 0;
     left: 0;

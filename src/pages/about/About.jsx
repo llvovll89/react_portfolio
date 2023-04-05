@@ -1,26 +1,20 @@
 import React, { useContext } from 'react';
-// data
-import { about, backSkill , frontSkill} from '../../assets/db/data';
-// components
+
+import { about, backSkill, frontSkill } from '../../assets/db/data';
+
 import { AboutItem } from './AboutItem';
-// img
+
 import aboutImg from '../../assets/images/kimgeonho.jpg';
-import { UseContext } from '../../context/useContext';
+import { DarkContext } from '../../context/darkContext';
 import './About.css';
 
 export const About = () => {
-  const { darkMode } = useContext(UseContext);
+  const { darkMode } = useContext(DarkContext);
+  const containerClassName = `about section ${darkMode && 'dark_mode'}`;
 
   return (
     <>
-      <section
-        className="about section hidden"
-        id="about"
-        style={{
-          background: darkMode ? '#181818' : '#EFFEFF',
-          color: darkMode ? '#FFFFFF' : '#212222',
-        }}
-      >
+      <section className={containerClassName} id="about">
         <div className="about-container container">
           <div className="row">
             <div
@@ -75,7 +69,12 @@ export const About = () => {
                   </div>
                   <div className="row btn_row">
                     <div className="btnbox pad15">
-                      <a href='https://velog.io/@llvovll89' className="about_btn" target="_blank" rel="noreferrer">
+                      <a
+                        href="https://velog.io/@llvovll89"
+                        className="about_btn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Blog Go
                       </a>
                     </div>

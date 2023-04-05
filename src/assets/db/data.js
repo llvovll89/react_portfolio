@@ -48,7 +48,7 @@ export const navItem = [
   },
 ];
 
-export const mainhome = [
+export const mainHomeData = [
   {
     id: 1,
     name: '저의 포트폴리오를 방문해 주셔서',

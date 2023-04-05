@@ -11,7 +11,6 @@ import {
 } from 'react-icons/ai';
 
 export const ReactCardForm = ({
-  onClick,
   text,
   title,
   desc,
@@ -23,7 +22,7 @@ export const ReactCardForm = ({
 }) => {
   return (
     <SplideSlide className="slide">
-      <div className="react_content">
+      <div className="react_content" title="next project (right swipe)">
         <div
           className="react_left"
           data-aos="flip-left"
@@ -41,7 +40,7 @@ export const ReactCardForm = ({
               <AiFillGithub />
             </a>
           </div>
-          <VelogLink onClick={onClick} href={velog} target="_blnak" rel="noreferrer">
+          <VelogLink href={velog} target="_blank" rel="noreferrer">
             프로젝트 과정보기
           </VelogLink>
         </div>

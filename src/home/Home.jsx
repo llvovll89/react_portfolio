@@ -12,7 +12,6 @@ export const Home = () => {
     <>
       <Main />
       <About />
-      {/* <VanilaJsProject /> */}
       <ReactProject />
       <Contact />
       <Arrow />
