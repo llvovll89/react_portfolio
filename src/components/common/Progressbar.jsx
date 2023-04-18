@@ -39,7 +39,7 @@ const ProgressBar = () => {
         style={{
           height: '4px',
           backgroundColor: '#08f',
-          transitionDuration: '0.2s',
+          transitionDuration: '0.1s',
           width: width,
           margin: 0,
           padding: 0,
@@ -47,7 +47,7 @@ const ProgressBar = () => {
           top: 0,
           zIndex: 1000,
           transitionProperty: 'width',
-          transitionTimingFunction: `ease-out`,
+          transitionTimingFunction: `ease-in-out`,
         }}
       />
     );

@@ -5,8 +5,10 @@ import { About } from './about/About';
 import { Asidecontent } from '../components/aside/Asidecontent';
 import { ReactProject } from './project/react/ReactProject';
 import { Contact } from './contact/Contact';
-import { Randingpage } from '../components/randingpage/Randingpage';
 import { DarkMode } from '../components/toggle/darkmode/DarkMode';
+
+// import { Randingpage } from '../components/randingpage/Randingpage';
+// <Route path="/" element={<Randingpage />} />
 
 export const Pages = () => {
   return (
@@ -16,8 +18,7 @@ export const Pages = () => {
           <Asidecontent />
           <DarkMode />
           <Routes>
-            <Route path="/" element={<Randingpage />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<ReactProject />} />
             <Route path="/contact" element={<Contact />} />

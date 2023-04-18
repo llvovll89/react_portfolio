@@ -98,13 +98,8 @@
     position: absolute;
     width: 26px;
     height: 2px;
-    background: rgba(255, 255, 255, 0.52);
     border-radius: 4px;
     transition: 0.5s;
-}
-
-.aside .aside-toggle.active span {
-    background: #525451c2;
 }
 
 .aside .aside-toggle span:nth-child(1) {
@@ -375,6 +370,23 @@
 }
 
 @media screen and (max-width: 564px) {
+    .aside.show {
+        padding: 12px;
+        width: 250px;
+    }
+
+    .aside .aside-toggle.active {
+        left: 200px;
+        top: 10px;
+        border: none;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
+        transition: 0.4s all ease;
+    }
+
+    .aside .aside-logo {
+        top: 70px;
+    }
+
     .aside .aside-logo a {
         font-family: var(--mainFont);
         font-size: 1.5rem;

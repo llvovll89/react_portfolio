@@ -8,7 +8,7 @@ import './Main.css';
 
 export const Main = () => {
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#a49494' : '#FFFFFF';
+  const bgColor = darkMode ? '#9fc2e7' : '#FFFFFF';
   const textColor = darkMode ? '#FFFFFF' : '#000';
   const btnBg = darkMode ? '#ffffff' : '#0f0f0f';
 
@@ -56,7 +56,7 @@ export const Main = () => {
                   &nbsp;입니다."
                 </span>
               </p>
-              <button
+              <a
                 href="#about"
                 className="main_btn"
                 data-aos="flip-left"
@@ -65,7 +65,7 @@ export const Main = () => {
               >
                 More Me
                 <MdTouchApp />
-              </button>
+              </a>
             </div>
           </div>
           <div

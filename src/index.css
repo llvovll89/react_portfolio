@@ -206,7 +206,9 @@ img {
   .main-content {
     padding-left: 0;
   }
+}
 
+@media screen and (max-width: 768px) {
   .dark_container {
     padding: 4px 10px;
   }

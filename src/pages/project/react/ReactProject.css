@@ -114,7 +114,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     letter-spacing: 1px;
     color: #FFF;
     font-weight: 500;
@@ -208,12 +208,6 @@
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
-/* 
-    .react_content .react_left .react_icons {
-        display: inline-block;
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    } */
 
     .react_content .react_left .link_btn a {
         font-size: 1rem;
@@ -223,6 +217,14 @@
 
     .react_content .react_left_right {
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .react_content .react_left .arr_desc,
+    .react_content .react_left .react_desc {
+        font-family: var(--mainFont);
     }
 }
 
@@ -239,6 +241,7 @@
         font-size: 17.5px;
         font-weight: 500;
     }
+
     .react_content .react_left .react_title {
         font-size: 20px;
         margin-bottom: 8px;
@@ -253,18 +256,14 @@
         line-height: 1.35;
         word-break: break-word;
     }
-    
+
     .react_content .react_left .react_desc {
-        font-size: 14px;
+        font-size: 13.5px;
         font-weight: 600;
         display: block;
         word-break: break-word;
         line-height: 1.5;
     }
-
-    /* .react_content .react_left .react_icons {
-        margin: 4px auto;
-    } */
 
     .react_content .react_left_right {
         line-height: 1.2;

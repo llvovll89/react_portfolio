@@ -23,7 +23,7 @@ export const navItem = [
     chapnum: '01',
     navtext: 'HOME',
     navicon: <AiOutlineHome />,
-    navurl: '/home',
+    navurl: '/',
   },
   {
     id: 2,
