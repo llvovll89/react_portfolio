@@ -2,34 +2,48 @@ import React, { useContext } from 'react';
 import { CiDark, CiLight } from 'react-icons/ci';
 import { DarkContext } from '../../../context/darkContext';
 
-export const Darkmode = () => {
+export const DarkMode = () => {
   const { darkMode, setDarkMode } = useContext(DarkContext);
 
-  const handelClick = () => {
-    setDarkMode(!false);
-    if (darkMode !== false) {
-      setDarkMode(false);
-    }
+  const handleClick = () => {
+    setDarkMode(!darkMode);
+  };
+
+  const containerStyles = {
+    background: darkMode ? '#FFF' : '#000',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '4px', 
+    boxShadow: '0px 1px 2px rgba(0,0,0,0.16)',
+  };
+
+  const iconStyles = {
+    color: darkMode ? '#121111' : '#FFF',
+  };
+
+  const textStyles = {
+    color: darkMode ? '#121111' : '#FFF',
+    fontWeight: 'bold',
   };
 
   return (
-    <>
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        className="dark_container"
-        onClick={handelClick}
-        style={{
-          background: darkMode ? '#FFF' : '#000',
-        }}
-      >
-        <span
-          className="dark_dark"
-          style={{ color: darkMode ? '#121111' : '#FFF' }}
-        >
-          {darkMode ? <CiLight /> : <CiDark />}
-        </span>
-      </div>
-    </>
+    <div
+      className="dark_container"
+      onClick={handleClick}
+      style={containerStyles}
+    >
+      {darkMode ? (
+        <>
+          <CiLight style={iconStyles} />
+          <span style={textStyles}>Light</span>
+        </>
+      ) : (
+        <>
+          <CiDark style={iconStyles} />
+          <span style={textStyles}>Dark</span>
+        </>
+      )}
+    </div>
   );
 };

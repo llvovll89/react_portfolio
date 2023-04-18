@@ -1,56 +1,21 @@
 .arrow {
     position: fixed;
-    display: block;
-    z-index: 1050;
-    right: -20%;
-    box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
+    bottom: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 600;
+    border-radius: 20% 12% 20% 12%;
+    transition: 0.3s all ease;
     cursor: pointer;
-    overflow: visible;
-    text-transform: uppercase;
-    background: rgba(52, 57, 61, 0.8);
-    transition: 0.35s all ease;
-    color: var(--whiteColor);
-    opacity: 0;
 }
 
-.arrow-show {
-    right: 50px;
-    bottom: 100px;
-    opacity: 1;
-}
-
-.arrow .arrow-icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--whiteColor);
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: 0.5s all ease;
-}
-
-.arrow:hover {
-    background: #EFE99A;;
-}
-
-.arrow:hover .arrow-icon {
-    color: #29293F;;
-}
-
-@media screen and (max-width:768px) { 
-    .arrow-show {
-        right: 20px;
-        bottom: 20px;
-    }   
-}
-
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 768px) {
     .arrow {
-        width: 52px;
-        height: 52px;
+        padding: 4px 10px;
     }
 }

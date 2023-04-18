@@ -68,7 +68,7 @@ img {
 
 /* section in */
 .main-content {
-  padding-left: 270px;
+  padding-left: 240px;
 }
 
 .container {
@@ -168,20 +168,18 @@ img {
 /* ---- ---- dark_mode --------- */
 .dark_container {
   position: fixed;
-  top: 1%;
-  right: 0.5%;
-  width: 44px;
-  height: 44px;
-  padding: 0.25rem;
+  bottom: 16px;
+  right: 76px;
+  padding: 6px 12px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--lightBlackColor);
   overflow: hidden;
   z-index: 600;
   border-radius: 20% 12% 20% 12%;
   transition: 0.3s all ease;
+  cursor: pointer;
 }
 
 .dark_container:hover .dark_dark {
@@ -201,24 +199,15 @@ img {
   height: 100%;
 }
 
-@media screen and (max-width: 1280px) {
-  .main-content {
-    padding-left: 0;
-  }
-  .dark_container {
-    left: 10%;
-    top: 1.5%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .section {
     padding: 0 18px;
   }
+  .main-content {
+    padding-left: 0;
+  }
+
   .dark_container {
-    left: 75px;
-    top: 15px;
-    width: 45px;
-    height: 40px;
+    padding: 4px 10px;
   }
 }

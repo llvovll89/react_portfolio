@@ -1,22 +1,13 @@
-.section_main {
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-}
-
 .main_container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
 .main_content {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    min-height: 100vh;
     display: flex;
-    height: 100vh;
-    justify-content: flex-start;
 }
 
 .logo_title {
@@ -24,12 +15,12 @@
     align-items: flex-end;
     flex-flow: column;
     position: absolute;
-    top: 6%;
-    right: 6%;
+    top: 1.5%;
+    right: 2%;
     width: 15%;
-    line-height: 1.35;
-    padding-top: 0.85rem;
-    border-top: 1px solid #ccc;
+    padding: 8px 4px 4px 4px;
+    color: #fff;
+    border-top: 1px solid #FFF;
 }
 
 .logo_title span {
@@ -38,7 +29,7 @@
 
 .main_content .main_left {
     position: relative;
-    width: 47%;
+    width: 100%;
     display: flex;
     align-items: center;
     transform-origin: left bottom;
@@ -58,12 +49,15 @@
 }
 
 .main_content .main_left .left_content {
-    margin-left: 14%;
-    width: 72%;
-    opacity: 1;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 .main_content .main_left .left_content .left_text {
@@ -108,41 +102,41 @@
 .main_content .main_left .left_content .main_btn {
     position: relative;
     overflow: hidden;
-    display: inline-block;
-    margin: 1rem auto;
-    padding: 0 2.5rem;
-    height: 3.6rem;
-    letter-spacing: 0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    height: 46px;
     font-weight: 500;
-    border: solid 1px var(--lightBlackColor);
-    font: 200 1.44rem/3.6rem var(--mainFont);
+    font-size: 16px;
     border-radius: 6px;
     transition: 0.2s all linear;
-    color: #fff;
-    background: #181818;
 }
 
 .main_content .main_left .left_content .main_btn:hover {
     background: #08f;
-    transform: rotateZ(3.5deg);
+    transform: rotateZ(1.5deg);
 }
 
 .main_content .right_content {
     position: relative;
-    background: #EFFEFF;
-    width: 53%;
+    width: 100%;
     transform-origin: right center;
     transition: transform 0.1s linear 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main_content .main_img {
-    position: absolute;
-    bottom: 26%;
-    right: 13.5%;
+    width: 80%;
+    height: 350px;
+    margin: auto;
+}
+
+.main_content .right_content .main_img img {
     background: #c0e5f0;
-    max-height: 33vw;
-    max-width: 30vw;
-    height: 502px;
     opacity: 1;
     transform: translate3d(0, 0, 0);
     transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
@@ -151,13 +145,32 @@
     animation: homeImage 10s ease-in-out infinite 1s;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .main_content {
-        flex-flow: column-reverse;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_content::before {
+        position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/images/bg-cloud.png');
+    background-position: center;
+    background-size: cover;
+    animation: movebg 40s linear infinite;
+    transition: transform 0.2s linear 0.4s;
     }
 
     .main_content .main_left::before {
         display: none;
+    }
+
+    .main_content .main_left .left_content {
+        gap: 12px;
     }
 
     .main_content .main_left .left_content .left_text {
@@ -177,110 +190,22 @@
         margin: 1.7rem 0 1rem 0;
     }
 
-    .main_content .main_left,
     .main_content .right_content {
-        width: 100%;
-    }
-
-    .main_content .main_left.flex_item {
-        height: 60vh;
-    }
-
-    .main_content .right_content {
-        background: transparent;
-    }
-
-    .main_content .right_content.flex_item {
-        height: 60vh;
-        margin-top: 10vh;
-    }
-
-    .main_content .main_left .left_content {
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .main_content .main_img {
-        left: 16%;
-        top: 0%;
-        max-height: 48vw;
-        max-width: 63vw;
-    }
-
-    .main_content .main_left .left_content .main_btn {
-        margin: 1.2rem 1rem 1rem 0;
-        font: 200 1.22rem/3rem var(--mainFont);
-        padding: 0 2rem;
-        height: 3.2rem;
+        display: none;
     }
 
     .logo_title {
-        top: 4.5%;
-        right: 5%;
-        width: 40%;
+        top: 3%;
+        right: 3%;
+        width: 30%;
         line-height: 1.15;
     }
 
     .logo_title span {
-        font-size: 1rem;
+        font-size: 14.5px;
     }
 }
 
-@media screen and (max-width: 624px) {
-    .main_content .main_left {
-        justify-content: center;
-    }
-    .main_content .main_left .left_content .left_big {
-        font-weight: 400;
-        padding-top: 0.35rem;
-        font-family: var(--korFont);
-    }
-    .main_content .main_left .left_content .left_text {
-        margin-bottom: 0.5rem;
-        font-size: 1.4rem;
-        letter-spacing: 0.035rem;
-        font-family: var(--korFont);
-        padding-bottom: 0.6rem;
-        font-weight: 500;
-        border-bottom: 1px solid #ccc;
-    }
-    .main_content .right_content.flex_item {
-        height: 60vh;
-        margin-top: 0;
-        background-image: url('../../../public/images/bg-cloud.png');
-        background-position: center;
-        background-size: cover;
-        animation: movebg 40s linear infinite;
-        transition: transform 0.2s linear 0.4s;
-        z-index: 10;
-    }
-    .logo_title {
-        width: 30%;
-        z-index: 100;
-    }
-    .logo_title span {
-        font-size: 0.9rem;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.27);
-    }
-    .main_content .main_img {
-        margin-top: 1vh;
-        left: 14%;
-        top: 16%;
-        max-height: 71vw;
-        max-width: 73vw;
-    }
-    .main_content .main_left .left_content .left_nomal {
-        font-size: 1.1rem;
-        margin: 0.9rem 0 0.9rem 0;
-        padding-bottom: 0.75rem;
-    }
-    .main_content .main_left .left_content .main_btn {
-        margin: 1rem 0.75rem 0.75rem 0;
-        padding: 0 2.5rem;
-    }
-    .main_content .main_left .left_content .main_btn:hover {
-        background: #EFFEFF;
-        border: 0;
-        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
-    }
+@media screen and (max-width: 564px) {
+    
 }

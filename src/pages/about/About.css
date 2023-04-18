@@ -25,7 +25,6 @@
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
-    color: var(--titleColor);
     font-family: 'Chosunilbo_myungjo';
 }
 
@@ -225,9 +224,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about {
-        color: var(--whiteColor);
-    }
 
     .about .about-container {
         padding-bottom: 0;
@@ -313,7 +309,4 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    /* .about .about-content .backend .back-text .backend-content .back-item span {
-        
-    } */
 }

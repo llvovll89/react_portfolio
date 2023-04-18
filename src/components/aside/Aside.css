@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    width: 270px;
+    padding: 16px;
+    width: 240px;
     height: 100%;
     top: 0;
     left: 0;
@@ -18,16 +18,15 @@
 
 .aside .aside-logo {
     position: absolute;
-    top: 50px;
-    font-size: 30px;
+    top: 30px;
     text-transform: capitalize;
 }
 
 .aside .aside-logo a {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 22px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 0.15rem;
     transition: 0.3s all ease;
 }
 
@@ -38,35 +37,34 @@
 .aside .aside-logo a::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid var(--orangeColor);
-    border-left: 3px solid var(--orangeColor);
-    top: -7%;
-    left: -7%;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #2EB573;
+    border-left: 3px solid #2EB573;
+    top: -8%;
+    left: -8%;
     transition: 0.3s all linear;
 }
 
 .aside .aside-logo a::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 3px solid var(--orangeColor);
-    border-right: 3px solid var(--orangeColor);
-    bottom: -4%;
-    right: -7%;
+    width: 16px;
+    height: 16px;
+    border-bottom: 3px solid #2EB573;
+    border-right: 3px solid #2EB573;
+    bottom: -5%;
+    right: -8%;
     transition: 0.3s all linear;
 }
 
 .aside .aside-logo:hover a {
     cursor: pointer;
-    color: #2EB573;
     transition: 0.3s all linear;
 }
 
 .aside .aside-logo:hover a::before {
-    top: 71%;
+    top: 72%;
     border-bottom: 3px solid #a1fbd0;
     border-left: 3px solid #a1fbd0;
     border-top: none;
@@ -74,8 +72,8 @@
 }
 
 .aside .aside-logo:hover a::after {
-    bottom: 77%;
-    right: -12%;
+    bottom: 78%;
+    right: -13%;
     border-top: 3px solid #a1fbd0;
     border-bottom: none;
     border-right: 3px solid #a1fbd0;
@@ -84,23 +82,21 @@
 
 .aside .aside-toggle {
     position: fixed;
-    height: 40px;
-    width: 45px;
+    height: 36px;
+    width: 36px;
     left: 15px;
     top: 15px;
     border-radius: 6px;
-    background: #121111;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.13);
     display: none;
     align-items: center;
     cursor: pointer;
     overflow: hidden;
-    border: 1px solid var(--lightBlackColor);
 }
 
 .aside .aside-toggle span {
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 2px;
     background: rgba(255, 255, 255, 0.52);
     border-radius: 4px;
@@ -128,13 +124,13 @@
 }
 
 .aside .aside-toggle.active span:nth-child(1) {
-    width: 24px;
+    width: 22px;
     transform: translateY(0px) rotate(45deg);
     transition-delay: 0.12s;
 }
 
 .aside .aside-toggle.active span:nth-child(2) {
-    width: 24px;
+    width: 22px;
     transform: translateY(0px) rotate(315deg);
     transition-delay: 0.25s;
 }
@@ -143,14 +139,9 @@
     transform: translateX(60px);
 }
 
-.aside .aside-nav {
-    margin: -top 50px;
-}
-
 .aside .aside-nav .border {
     position: relative;
-    width: max-content;
-    height: 70px;
+    height: 60px;
     z-index: 1;
     text-align: center;
     border-bottom: 1px solid var(--orangeColor);
@@ -183,7 +174,7 @@
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: 0.4s linear;
     color: var(--lightBlackColor);
@@ -276,10 +267,10 @@
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .aside {
         transition: 0.5s all ease;
-        left: -270px;
+        left: -300px;
     }
 
     .aside .aside-logo:hover a {
@@ -293,8 +284,8 @@
     }
 
     .aside.show {
+        width: 300px;
         left: 0;
-        width: 100%;
         transition: 0.5s all ease;
         z-index: 1100;
         background: #f0f9f9;
@@ -320,27 +311,20 @@
 
     .aside .aside-nav {
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 30px;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
     }
 
-
-    .aside .aside-nav .border {
-        border-bottom: 0;
-        border-radius: 12px;
-        transition: all 0.4s ease;
-    }
-
     .aside .aside-nav .border a .link-icons {
-        font-size: 2.1rem;
+        font-size: 26px;
         color: #060000;
     }
 
     .aside .aside-nav .border a .link-icons svg {
-        border-radius: 35%;
+        border-radius: 3px;
     }
 
     .aside .aside-nav .border:nth-child(1) a .link-icons svg {
@@ -371,30 +355,16 @@
 
     .aside .aside-toggle {
         display: flex;
+        align-items: center;
+        justify-content: center;
         transition: 0.4s all ease;
     }
 
-    .aside .aside-toggle:hover,
-    .aside .aside-toggle.active:hover {
-        border: 0;
-        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.12);
-        transform: scale(0.9);
-    }
-
-    .aside .aside-toggle.active:hover {
-        background: transparent;
-    }
-
-    .aside-toggle.active:hover span {
-        background: #EFFEFF;
-    }
-
     .aside .aside-toggle.active {
-        left: 85%;
+        left: 250px;
         top: 10px;
         border: none;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
-        background: #e4ebec;
         transition: 0.4s all ease;
     }
 

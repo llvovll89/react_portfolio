@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navItem, social } from '../../assets/db/data';
 import './Aside.css';
+import { DarkContext } from '../../context/darkContext';
 
 export const Asidecontent = () => {
-
   const border = window.document.querySelectorAll('.border');
   border.forEach((a) => {
     a.addEventListener('click', () => {
@@ -16,6 +16,8 @@ export const Asidecontent = () => {
   });
 
   const [active, setActive] = useState(false);
+  const { darkMode } = useContext(DarkContext);
+  const bgColor = darkMode ? '#000000' : '#97cdf2';
 
   return (
     <>
@@ -32,10 +34,13 @@ export const Asidecontent = () => {
         <div
           className={active ? 'aside-toggle active' : 'aside-toggle'}
           onClick={() => setActive(!active)}
+          style={{
+            background: bgColor,
+          }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span style={{ background: '#ffffff' }}></span>
+          <span style={{ background: '#ffffff' }}></span>
+          <span style={{ background: '#ffffff' }}></span>
         </div>
         <ul
           className="aside-nav"
@@ -44,7 +49,7 @@ export const Asidecontent = () => {
           data-aos-delay="600"
         >
           {navItem.map((link) => (
-            <li key={link.id} className="border" >
+            <li key={link.id} className="border">
               <Link
                 to={link.navurl}
                 data-aos="fade-right"

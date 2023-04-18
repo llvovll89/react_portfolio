@@ -6,10 +6,12 @@ import { ReactProject } from '../pages/project/react/ReactProject';
 import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../components/footer/Footer';
 import { Arrow } from '../components/toggle/toparoow/Arrow';
+import ProgressBar from '../components/common/Progressbar';
 
 export const Home = () => {
   return (
     <>
+      <ProgressBar />
       <Main />
       <About />
       <ReactProject />
