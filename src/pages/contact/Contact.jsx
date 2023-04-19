@@ -1,9 +1,8 @@
 import React, { useContext, useRef, useState } from 'react';
 import contactImg from '../../assets/images/ho1.jpg';
 import { DarkContext } from '../../context/darkContext';
-import './Contact.css';
-
 import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 export const Contact = () => {
   const { darkMode } = useContext(DarkContext);
@@ -12,9 +11,14 @@ export const Contact = () => {
   const [mail, setMail] = useState('');
   const [textArea, setTextArea] = useState('');
   const form = useRef();
+
   const serviceKey = process.env.REACT_APP_SERVICE_KEY;
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
+  const bgColor = darkMode ? '#050306' : '#FFFFFF';
+  const initColor = darkMode ? '#FFFFFF' : '#050306';
+  const titleColor = darkMode ? '#1DE9B6' : '#050306';
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,12 +40,12 @@ export const Contact = () => {
 
   return (
     <>
-      <section
-        className="contact section"
+      <div
+        className="contact"
         style={{
-          background: darkMode ? '#121212' : '#FFFFFF',
-          color: darkMode ? '#fff' : '#000',
-          transition: "0.25s all linear"
+          background: bgColor,
+          color: initColor,
+          transition: '0.25s all linear',
         }}
       >
         <div className="inner">
@@ -57,6 +61,7 @@ export const Contact = () => {
               className="contact_title"
               data-aos="zoom-in-down"
               data-aos-duration="1000"
+              style={{ color: titleColor }}
             >
               CONTACT ME
             </h3>
@@ -133,7 +138,7 @@ export const Contact = () => {
             <div className="contact_right"></div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

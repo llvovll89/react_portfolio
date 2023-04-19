@@ -9,7 +9,7 @@
 }
 
 html {
-  cursor: url(./assets/images/cursor.png)2 2 , pointer;
+  cursor: url(./assets/images/cursor.png)2 2, pointer;
 }
 
 :root {
@@ -17,7 +17,7 @@ html {
   /* color */
   --whiteColor: #FEFEFE;
   --orangeColor: #CB9106;
-  --lightBlackColor : #8c8c8c;
+  --lightBlackColor: #8c8c8c;
 
   /* font-size */
   --nmSize: 20px;
@@ -33,7 +33,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -69,6 +69,8 @@ img {
 /* section in */
 .main-content {
   padding-left: 240px;
+  min-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+
 }
 
 .container {
@@ -203,6 +205,7 @@ img {
   .section {
     padding: 0 18px;
   }
+
   .main-content {
     padding-left: 0;
   }

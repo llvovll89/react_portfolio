@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navItem, social } from '../../assets/db/data';
-import './Aside.css';
 import { DarkContext } from '../../context/darkContext';
+import './Navbar.css';
 
-export const Asidecontent = () => {
+export const Navbar = () => {
   const border = window.document.querySelectorAll('.border');
   border.forEach((a) => {
     a.addEventListener('click', () => {

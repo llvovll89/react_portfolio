@@ -4,21 +4,21 @@
     display: flex;
     justify-content: center;
     font-family: var(--mainFont);
+    padding: 36px 18px;
 }
 
 .inner {
-    padding: 60px 0;
-    max-width: 1240px;
     width: 100%;
+    max-width: 1024px;
+    /* max-height: max-content; */
     margin: auto;
-    /* margin: 10vh auto; */
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .inner .contact_img {
     position: relative;
-    width: 48%;
+    width: 100%;
     overflow: hidden;
     transition: 0.3s all ease;
 }
@@ -26,6 +26,8 @@
 .inner .contact_img img {
     border-radius: 6px;
     transition: 0.3s all ease;
+    width: 100%;
+    height: 100%;
 }
 
 .inner .contact_img:hover {
@@ -39,15 +41,14 @@
 
 .inner .contact_text {
     position: relative;
-    width: 52%;
-    margin-left: 2rem;
-    padding: 1rem;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
 }
 
 .inner .contact_text .contact_title {
     font-family: 'Montserrat';
     letter-spacing: -0.03rem;
-    font-size: 4rem;
+    font-size: 30px;
     line-height: 1.5;
 }
 
@@ -71,7 +72,7 @@
 
 .inner .contact_text .contact_list .items li span {
     cursor: initial;
-    font-size: 1.3rem;
+    font-size: 16px;
 }
 
 .inner .contact_text .contact_list .items li span:nth-child(2) {
@@ -165,8 +166,6 @@
 }
 
 .contact .inner .contact_msg .contact_left input[type="text"]:focus,
-.contact .inner .contact_msg .contact_left input[type="text"]:not(:disabled):hover,
-.contact .inner .contact_msg .contact_left textarea:not(:disabled):hover,
 .contact .inner .contact_msg .contact_left textarea:focus {
     border: 2px solid #08f;
 }
@@ -251,6 +250,10 @@ textarea, input {
 }
 
 @media screen and (max-width: 564px) {
+    .inner .contact_text .contact_title {
+        font-size: ;
+    }
+    
     .inner .contact_text .contact_list .items li span:nth-child(2) {
         font-size: 1rem;
     }

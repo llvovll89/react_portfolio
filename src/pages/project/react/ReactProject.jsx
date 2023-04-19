@@ -8,9 +8,11 @@ import '@splidejs/splide/dist/css/splide.min.css';
 
 export const ReactProject = () => {
   const { darkMode } = useContext(DarkContext);
-  const containerClassName = darkMode
-    ? 'project_container dark_mode'
-    : 'project_container';
+
+  const containerStyle = {
+    background: darkMode ? 'rgb(5, 3, 6)' : '#FFFFFF',
+    color: darkMode ? '#FFFFFF' : 'rgba(5,3,6)',
+  };
 
   const splideOption = {
     perPage: 1,
@@ -22,7 +24,7 @@ export const ReactProject = () => {
   };
 
   return (
-    <div className={containerClassName}>
+    <div className={darkMode ? "project_container dark" : "project_container"} style={containerStyle}>
       <div className="project_wrap">
         <Splide options={splideOption}>
           {reactDB.map((project) => (

@@ -15,9 +15,9 @@
     transition: background color 0.25s linear;
 }
 
-.project_container.dark_mode {
-    background: #181818;
-    color: #ffffff;
+.project_container.dark .react_content {
+    background: #1E1F21;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.16);
 }
 
 .project_container .project_wrap {
@@ -29,66 +29,53 @@
 
 .react_content {
     position: relative;
-    max-width: 96vw;
-    margin: 14vh auto;
-    padding: 0 2.5vh;
+    max-width: 1024px;
+    margin: auto;
+    padding: 36px 18px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 16px;
     cursor: pointer;
-}
-
-.react_content[title]:hover::after {
-    content: attr(title);
-    display: block;
-    font-size: 18px;
-    width: max-content;
-    padding: 12px;
-    background: #000;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
-    opacity: 0.88;
+    border-radius: 12px;
+    background: #Fefefe;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .react_content .react_left {
     position: relative;
-    height: 100%;
-    width: 35%;
+    width: 100%;
+    flex: 1 1 45%;
+    padding-left: 12px; 
+    gap: 6px;
 }
 
 .react_content .react_left .react_number {
-    display: inline-block;
-    font-size: 2.2rem;
+    font-size: 30px;
+    display: block;
+    padding-bottom: 12px;
 }
 
 .react_content .react_left .react_title {
-    font-size: 3.2rem;
+    font-size: 26px;
+    font-weight: 600;
     font-family: var(--mainFont);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.8rem;
-    font-weight: 500;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;  
+    letter-spacing: 0.015rem;
+    margin-bottom: 12px;
     width: max-content;
-
-    letter-spacing: 0.75px;
 }
 
 .react_content .react_left .desc_contents {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    padding: 6px 0;
+    padding: 12px 0;
 }
 
 .react_content .react_left .arr_desc {
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.015rem;
+    line-height: 1.5;
     font-family: var(--korFont);
-    line-height: 1.35;
 }
 
 .react_content .react_left .react_desc {
@@ -105,8 +92,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 56px;
-    margin: 16px auto;
+    padding: 16px 20px 0px 0px;
     gap: 12px;
 }
 
@@ -115,93 +101,60 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 46px;
+    font-size: 16px;
     letter-spacing: 1px;
-    color: #FFF;
-    font-weight: 500;
-    border: 1px solid #ccc;
+    font-weight: 600;
     border-radius: 6px;
     transition: 0.3s all linear;
 }
 
-.react_content .react_left .link_btn a:hover {
-    background: transparent;
-    color: #000;
-    border: 1.5px solid #ccc;
-}
-
-.react_content .react_left .link_btn a:first-child {
-    font-size: 20px;
-    background: #aad8e4;
-}
-
-.react_content .react_left .link_btn a:last-child {
-    background: #Fec2c1;
-    font-size: 2rem;
-}
-
 .react_content .react_right {
-    width: 58%;
     position: relative;
+    width: 100%;
+    flex: 1 1 55%;
+    overflow: hidden;
 }
 
 .react_content .react_right img {
-    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .react_content .react_right::after {
     position: absolute;
-    content: "< 옆으로 />";
+    content: "< Next />";
     width: max-content;
     height: max-content;
     font-size: 13.5px;
     letter-spacing: 0.015rem;
     font-weight: 600;
-    top: -6%;
+    top: -8%;
     font-family: var(--korFont);
     right: 0;
     animation: leftright 1s infinite alternate;
     border-radius: 12px;
 }
 
-@media screen and (max-width: 1240px) {
-    .react_container .react_wrap {
-        max-width: 1360px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .react_content {
         flex-flow: column-reverse;
-        max-width: 1024px;
-        margin: auto;
-        padding: 0 12px;
-        height: 100%;
-    }
-
-    .react_content .react_right,
-    .react_content .react_left {
-        width: 100%;
-        height: 100%;
-    }
-
-    .react_content .react_right {
-        height: 300px;
+        padding: 16px 6px;
     }
 
     .react_content .react_left {
-        margin-top: 1.6rem;
+        padding: 6px;
     }
 
     .react_content .react_left .react_number {
-        font-size: 26px;
-        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 6px;
     }
 
     .react_content .react_left .react_title {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        padding-top: 0.6rem;
-        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 6px;
     }
 
     .react_content .react_left .react_desc {
@@ -209,10 +162,8 @@
         margin-bottom: 1.5rem;
     }
 
-    .react_content .react_left .link_btn a {
-        font-size: 1rem;
-        padding: 10px 26px;
-        letter-spacing: 1px;
+    .react_content .react_left .link_btn {
+        padding: 16px 6px 0px 6px;
     }
 
     .react_content .react_left_right {
@@ -220,73 +171,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .react_content .react_left .arr_desc,
-    .react_content .react_left .react_desc {
-        font-family: var(--mainFont);
-    }
-}
-
 @media screen and (max-width: 564px) {
-    .react_container {
-        padding: 0 6px;
-    }
 
-    .react_content .react_left {
-        margin-top: 16px;
-    }
-
-    .react_content .react_left .react_number {
-        font-size: 17.5px;
-        font-weight: 500;
-    }
-
-    .react_content .react_left .react_title {
-        font-size: 20px;
-        margin-bottom: 8px;
-        padding-bottom: 4px;
-        font-weight: 600;
-    }
-
-    .react_content .react_left .arr_desc {
-        font-weight: 600;
-        font-size: 13.5px;
-        letter-spacing: 0.015rem;
-        line-height: 1.35;
-        word-break: break-word;
-    }
-
-    .react_content .react_left .react_desc {
-        font-size: 13.5px;
-        font-weight: 600;
-        display: block;
-        word-break: break-word;
-        line-height: 1.5;
-    }
-
-    .react_content .react_left_right {
-        line-height: 1.2;
-        font-size: 14px;
-        padding: 0.1rem;
-    }
-
-    .react_content .react_right::after {
-        font-weight: 400;
-        top: -10%;
-    }
-
-    .react_content .react_left .link_btn {
-        height: 46px;
-    }
-
-    .react_content .react_left .link_btn a:nth-child(1) {
-        font-size: 16px;
-    }
-
-    .react_content .react_left .link_btn a:nth-child(2) {
-        font-size: 22px;
-    }
 }
 
 @keyframes leftright {
@@ -303,7 +189,6 @@
 
 @media(hover: hover) and (pointer: fine) {
     .react_content .react_left .link_btn a:hover {
-        border: 1.5px solid #ccc;
         background: #181818;
         color: #fff;
     }
