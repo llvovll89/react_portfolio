@@ -66,7 +66,6 @@
     letter-spacing: 0.08rem;
     padding-bottom: 9px;
     margin-bottom: 16px;
-    font-family: var(--mainFont);
     border-bottom: 1px solid rgb(183, 203, 221);
     font-weight: 600;
 }
@@ -279,6 +278,7 @@
     .main_content .main_left .left_content .left_big {
         font-size: 16px;
         padding: 7px 0;
+        font-family: var(--appleFont);
     }
     
     .main_content .main_left .left_content .left_nomal {

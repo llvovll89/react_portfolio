@@ -28,6 +28,7 @@ html {
   --korFont: 'Chosunilbo_myungjo';
   --mainFont: 'Rajdhani', sans-serif;
   --popFont: 'Poppins', sans-serif;
+  --appleFont: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
 }
 
 * {
@@ -38,7 +39,7 @@ html {
 }
 
 body {
-  font-family: var(--mainFont);
+  font-family: var(--appleFont);
 }
 
 ul,
