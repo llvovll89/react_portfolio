@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CiDark, CiLight } from 'react-icons/ci';
-import { DarkContext } from '../../../context/darkContext';
+import { DarkContext } from '../context/darkContext';
 
 export const DarkMode = () => {
   const { darkMode, setDarkMode } = useContext(DarkContext);

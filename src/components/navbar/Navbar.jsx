@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   const [active, setActive] = useState(false);
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#000000' : '#3E82F7';
+  const bgColor = darkMode ? '#000000' : '#3d7fea';
 
   return (
     <>

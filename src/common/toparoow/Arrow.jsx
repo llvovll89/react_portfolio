@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { SlArrowUp } from 'react-icons/sl';
-import { DarkContext } from '../../../context/darkContext';
+import { DarkContext } from '../../context/darkContext';
 import './Arrow.css';
 
 export const Arrow = () => {

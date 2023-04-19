@@ -8,9 +8,10 @@ import './Main.css';
 
 export const Main = () => {
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#9fc2e7' : '#FFFFFF';
+  const bgColor = darkMode ? '#0f2741' : '#FFFFFF';
   const textColor = darkMode ? '#FFFFFF' : '#000';
   const btnBg = darkMode ? '#ffffff' : '#0f0f0f';
+  const logoStyle = darkMode ? '#FFFFFF' : '#0f0f0f';
 
   return (
     <>
@@ -61,7 +62,10 @@ export const Main = () => {
                 className="main_btn"
                 data-aos="flip-left"
                 data-aos-duration="1000"
-                style={{ background: btnBg, color: darkMode ? "#000" : "#ffffff" }}
+                style={{
+                  background: btnBg,
+                  color: darkMode ? '#000' : '#ffffff',
+                }}
               >
                 More Me
                 <MdTouchApp />
@@ -70,10 +74,6 @@ export const Main = () => {
           </div>
           <div
             className="right_content flex_item"
-            style={{
-              background: bgColor,
-              transition: '0.4s all ease',
-            }}
           >
             <div className="main_img">
               <img
@@ -82,7 +82,6 @@ export const Main = () => {
                 data-aos="zoom-out-up"
                 data-aos-duration="1000"
                 data-aos-delay="500"
-                style={{ background: darkMode ? '#f3fef3' : 'transparent' }}
               />
             </div>
           </div>
@@ -91,8 +90,8 @@ export const Main = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <span>Front_end</span>
-            <span>Developer</span>
+            <span style={{ color: logoStyle }}>Front_end</span>
+            <span style={{ color: logoStyle }}>Developer</span>
           </div>
         </div>
       </div>
