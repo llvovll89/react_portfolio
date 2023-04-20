@@ -20,7 +20,7 @@ export const About = () => {
 
   return (
     <>
-      <div className="about_container" style={aboutStyles}>
+      <div className="about_container" id='about' style={aboutStyles}>
         <div className="about_title">
           <div
             className="section-title "

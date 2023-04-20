@@ -10,7 +10,7 @@ export const ReactProject = () => {
   const { darkMode } = useContext(DarkContext);
 
   const containerStyle = {
-    background: darkMode ? 'rgb(5, 3, 6)' : '#faf4f4',
+    background: darkMode ? '#09091b' : '#faf4f4',
     color: darkMode ? '#FFFFFF' : 'rgba(5,3,6)',
   };
 

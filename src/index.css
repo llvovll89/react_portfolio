@@ -159,7 +159,7 @@ img {
 ::-webkit-scrollbar-thumb {
   background: #Fff;
   border-radius: 100vw;
-  border: 0.2rem solid #Fccfc3;
+  border: 0.2rem solid #f1d5cd;
 }
 
 ::-webkit-scrollbar-thumb:hover {

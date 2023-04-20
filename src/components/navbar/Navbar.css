@@ -7,9 +7,8 @@
     width: 240px;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 0;    
     z-index: 1200;
-    background: rgba(0, 0, 0, 0.88);
 }
 
 .aside a {
@@ -31,7 +30,7 @@
 }
 
 .aside .aside-logo a span {
-    font-family: var(--popFont);
+    font-family: var(--appleFont);
 }
 
 .aside .aside-logo a::before {
@@ -140,17 +139,10 @@
     z-index: 1;
     text-align: center;
     border-bottom: 1px solid var(--orangeColor);
-    transition: 0.3s all linear;
 }
 .aside .aside-nav .border.bt {
-    border-bottom: 1.5px solid #FFF;
-    transition: 0.3s all linear;
+    border-bottom: 2px solid #08f;
     width: 40px;
-}
-
-.aside .aside-nav .border.bt a .link-icons , 
-.aside .aside-nav .border.bt a .link-items{
-    color: #FFF;
 }
 
 .aside .aside-nav .border a {
@@ -172,12 +164,10 @@
     font-size: 1.5rem;
     text-align: center;
     transition: 0.4s linear;
-    color: var(--lightBlackColor);
 }
 
 .aside .aside-nav a .link-items {
     position: absolute;
-    color: var(--lightBlackColor);
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.05rem;
@@ -268,16 +258,6 @@
         left: -300px;
     }
 
-    .aside .aside-logo:hover a {
-        cursor: pointer;
-        color: #2d2d30;
-    }
-
-    .aside .aside-logo:hover a::after,
-    .aside .aside-logo:hover a::before {
-        border-color: #2d2d30;
-    }
-
     .aside.show {
         width: 300px;
         left: 0;
@@ -291,13 +271,13 @@
     }
 
     .aside .aside-logo a::before {
-        border-top: 3px solid var(--whiteColor);
-        border-left: 3px solid var(--whiteColor);
+        border-top: 3px solid #FE5493;
+        border-left: 3px solid #FE5493;
     }
 
     .aside .aside-logo a::after {
-        border-bottom: 3px solid var(--whiteColor);
-        border-right: 3px solid var(--whiteColor);
+        border-bottom: 3px solid #FE5493;
+        border-right: 3px solid #FE5493;
     }
 
     .aside .aside-nav .aside .aside-nav .border {
@@ -320,26 +300,6 @@
 
     .aside .aside-nav .border a .link-icons svg {
         border-radius: 3px;
-    }
-
-    .aside .aside-nav .border:nth-child(1) a .link-icons svg {
-        background: rgb(155, 185, 239);
-    }
-
-    .aside .aside-nav .border:nth-child(2) a .link-icons svg {
-        background: rgb(165, 236, 180);
-    }
-
-    .aside .aside-nav .border:nth-child(3) a .link-icons svg {
-        background: rgb(171, 214, 231);
-    }
-
-    .aside .aside-nav .border:nth-child(4) a .link-icons svg {
-        background: rgb(236, 236, 165);
-    }
-
-    .aside .aside-nav .border:nth-child(5) a .link-icons svg {
-        background: rgb(214, 183, 183);
     }
 
     .aside .aside-nav a .link-items {
@@ -373,10 +333,6 @@
     .aside.show {
         padding: 12px;
         width: 250px;
-        background: #f0f9f9;
-        background-image: url('../../../public/images/bg-cloud.png');
-        background-position: center;
-        background-size: cover;
         animation: none;
     }
 

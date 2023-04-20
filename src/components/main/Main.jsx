@@ -8,7 +8,7 @@ import './Main.css';
 
 export const Main = () => {
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#0f2741' : '#FFFFFF';
+  const bgColor = darkMode ? '#161616' : '#FFFFFF';
   const textColor = darkMode ? '#FFFFFF' : '#000';
   const btnBg = darkMode ? '#ffffff' : '#0f0f0f';
   const logoStyle = darkMode ? '#FFFFFF' : '#0f0f0f';

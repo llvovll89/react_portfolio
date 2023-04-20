@@ -1,4 +1,5 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import contactImages from '../../assets/images/kimgeonho.jpg';
 import contactImg from '../../assets/images/ho1.jpg';
 import { DarkContext } from '../../context/darkContext';
 import emailjs from '@emailjs/browser';
@@ -6,17 +7,15 @@ import './Contact.css';
 
 export const Contact = () => {
   const { darkMode } = useContext(DarkContext);
+  const [state, setState] = useState({ message: '', mail: '', textArea: '' });
 
-  const [message, setMessage] = useState('');
-  const [mail, setMail] = useState('');
-  const [textArea, setTextArea] = useState('');
-  const form = useRef();
+  const form = useRef(null);
 
   const serviceKey = process.env.REACT_APP_SERVICE_KEY;
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-  const bgColor = darkMode ? '#050306' : '#FFFFFF';
+  const bgColor = darkMode ? '#1A1A2E' : '#FFFFFF';
   const initColor = darkMode ? '#FFFFFF' : '#050306';
   const titleColor = darkMode ? '#1DE9B6' : '#050306';
 
@@ -26,14 +25,10 @@ export const Contact = () => {
     emailjs.sendForm(serviceKey, templateKey, e.target, publicKey).then(
       (result) => {
         alert('전송되었습니다!');
-        setMessage('');
-        setMail('');
-        setTextArea('');
-        console.log(result.text);
+        setState({ message: '', mail: '', textArea: '' });
       },
       (err) => {
         alert('전송에 실패 하였습니다!');
-        console.log(err.text);
       }
     );
   };
@@ -54,7 +49,7 @@ export const Contact = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <img src={contactImg} alt="" />
+            <img src={contactImages} alt="" />
           </div>
           <div className="contact_text">
             <h3
@@ -77,65 +72,90 @@ export const Contact = () => {
                   <span>svvvs5579@naver.com</span>
                 </li>
                 <li>
-                  <span>Github</span>
-                  <span>llvovll89/github.com</span>
-                </li>
-                <li>
-                  <span>Address</span>
-                  <span>대구광역시 동구 신암동</span>
-                </li>
-                <li>
                   <span>Phone</span>
                   <span>+82-10-2570-????</span>
+                </li>
+                <li>
+                  <span>velog</span>
+                  <a
+                    href="https://velog.io/@llvovll89"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: titleColor }}
+                  >
+                    https://velog.io/@llvovll89
+                  </a>
+                </li>
+                <li>
+                  <span>Github</span>
+                  <a
+                    href="https://github.com/llvovll89"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: titleColor }}
+                  >
+                    https://github.com/llvovll89
+                  </a>
                 </li>
               </ul>
             </div>
             <div
-              className="contact_msg"
+              className="contact_right"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
             >
-              <form ref={form} onSubmit={sendEmail} className="contact_left">
-                <label htmlFor="from_name"> name</label>
-                <input
-                  autoComplete="off"
-                  type="text"
-                  placeholder="이름입력.."
-                  name="from_name"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-                <label htmlFor="e-mail"> E-mail</label>
-                <input
-                  autoComplete="off"
-                  type="text"
-                  placeholder="E-mail입력.."
-                  name="e-mail"
-                  value={mail}
-                  onChange={(e) => setMail(e.target.value)}
-                />
-                <label htmlFor="text"> Message</label>
-                <textarea
-                  cols="30"
-                  type="text"
-                  placeholder="메시지 입력.."
-                  name="text"
-                  value={textArea}
-                  onChange={(e) => setTextArea(e.target.value)}
-                />
+              <form ref={form} onSubmit={sendEmail} className="submitForm">
+                <div className="area">
+                  <input
+                    autoComplete="off"
+                    type="text"
+                    name="from_name"
+                    value={state.message}
+                    onChange={(e) =>
+                      setState({ ...state, message: e.target.value })
+                    }
+                  />
+                  <label htmlFor="from_name"> name</label>
+                </div>
+                <div className="area">
+                  <input
+                    autoComplete="off"
+                    type="text"
+                    name="e-mail"
+                    value={state.mail}
+                    onChange={(e) =>
+                      setState({ ...state, mail: e.target.value })
+                    }
+                  />
+                  <label htmlFor="e-mail"> E-mail</label>
+                </div>
+                <div className="area">
+                  <textarea
+                    cols="30"
+                    type="text"
+                    name="text"
+                    value={state.textArea}
+                    onChange={(e) =>
+                      setState({ ...state, textArea: e.target.value })
+                    }
+                  />
+                  <label htmlFor="text"> Message</label>
+                </div>
                 <div className="contact_btnbox">
                   <button
                     className="contact_btn"
-                    style={{ color: darkMode ? '#fff' : '#000' }}
+                    style={{
+                      color: darkMode ? '#000' : '#Fff',
+                      background: darkMode ? '#FFF' : '#000',
+                    }}
                   >
-                    SEND
+                    전송하기
                     <span></span>
                   </button>
                 </div>
               </form>
             </div>
-            <div className="contact_right"></div>
           </div>
         </div>
       </div>

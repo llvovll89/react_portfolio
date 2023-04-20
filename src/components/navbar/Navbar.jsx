@@ -17,13 +17,15 @@ export const Navbar = () => {
 
   const [active, setActive] = useState(false);
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#000000' : '#3d7fea';
+  const bgColor = darkMode ? '#FFFFFF' : '#231f20';
+  const toggleColor = darkMode ? "rgb(5,3,6)" : "#FFFFFF";
+  const titleColor = darkMode ? "#231f20" : "#FFFFFF";
 
   return (
     <>
-      <div className={active ? 'aside show' : 'aside'}>
+    <div className={`aside ${active ? 'show' : ''}${darkMode ? ' dark' : ''}`} style={{ background : bgColor }}>
         <div className="aside-logo">
-          <Link to="/" title="Home 으로..">
+          <Link to="/" title="Home 으로.." style={{color: titleColor}}>
             <span>FRONT_END</span>
             <br />
             <span data-aos="fade-left" duration="1000">
@@ -38,9 +40,9 @@ export const Navbar = () => {
             background: bgColor,
           }}
         >
-          <span style={{ background: '#ffffff' }}></span>
-          <span style={{ background: '#ffffff' }}></span>
-          <span style={{ background: '#ffffff' }}></span>
+          <span style={{ background : toggleColor }}></span>
+          <span style={{ background : toggleColor }}></span>
+          <span style={{ background : toggleColor }}></span>
         </div>
         <ul
           className="aside-nav"
@@ -56,8 +58,8 @@ export const Navbar = () => {
                 duration="1000"
                 onClick={() => setActive(!active)}
               >
-                <span className="link-icons">{link.navicon}</span>
-                <span className="link-items"> {link.navtext}</span>
+                <span className="link-icons" style={{color: toggleColor}}>{link.navicon}</span>
+                <span className="link-items" style={{color: toggleColor}}> {link.navtext}</span>
               </Link>
             </li>
           ))}

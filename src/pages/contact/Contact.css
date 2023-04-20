@@ -1,24 +1,25 @@
 .contact {
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    font-family: var(--mainFont);
+    align-items: center;
     padding: 36px 18px;
 }
 
 .inner {
     width: 100%;
     max-width: 1024px;
-    /* max-height: max-content; */
     margin: auto;
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
 .inner .contact_img {
     position: relative;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     transition: 0.3s all ease;
 }
@@ -31,18 +32,18 @@
 }
 
 .inner .contact_img:hover {
-    transition: 0.3s all ease;
+    transition: 0.2s all ease;
 }
 
 .inner .contact_img:hover img {
-    transform: scale(0.93);
-    transition: 0.3s all ease;
+    transform: scale(0.98);
+    transition: 0.2s all ease;
 }
 
 .inner .contact_text {
     position: relative;
     width: 100%;
-    padding: 0px 0px 0px 20px;
+    padding: 16px;
 }
 
 .inner .contact_text .contact_title {
@@ -53,14 +54,13 @@
 }
 
 .inner .contact_text .contact_list {
-    padding-top: 2rem;
+    padding: 20px 0px 0px 6px;
 }
 
 .inner .contact_text .contact_list .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    place-items: center;
+    gap: 9px;
 }
 
 .inner .contact_text .contact_list .items li {
@@ -75,7 +75,8 @@
     font-size: 16px;
 }
 
-.inner .contact_text .contact_list .items li span:nth-child(2) {
+.inner .contact_text .contact_list .items li span:nth-child(2),
+.inner .contact_text .contact_list .items li a {
     font-size: 1.15rem;
     width: max-content;
     border-bottom: 1px solid #ccc;
@@ -83,67 +84,78 @@
     font-family: var(--korFont);
 }
 
-.contact .inner .contact_msg {
+.contact .inner .contact_right {
     margin-top: 1rem;
 }
 
-.contact .inner .contact_msg .contact_left {
+.contact .inner .contact_right .submitForm {
     display: flex;
     flex-flow: column;
     vertical-align: top;
 }
 
-.contact .inner .contact_msg .contact_left label {
-    margin-bottom: 0.6rem;
-    font-size: 1.3rem;
+.contact .inner .contact_right .submitForm .area {
+    width: 100%;
+    position: relative;
 }
 
-.contact .inner .contact_msg .contact_left textarea, button {
+.contact .inner .contact_right .submitForm label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 15px;
+    transition: top .5s ease;
+    color: #999;
+}
+
+.contact .inner .contact_right .submitForm textarea, button {
     border-radius: 6px;
 }
 
-.contact .inner .contact_msg .contact_left input[type="text"] {
-    margin-bottom: 0.5rem;
+.contact .inner .contact_right .submitForm input[type="text"] {
+    margin-bottom: 14px;
     width: 100%;
-    height: 56px;   
-    line-height: 2.3rem;
-    padding: 6px 12px;
-    font-size: 1rem;
-    background: #FFFFFF;
-    border-bottom: 1px solid #ccc;
+    height: 56px;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #ada9a9;
 }
 
-.contact .inner .contact_msg .contact_left textarea {
-    height: 10rem;
-    background: #FFFFFF;
-    border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    resize: none;
-    font-size: 1.1rem;
-    transition: 0.2s all ease;
+.contact .inner .contact_right .submitForm textarea {
+    margin-bottom: 14px;
+    width: 100%;
+    height: 56px;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #999;
 }
 
-.contact .contact_msg .contact_left .contact_btnbox {
+.contact .contact_right .submitForm .contact_btnbox {
     text-align: center;
     margin-top: 1.4rem;
     border-radius: 3px;
 }
 
-.contact .contact_msg .contact_left .contact_btnbox .contact_btn {
+.contact .contact_right .submitForm .contact_btnbox .contact_btn {
     position: relative;
     display: inline-block;
     font-size: 1.15rem;
     width: 100%;
     font-weight: 300;
     padding: 0.8rem 3.5rem;
-    border: 1px solid #20c997;
     overflow: hidden;
     vertical-align: top;
     z-index: 100;
     transition: 0.4s all linear;
 }
 
-.contact .contact_msg .contact_left .contact_btnbox .contact_btn span {
+.contact .contact_right .submitForm .contact_btnbox .contact_btn span {
     position: absolute;
     display: block;
     top: 0;
@@ -156,21 +168,25 @@
     z-index: -1;
 }
 
-.contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover {
+.contact .contact_right .submitForm .contact_btnbox .contact_btn:hover {
     transition: 0.4s all linear;
 }
 
-.contact .contact_msg .contact_left .contact_btnbox .contact_btn:hover span {
+.contact .contact_right .submitForm .contact_btnbox .contact_btn:hover span {
     transform: translateX(0);
     transition: 0.4s all linear;
 }
 
-.contact .inner .contact_msg .contact_left input[type="text"]:focus {
+.contact .inner .contact_right .submitForm input[type="text"]:focus,
+.contact .inner .contact_right .submitForm textarea:focus {
     border-bottom: 2px solid #08f;
 }
 
-.contact .inner .contact_msg .contact_left textarea:focus {
-    border: 2px solid #08f;
+.contact .inner .contact_right .submitForm input[type="text"]:focus+label,
+.contact .inner .contact_right .submitForm textarea:focus+label {
+    top: 0;
+    font-size: 13px;
+    color: #166cea;
 }
 
 textarea, input {
@@ -178,44 +194,36 @@ textarea, input {
 }
 
 @media screen and (max-width: 768px) {
-    .contact .inner {
-        flex-flow: column;
+    .contact {
+        padding: 30px 12px;
     }
 
-    .inner .contact_img {
-        height: 45vh;
+    .contact .inner {
+        flex-flow: column;
     }
 
     .inner .contact_img img {
         object-fit: cover;
     }
 
-    .contact .inner .contact_msg .contact_left {
-        padding-left: 1rem;
+    .contact .inner .contact_right .submitForm {}
+
+    .contact .inner .contact_right .submitForm label {
+        font-size: 14px;
     }
 
-    .contact .inner .contact_msg .contact_left label {
-        font-size: 1.1rem;
+    .contact .inner .contact_right .submitForm input[type="text"] {
+        margin-bottom: 8px;
+        height: 52px;
     }
 
-    .contact .inner .contact_msg .contact_left input[type="text"] {
-        height: 2.5rem;
-        line-height: 2.3rem;
-        font-size: 0.9rem;
+    .contact .inner .contact_right .submitForm textarea {
+        font-size: 16px;
+        height: 76px;
     }
 
-    .contact .inner .contact_msg .contact_left textarea {
-        font-size: 0.9rem;
-        height: 8rem;
-    }
-
-    .contact .contact_msg .contact_left .contact_btnbox .contact_btn {
-        font-size: 1rem;
-    }
-
-    .inner .contact_img, .inner .contact_text {
-        padding-left: 0;
-        margin-left: 0;
+    .contact .contact_right .submitForm .contact_btnbox .contact_btn {
+        font-size: 15px;
     }
 
     .inner .contact_img,
@@ -229,35 +237,17 @@ textarea, input {
         padding-left: 0.5rem;
     }
 
-    .inner .contact_text .contact_list {
-        padding: 1.3rem 1rem 0 1rem;
-    }
-
     .inner .contact_text .contact_list .items li {
-        gap: 0.3rem;
-        margin-bottom: 1rem;
+        gap: 4px;
+        margin-bottom: 12px;
     }
-
 
     .inner .contact_text .contact_list .items li span {
-        font-size: 1.1rem;
+        font-size: 15px;
     }
 
+    .inner .contact_text .contact_list .items li span:nth-child(2),
     .inner .contact_text .contact_list .items li a {
-        font-size: 1rem;
-        width: max-content;
-        color: #121111;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 0.2rem;
-    }
-}
-
-@media screen and (max-width: 564px) {
-    .inner .contact_text .contact_title {
-        font-size: ;
-    }
-    
-    .inner .contact_text .contact_list .items li span:nth-child(2) {
-        font-size: 1rem;
+        font-size: 15px;
     }
 }
