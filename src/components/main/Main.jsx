@@ -8,14 +8,13 @@ import './Main.css';
 
 export const Main = () => {
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#161616' : '#FFFFFF';
+  const bgColor = darkMode ? '#36548F' : "#FEFEFE";
   const textColor = darkMode ? '#FFFFFF' : '#000';
   const btnBg = darkMode ? '#ffffff' : '#0f0f0f';
-  const logoStyle = darkMode ? '#FFFFFF' : '#0f0f0f';
 
   return (
     <>
-      <div className="main_container">
+      <div className={darkMode ? "main_container dark" : "main_container"}>
         <div
           className="main_content"
           style={{ background: bgColor, color: textColor }}
@@ -51,7 +50,7 @@ export const Main = () => {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <span>" 항상 공부하고 발전하려고 노력하는</span>
+                <span>" 오늘보다 나은 내일이 되기위해 노력하는</span>
                 <span>
                   <span className="color">신입 프론트엔드 개발자 김건호</span>
                   &nbsp;입니다."
@@ -90,8 +89,8 @@ export const Main = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <span style={{ color: logoStyle }}>Front_end</span>
-            <span style={{ color: logoStyle }}>Developer</span>
+            <span>Front_end</span>
+            <span>Developer</span>
           </div>
         </div>
       </div>

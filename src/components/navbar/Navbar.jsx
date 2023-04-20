@@ -10,16 +10,20 @@ export const Navbar = () => {
     a.addEventListener('click', () => {
       border.forEach((b) => {
         b.classList.remove('bt');
+        b.style.width = '';
       });
       a.classList.add('bt');
+      a.style.width = '40px';
     });
   });
+  
 
   const [active, setActive] = useState(false);
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#FFFFFF' : '#231f20';
-  const toggleColor = darkMode ? "rgb(5,3,6)" : "#FFFFFF";
-  const titleColor = darkMode ? "#231f20" : "#FFFFFF";
+
+  const bgColor = darkMode ? '#231f20' : "#36548F";
+  const toggleColor = darkMode ? "#F3f3f3" : "#FEFEFE";
+  const titleColor = darkMode ? "#F3f3f3" : "#FEFEFE";
 
   return (
     <>

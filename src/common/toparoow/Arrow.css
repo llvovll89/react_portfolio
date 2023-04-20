@@ -5,8 +5,6 @@
     padding: 6px 12px;
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     z-index: 600;
     border-radius: 20% 12% 20% 12%;

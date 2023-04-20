@@ -7,6 +7,8 @@ import './ReactProject.css';
 export const ReactCard = ({
   text = '',
   title = '',
+  subtitle = '',
+  skill = '',
   desc = '',
   imgUrl = '',
   link = '',
@@ -22,15 +24,29 @@ export const ReactCard = ({
 
   return (
     <SplideSlide className="slide">
-      <div className="react_content">
+      <div className="react_content" style={{background: darkMode ? "#262626" : "#FEFEFE"}}>
         <div
           className="react_left"
           data-aos="flip-left"
           data-aos-duration="1000"
         >
           <span className="react_number">{text}</span>
+          <div className="title">
           <h2 className="react_title">{title}</h2>
+          <span className='react_subtitle'>{subtitle}</span>
+          </div>
+          <div className="react_skills">
+          <p className='content_title'>{'<사용기술 & 언어>'}</p>
+          <div className="skill_arr">
+          {Array.isArray(skill) ? (
+            skill.map((item, index) => (
+              <span key={index} className='skill'>{item}</span>
+            ))
+          ) : null}
+          </div>
+          </div>
           <div className="desc_contents">
+            <p className='content_title'>{"<개발내용>"}</p>
             {Array.isArray(desc) ? (
               desc.map((item, index) => (
                 <p key={index} className="arr_desc">

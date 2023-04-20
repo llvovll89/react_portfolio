@@ -6,7 +6,6 @@ export const DarkContextProvider = ({children}) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modal, setModal] = useState(false);
 
-  // Project modal
   const modalOn = () => {
     setModal(!modal);
   }

@@ -12,7 +12,7 @@ export const Footer = () => {
         <div
           className="footer_content"
           style={{
-            background: darkMode ? '#1A1819' : '#2A2B32',
+            background: darkMode ? '#231f20' : "#36548F",
             color: '#FFFFFF',
           }}
         >

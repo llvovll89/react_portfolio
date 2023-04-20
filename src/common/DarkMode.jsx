@@ -14,7 +14,7 @@ export const DarkMode = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '4px', 
+    gap: '2.5px', 
     boxShadow: '0px 1px 2px rgba(0,0,0,0.16)',
   };
 

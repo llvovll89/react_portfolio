@@ -200,7 +200,7 @@ img {
   height: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .section {
     padding: 0 18px;
   }

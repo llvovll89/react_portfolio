@@ -4,30 +4,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
     padding: 20px;
-    background: "#fff";
-    color: #272626;
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
     transition: background color 0.25s linear;
 }
 
-.project_container.dark .react_content {
+.project_container.dark .splide__pagination__page{
+    background: #Fefefe;
+}
+
+/* 페이지네이션 */
+.splide__pagination {
+    bottom: -2.5em;
+}
+.splide__pagination__page {
+    opacity: 0.8;
+    width: 10px;
+    height: 10px;
     background: #1E1F21;
 }
 
+.splide__pagination__page.is-active {
+    background: rgba(0, 0, 0, 0.33);
+}
+
 .project_container .project_wrap {
-    max-width: 1240px;
     width: 100%;
+    height: 100%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .react_content {
     position: relative;
-    max-width: 1024px;
+    width: 100%;
+    height: auto;
     margin: auto;
     padding: 36px 18px;
     display: flex;
@@ -41,26 +53,53 @@
 .react_content .react_left {
     position: relative;
     width: 100%;
-    flex: 1 1 45%;
     padding-left: 12px; 
     gap: 6px;
+    font-family: var(--korFont);
+}
 
+.react_content .content_title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 3px;
 }
 
 .react_content .react_left .react_number {
-    font-size: 30px;
+    font-size: 26px;
     display: block;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
+}
+
+.react_content .title {
+    padding-bottom: 6px;
+}
+
+.react_content .title .react_subtitle {
+    font-size: 20px;
 }
 
 .react_content .react_left .react_title {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 600;
-    font-family: var(--mainFont);
-    border-bottom: 1px solid #ccc;  
-    letter-spacing: 0.015rem;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
+    letter-spacing: 0.16rem;
     width: max-content;
+}
+
+.react_content .react_left .react_skills {
+    padding: 12px 0;
+}
+
+.react_content .react_left .react_skills .skill_arr {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 3px;
+    padding-top: 3px;
+}
+
+.react_content .react_left .react_skills .skill_arr .skill{
+    font-size: 20px;
 }
 
 .react_content .react_left .desc_contents {
@@ -73,18 +112,8 @@
 .react_content .react_left .arr_desc {
     font-weight: 500;
     letter-spacing: 0.015rem;
-    line-height: 1.5;
-    font-family: var(--korFont);
-}
-
-.react_content .react_left .react_desc {
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: block;
-    word-break: break-word;
-    margin-bottom: 2rem;
-    font-family: var(--korFont);
-    line-height: 1.5;
+    line-height: 1.35;
+    font-size: 18px;
 }
 
 .react_content .react_left .link_btn {
@@ -100,111 +129,160 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 46px;
+    height: 56px;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 6px;
-    transition: 0.3s all linear;
+}
+
+.react_content .react_left .link_btn a:hover,
+.react_content .react_left .link_btn a:focus,
+.react_content .react_left .link_btn a:active {
+    background: #08f;
 }
 
 .react_content .react_right {
     position: relative;
     width: 100%;
-    flex: 1 1 55%;
     overflow: hidden;
+    border-radius: 6px;   
 }
 
 .react_content .react_right img {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.react_content .react_right::after {
-    position: absolute;
-    content: "< Next />";
-    width: max-content;
-    height: max-content;
-    font-size: 13.5px;
-    letter-spacing: 0.015rem;
-    font-weight: 600;
-    top: -8%;
-    font-family: var(--korFont);
-    right: 0;
-    animation: leftright 1s infinite alternate;
-    border-radius: 12px;
+@media screen and (max-width: 1024px) {
+.react_content .react_left {
+    padding-left: 6px; 
+}
+
+.react_content .content_title {
+    font-size: 18px;
+}
+
+.react_content .title .react_subtitle {
+    font-size: 18px;
+}
+
+.react_content .react_left .react_title {
+    font-size: 32px;
+}
+
+.react_content .react_left .react_skills {
+    padding: 10px 0;
+}
+
+.react_content .react_left .react_skills .skill_arr .skill{
+    font-size: 18px;
+}
+
+.react_content .react_left .arr_desc {
+    font-size: 16px;
+}
+
+.react_content .react_left .link_btn a {
+    height: 53px;
+}
+
+.react_content .react_left .link_btn a:hover,
+.react_content .react_left .link_btn a:focus,
+.react_content .react_left .link_btn a:active {
+    background: #08f;
+}
 }
 
 @media screen and (max-width: 768px) {
     .react_content {
-        flex-flow: column-reverse;
-        padding: 16px 6px;
+        flex-direction: column-reverse;
+        padding: 16px 12px;
     }
-
-    .react_content .react_left {
-        padding: 6px;
+    
+    .react_content .content_title {
+        font-size: 16px;
+        font-weight: 600;
     }
-
+    
     .react_content .react_left .react_number {
-        font-size: 20px;
-        padding-bottom: 6px;
+        font-size: 24px;
+        padding-bottom: 9px;
     }
-
+    
+    .react_content .title .react_subtitle {
+        font-size: 16px;
+    }
+    
     .react_content .react_left .react_title {
-        font-size: 22px;
-        margin-bottom: 6px;
+        font-size: 30px;
     }
-
-    .react_content .react_left .react_desc {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+    
+    .react_content .react_left .react_skills {
+        padding: 9px 0;
     }
-
-    .react_content .react_left .link_btn {
-        padding: 16px 6px 0px 6px;
+    
+    .react_content .react_left .react_skills .skill_arr .skill{
+        font-size: 16px;
     }
-
-    .react_content .react_left_right {
-        font-size: 0.9rem;
+    
+    .react_content .react_left .desc_contents {
+        padding: 10px 0;
+    }
+    
+    .react_content .react_left .arr_desc {
+        font-size: 16px;
+    }
+    
+    .react_content .react_left .link_btn a {
+        height: 50px;
     }
 }
 
 @media screen and (max-width: 564px) {
     .react_content {
-        padding: 16px;
-        gap: 12px;
-        /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+        padding: 16px 10px;
     }
-
-    .react_content .react_left {
-        padding: 12px;
+    
+    .react_content .content_title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .react_content .react_left .react_number {
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+    
+    .react_content .title .react_subtitle {
+        font-size: 15px;
+    }
+    
+    .react_content .react_left .react_title {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .react_content .react_left .react_skills {
+        padding: 8px 0;
+    }
+    
+    .react_content .react_left .react_skills .skill_arr .skill{
+        font-size: 15px;
+    }
+    
+    .react_content .react_left .desc_contents {
+        padding: 9px 0;
     }
     
     .react_content .react_left .arr_desc {
-        font-size: 14px;
-        font-family: var(--appleFont);
+        font-size: 15px;
     }
-
+    
     .react_content .react_left .link_btn a {
-        font-size: 14px;
-        font-family: var(--appleFont);
-        height: 40px;
-    }
-    .react_content .react_left .link_btn {
-        padding: 17px 10px 0px 10px;
-    }
-}
-
-@keyframes leftright {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    100% {
-        opacity: 0.76;
-        transform: translateX(-9%);
+        height: 48px;
     }
 }
 

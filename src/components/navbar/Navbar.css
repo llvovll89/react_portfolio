@@ -138,11 +138,10 @@
     height: 60px;
     z-index: 1;
     text-align: center;
-    border-bottom: 1px solid var(--orangeColor);
+    border-bottom: 1px solid #9B9EA3;
 }
 .aside .aside-nav .border.bt {
     border-bottom: 2px solid #08f;
-    width: 40px;
 }
 
 .aside .aside-nav .border a {
@@ -252,7 +251,7 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
     .aside {
         transition: 0.5s all ease;
         left: -300px;
