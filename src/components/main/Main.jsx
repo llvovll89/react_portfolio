@@ -1,99 +1,78 @@
 import React, { useContext } from 'react';
-import { mainHomeData } from '../../assets/db/data';
-import { MdTouchApp } from 'react-icons/md';
 import { DarkContext } from '../../context/darkContext';
 import Typewriter from 'typewriter-effect';
-import mainhomeIMG from '../../assets/images/hojjang.png';
 import './Main.css';
 
 export const Main = () => {
   const { darkMode } = useContext(DarkContext);
-  const bgColor = darkMode ? '#36548F' : "#FEFEFE";
-  const textColor = darkMode ? '#FFFFFF' : '#000';
-  const btnBg = darkMode ? '#ffffff' : '#0f0f0f';
 
   return (
     <>
-      <div className={darkMode ? "main_container dark" : "main_container"}>
-        <div
-          className="main_content"
-          style={{ background: bgColor, color: textColor }}
-        >
-          <div className="main_left flex_item">
-            <div className="left_content">
-              <p
-                className="left_text"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-              >
-                WELCOME TO MY PORTFOLIO
-              </p>
-              <h2
-                className="left_big"
-                data-aos="zoom-out"
-                data-aos-duration="1000"
-              >
-                {mainHomeData.map((item) => (
-                  <Typewriter
-                    className="ani-title"
-                    key={item.id}
-                    options={{
-                      strings: [`${item.name}`, `${item.post}`],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                ))}
-              </h2>
-              <p
-                className="left_nomal"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <span>" 오늘보다 나은 내일이 되기위해 노력하는</span>
-                <span>
-                  <span className="color">신입 프론트엔드 개발자 김건호</span>
-                  &nbsp;입니다."
-                </span>
-              </p>
-              <a
-                href="#about"
-                className="main_btn"
-                data-aos="flip-left"
-                data-aos-duration="1000"
-                style={{
-                  background: btnBg,
-                  color: darkMode ? '#000' : '#ffffff',
-                }}
-              >
-                More Me
-                <MdTouchApp />
-              </a>
-            </div>
+      <main className={darkMode ? 'main dark' : 'main'}>
+        <section className="main_container">
+          <div
+            className="main_item"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <h1 className="text">Hi, my name is</h1>
+          </div>
+          <div className="main_item">
+            <h2 className="big_text text">Gunho Kim</h2>
           </div>
           <div
-            className="right_content flex_item"
+            className="main_item"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
           >
-            <div className="main_img">
-              <img
-                src={mainhomeIMG}
-                alt="main_img"
-                data-aos="zoom-out-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-              />
-            </div>
+            <Typewriter
+              className="text"
+              options={{
+                strings: [
+                  `제 포트폴리오에 방문해 주셔서 감사합니다.`,
+                  `
+                    Thanks for Visiting My Portfolio.`,
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </div>
+          <div
+            className="main_item"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <p>
+              저는 커뮤니케이션을 잘하고 밝은 에너지를 가진
+              <span className="salmon"> 프론트엔드 개발자 </span>
+              입니다. 보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고 마음에 드시면 <span className='salmon'>Contact</span> 해주세요.
+            </p>
+          </div>
+          <div
+            className="main_item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <a href="#about" className="btn">
+              More View
+            </a>
+          </div>
+
           <div
             className="logo_title"
             data-aos="zoom-in"
             data-aos-duration="1000"
+            style={{
+              color: darkMode ? '#FFFFFF' : undefined,
+              borderTop: darkMode ? '1px solid  #FFFFFF' : undefined,
+            }}
           >
             <span>Front_end</span>
             <span>Developer</span>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 };

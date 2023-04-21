@@ -68,7 +68,7 @@ img {
 
 
 /* section in */
-.main-content {
+.wrap {
   padding-left: 240px;
   min-height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
 
@@ -205,7 +205,7 @@ img {
     padding: 0 18px;
   }
 
-  .main-content {
+  .wrap {
     padding-left: 0;
   }
 

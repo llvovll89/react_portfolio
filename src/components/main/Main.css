@@ -1,13 +1,98 @@
-.main_container {
+.main {
     width: 100%;
+    height: 100vh;
     min-height: 100vh;
     position: relative;
+    margin: 0 auto;
 }
 
-.main_content {
+.main::before {
+    position: absolute;
+    content: '';
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    background-image: url('../../../public/images/bg-cloud.png');
+    background-position: center;
+    background-size: cover;
+    animation: movebg 40s linear infinite;
+    transition: transform 0.2s linear 0.4s;
+    z-index: -1;
+}
+
+.main_container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
     display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.main_item h1 {
+    margin: 0px 0px 30px 4px;
+    font-size: 4vw;
+    line-height: 1.1;
+    color: #576daf;
+}
+
+.main_item .big_text {
+    font-size: clamp(22px, 7vw, 46px);
+    color: #7085c5;
+}
+
+.main_item .Typewriter {
+    line-height: 0.9;
+    margin: 5px 0;
+    color: rgb(53, 99, 117);
+    font-family: var(--korFont);
+    font-size: 26px;
+}
+
+.kor {
+    font-family: var(--korFont);
+}
+
+.eng {
+    font-family: var(--appleFont);
+}
+
+.main_item p {
+    margin: 20px 0px 0px;
+    font-size: 20px;
+    line-height: 1.25;
+    max-width: 540px;
+    font-family: var(--korFont);
+}
+
+.main_item p>span {
+    padding-bottom: 2px;
+    color: rgb(231, 137, 126);
+    border-bottom: 1px solid rgba(231, 137, 126);
+}
+
+.main_item .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    background-color: #8897c2;
+    /* border: 1px solid #7085c5; */
+    border-radius: 4px;
+    width: 200px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 1;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: 50px;
+    cursor: pointer;
+
 }
 
 .logo_title {
@@ -19,8 +104,8 @@
     right: 2%;
     width: max-content;
     padding: 8px 4px 4px 4px;
-    color: #FEFEFE;
-    border-top: 1px solid #FEFEFE;
+    color: #36548F;
+    border-top: 1px solid #36548F;
     font-family: var(--korFont);
 }
 
@@ -28,281 +113,27 @@
     letter-spacing: 1px;
 }
 
-.main_content .main_left {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    transform-origin: left bottom;
-    transition: 0.4s all linear;
-}
-
-.main_content .main_left::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: url('../../../public/images/bg-cloud.png');
-    background-position: center;
-    background-size: cover;
-    animation: movebg 40s linear infinite;
-    transition: transform 0.2s linear 0.4s;
-}
-
-.main_content .main_left .left_content {
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    padding: 0 12px;
-}
-
-.main_content .main_left .left_content .left_text {
-    font-size: 30px;
-    width: max-content;
-    letter-spacing: 0.08rem;
-    padding-bottom: 9px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid rgb(183, 203, 221);
-    font-weight: 600;
-}
-
-.main_content .main_left .left_content .left_big {
-    position: relative;
-    font-family: var(--korFont);
-    font-size: 24px;
-    padding: 12px 0;
-    letter-spacing: -0.03rem;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-left: -0.5rem;
-}
-
-.main_content .main_left .left_content .left_nomal {
-    font-family: var(--korFont);
-    line-height: 1.5;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    font-size: 26px;
-    padding: 12px;
-}
-
-.color {
-    color: #e49a5d;
-    display: inline-block;
-}
-
-.main_content .main_left .left_content .main_btn {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 200px;
-    height: 46px;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 6px;
-    transition: 0.2s all linear;
-}
-
-.main_content .main_left .left_content .main_btn:hover {
-    transform: rotateZ(1.5deg);
-}
-
-.main_content .right_content {
-    position: relative;
-    width: 100%;
-    padding: 0 60px;
-    transform-origin: right center;
-    transition: transform 0.1s linear 0s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main_content .main_img {
-    width: 100%;
-    height: 450px;
-    text-align: center;
-}
-
-.main_content .right_content .main_img img {
-    width: 80%;
-    height: 100%;
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.1%);
-    animation: homeImage 10s ease-in-out infinite 1s;
-}
-
-@media screen and (max-width: 1024px) {
-    .main_content .main_left .left_content {
-        gap: 6px;
-    }
-    
-    .main_content .main_left .left_content .left_text {
-        font-size: 26px;
-        letter-spacing: 0.065rem;
-        padding-bottom: 7px;
-        margin-bottom: 12px;
-    }
-    
-    .main_content .main_left .left_content .left_big {
-        font-size: 22px;
-        padding: 10px 0;
-    }
-    
-    .main_content .main_left .left_content .left_nomal {
-        line-height: 1.5;
-        font-size: 22px;
-        padding: 10px;
-    }
-    
-    .main_content .main_left .left_content .main_btn {
-        height: 46px;
-        font-size: 16px;
-        transition: 0.2s all linear;
-    }
-
-    .main_content .right_content {
-        padding: 0;
-    }
-    
-    .main_content .main_img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .logo_title {
-        padding: 6px 3px 3px 3px;
+    .main_container {
+        padding: 0 36x;
     }
-    
-    .logo_title span {
-        letter-spacing: 0.035rem;
+
+    .main_item h1 {
+        margin: 0px 0px 12px 4px;
+        font-size: 3.5vw;
     }
-    
-    .main_content .main_left .left_content {
-        gap: 4.5px;
-        padding: 0 9px;
-    }
-    
-    .main_content .main_left .left_content .left_text {
-        font-size: 22px;
-        letter-spacing: 0.05rem;
-        padding-bottom: 5px;
-        margin-bottom: 12px;
-    }
-    
-    .main_content .main_left .left_content .left_big {
+
+    .main_item .Typewriter {
         font-size: 20px;
-        padding: 8px 0;
+        margin: 6px 0px 0px 0px;
     }
-    
-    .main_content .main_left .left_content .left_nomal {
-        line-height: 1.4;
-        font-size: 20px;
-        padding: 9px;
-    }
-    
-    .main_content .main_left .left_content .main_btn {
-        height: 46px;
+
+    .main_item p {
+        margin: 12px 0px 0px 0px;
         font-size: 16px;
-        transition: 0.2s all linear;
     }
 
-    .main_content .right_content {
-        position: relative;
-        width: 100%;
-        transform-origin: right center;
-        transition: transform 0.1s linear 0s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .main_item .btn {
+        width: 170px;
     }
-    
-    .main_content .main_img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 564px) {
-    .main_content .main_left::before {
-        display: none;
-    }
-
-    .main_content {
-        position: relative;
-        flex-direction: column-reverse;
-        justify-content: center;
-        z-index: 100;
-        gap: 36px;
-    }
-
-    .main_content::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-image: url('../../../public/images/bg-cloud.png');
-        background-position: center;
-        background-size: cover;
-        animation: movebg 40s linear infinite;
-        transition: transform 0.2s linear 0.4s;
-        z-index: -1;
-    }
-
-    .main_content .main_left .left_content {
-        gap: 4px;
-        padding: 0 8px;
-    }
-    
-    .main_content .main_left .left_content .left_text {
-        font-size: 18px;
-        letter-spacing: 0.04rem;
-        padding-bottom: 4px;
-        margin-bottom: 9px;
-    }
-    
-    .main_content .main_left .left_content .left_big {
-        font-size: 16px;
-        padding: 7px 0;
-        font-weight: 500;
-    }
-    
-    .main_content .main_left .left_content .left_nomal {
-        line-height: 1.4;
-        font-size: 18px;
-        padding: 12px 9px;
-    }
-    
-    .main_content .main_left .left_content .main_btn {
-        margin-top: 8px;
-        height: 46px;
-        font-size: 16px;
-        transition: 0.2s all linear;
-        max-width: 180px;
-    }
-
-    .main_content .right_content {
-        padding: 0 60px;
-    }
-
-    .main_content .main_img {
-        height: 300px;
-    }   
 }

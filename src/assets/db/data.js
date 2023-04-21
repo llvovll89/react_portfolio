@@ -48,14 +48,6 @@ export const navItem = [
   },
 ];
 
-export const mainHomeData = [
-  {
-    id: 1,
-    name: '저의 포트폴리오를 방문해 주셔서',
-    post: '진심으로 감사드립니다.',
-  },
-];
-
 export const social = [
   {
     id: 1,
@@ -74,16 +66,6 @@ export const social = [
     icon: <SiBloglovin />,
     text: '벨로그',
     url: 'https://velog.io/@llvovll89',
-  },
-];
-
-export const about = [
-  {
-    id: 1,
-    text: '저는 프론트엔드 개발자 입니다.',
-    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi error enim dolor. 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi error enim dolor. Incidunt, beatae est! Cumque veritatis rem ad officiis voluptas magni quasi soluta ea, eos similique nulla iste.
-      Incidunt, beatae est! Cumque veritatis rem ad officiis voluptas magni quasi soluta ea, eos similique nulla iste..`,
   },
 ];
 

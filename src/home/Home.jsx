@@ -1,11 +1,11 @@
 import React from 'react';
+import ProgressBar from '../common/Progressbar';
 import { Main } from '../components/main/Main';
 import { About } from '../pages/about/About';
-import { ReactProject } from '../pages/project/react/ReactProject';
 import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../components/footer/Footer';
 import { Arrow } from '../common/toparoow/Arrow';
-import ProgressBar from '../common/Progressbar';
+import { Project } from '../pages/project/Project';
 
 export const Home = () => {
   return (
@@ -13,7 +13,7 @@ export const Home = () => {
       <ProgressBar />
       <Main />
       <About />
-      <ReactProject />
+      <Project />
       <Contact />
       <Arrow />
       <Footer />
