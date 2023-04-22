@@ -9,6 +9,7 @@
     top: 0;
     left: 0;    
     z-index: 1200;
+    transition: all 0.15s linear;
 }
 
 .aside a {

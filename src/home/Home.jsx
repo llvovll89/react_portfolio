@@ -6,13 +6,15 @@ import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../components/footer/Footer';
 import { Arrow } from '../common/toparoow/Arrow';
 import { Project } from '../pages/project/Project';
+import AboutSection from '../components/aboutsection/AboutSection';
 
+// <About />
 export const Home = () => {
   return (
     <>
       <ProgressBar />
       <Main />
-      <About />
+      <AboutSection />
       <Project />
       <Contact />
       <Arrow />
