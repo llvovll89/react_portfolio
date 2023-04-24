@@ -10,6 +10,8 @@ import { Home } from './home/Home';
 import { Project } from './pages/project/Project';
 import { Contact } from './pages/contact/Contact';
 import AboutSection from './components/aboutsection/AboutSection';
+import Projects from './components/projects/Projects';
+// <Route path="project" element={<Project />} />
 
 function App() {
   useEffect(() => {
@@ -25,9 +27,9 @@ function App() {
             <DarkMode />
             <Routes>
               <Route path="/">
-                <Route index exact element={<Home />} />
-                <Route path="about" element={<AboutSection />} />
-                <Route path="project" element={<Project />} />
+              <Route index exact element={<Home />} />
+              <Route path="about" element={<AboutSection />} />
+              <Route path="project" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>

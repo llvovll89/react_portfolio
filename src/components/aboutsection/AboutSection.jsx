@@ -10,7 +10,7 @@ const AboutSection = () => {
     <section className="about">
       <div className="abouts_container">
         <h2 className="about_title">
-          <span>02.</span> About Me
+          <span>01.</span> About Me
         </h2>
         <div className="about_content">
           <div className="left">

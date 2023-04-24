@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { reactDB } from '../../assets/db/reactData';
+import { projectDB } from '../../assets/db/project';
 import { Card } from './Card';
 import './Project.css';
 import { DarkContext } from '../../context/darkContext';
@@ -27,7 +27,7 @@ export const Project = () => {
     <div className={darkMode ? "project_container dark" : "project_container"} style={containerStyle}>
       <div className="project_wrap">
         <Splide options={splideOption}>
-          {reactDB.map((project) => (
+          {projectDB.map((project) => (
             <Card key={project.id} {...project} />
           ))}
         </Splide>
