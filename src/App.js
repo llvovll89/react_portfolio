@@ -6,12 +6,9 @@ import { DarkContextProvider } from './context/darkContext';
 import { DarkMode } from './common/DarkMode';
 import { Navbar } from './components/navbar/Navbar';
 import { Home } from './home/Home';
-// import { About } from './pages/about/About';
-import { Project } from './pages/project/Project';
 import { Contact } from './pages/contact/Contact';
 import AboutSection from './components/aboutsection/AboutSection';
 import Projects from './components/projects/Projects';
-// <Route path="project" element={<Project />} />
 
 function App() {
   useEffect(() => {
@@ -30,7 +27,7 @@ function App() {
               <Route index exact element={<Home />} />
               <Route path="about" element={<AboutSection />} />
               <Route path="project" element={<Projects />} />
-                <Route path="contact" element={<Contact />} />
+              <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
           </div>

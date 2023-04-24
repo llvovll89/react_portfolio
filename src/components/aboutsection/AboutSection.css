@@ -52,13 +52,14 @@
     margin: 0px 0px 15px;
     line-height: 1.4;
     color: #45464b;
-    font-size: clamp(18px, 3vw, 14px);
+    font-size: clamp(17.5px, 3vw, 14px);
     font-family: var(--korFont);
 }
 
 .skill_title {
     position: relative;
     display: flex;
+    color: #3772F0;
     align-items: center;
 }
 
@@ -86,6 +87,7 @@
     margin-bottom: 10px;
     padding-left: 20px;
     letter-spacing: 0.015rem;
+    font-family: var(--mainFont);
 }
 
 .skills li::before {
@@ -152,6 +154,10 @@
         width: 120px;
         height: 1px;
         background-color: #08f;
+    }
+
+    .about_title {
+        margin: 10px 0px 25px;
     }
 
     .left {

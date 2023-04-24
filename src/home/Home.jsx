@@ -7,14 +7,12 @@ import { Arrow } from '../common/toparoow/Arrow';
 import AboutSection from '../components/aboutsection/AboutSection';
 import Projects from '../components/projects/Projects';
 
-// <About />
-// <Project />
 export const Home = () => {
   return (
     <>
-      <ProgressBar />
-      <Main />
-      <AboutSection />
+    <ProgressBar />
+    <Main />
+    <AboutSection />
       <Projects />
       <Contact />
       <Arrow />

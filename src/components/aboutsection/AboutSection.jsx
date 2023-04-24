@@ -5,6 +5,8 @@ import AboutImage from '../../assets/images/AboutImage.png';
 
 const AboutSection = () => {
   const darkMode = useContext(DarkContext);
+  const isLoaderInfo = window.innerWidth >= 768;
+
 
   return (
     <section className="about">
@@ -15,7 +17,8 @@ const AboutSection = () => {
         <div className="about_content">
           <div className="left">
             <div className="items">
-              <p className="info">
+              {isLoaderInfo ? (
+                <p className="info">
                 &nbsp;안녕하세요. 저는 항상 발전하려고 노력하는 프론트엔드 개발자입니다.
                 <br />
                 현재 사용하고 있는 기술로는 React.js 이고 프론트엔드의 기초를
@@ -27,6 +30,15 @@ const AboutSection = () => {
                 바탕으로 조금 먼 미래에는 백엔드 기술까지 겸비한 풀스택 개발자가
                 되고 싶습니다.
               </p>
+              ) : (
+                <p className="info">
+                  &nbsp;안녕하세요, 저는 오늘보단 내일이 더 나은 개발자가 되기 위해 노력하는 프론트엔드 개발자입니다.
+                  <br />
+                  현재 React.js를 이용해 프로젝트들을 만들어 보고 있고, 프론트엔드 개발의 기초를 잡기 위해 노력하고 있습니다.
+                  <br />
+                  웹개발에 필요한 CS지식, 알고리즘, 자료구조도 준비하여 좋은 개발자가 되고 싶습니다!
+                </p>
+              )}
 
               <p className="skill_title info">My Skill</p>
               <ul className="skills">
