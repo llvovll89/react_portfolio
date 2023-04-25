@@ -1,5 +1,7 @@
 .footer {
-    font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
+    font-family: var(--mainFont);
+    background: #181818;
+    color: #FFFFFF;
 }
 
 .footer .footer_content {
@@ -10,43 +12,41 @@
 
 .footer .footer_content .icons {
     margin: 0 1rem;
-    font-size: 2rem;
-    transition: 0.3s all ease;
+    font-size: clamp(20px , 3.5vw , 30px);
+    transition: 0.2s all ease;
     color: #FFF;
 }
 
 footer .footer_content .icons:hover {
-    color: rgb(111, 185, 214);
+    color: #3772F0;
 }
 
 .footer .footer_content .footer_copy {
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: clamp(16px, 3vw , 18px);
     letter-spacing: 1px;
 }
 
 .footer .footer_content .footer_subtext {
-    font-size: 0.8rem;
     display: inline-block;
-    margin-top: 0.74rem;
-    font-weight: 300;
-    color: #8c8c8c;
+    font-size: 14px;
+    color: #968f8f;
 }
 
 @media screen and (max-width: 768px) {
     .footer {
         padding: 8px auto;
     }
-    
+
     .footer .footer_content {
         padding: 1.5rem;
     }
-    
+
     .footer .footer_content .icons {
         margin: 0 0.8rem;
         font-size: 1.3rem;
     }
-    
+
     .footer .footer_content .footer_copy {
         margin-top: 0.35rem;
         font-size: 0.9rem;
@@ -58,21 +58,23 @@ footer .footer_content .icons:hover {
     .footer {
         padding: 6px auto;
     }
-    
+
     .footer .footer_content {
         padding: 1.25rem;
     }
+
     .footer .footer_content .icons {
         color: var(--whiteColor);
         margin: 0 1rem;
         font-size: 1.1rem;
     }
-    
+
     .footer .footer_content .footer_copy {
         margin-top: 0.35rem;
         font-size: 0.85rem;
         letter-spacing: 1px;
     }
+
     .footer .footer_content .footer_subtext {
         font-size: 0.7rem;
         margin-top: 0.66rem;

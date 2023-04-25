@@ -47,9 +47,7 @@
 }
 
 .inner .contact_text .contact_title {
-    font-family: 'Montserrat';
-    letter-spacing: -0.03rem;
-    font-size: 30px;
+    font-size: clamp(30px, 5vw , 40px);
     line-height: 1.5;
 }
 
@@ -68,20 +66,24 @@
     display: flex;
     gap: 0.6rem;
     flex-flow: column;
+    font-family: var(--korFont);
 }
 
 .inner .contact_text .contact_list .items li span {
     cursor: initial;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .inner .contact_text .contact_list .items li span:nth-child(2),
 .inner .contact_text .contact_list .items li a {
-    font-size: 1.15rem;
+    font-size: 17px;
     width: max-content;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
+    letter-spacing: 0.02rem;
     font-family: var(--korFont);
+    font-weight: 600;
 }
 
 .contact .inner .contact_right {
@@ -108,10 +110,6 @@
     color: #999;
 }
 
-.contact .inner .contact_right .submitForm textarea, button {
-    border-radius: 6px;
-}
-
 .contact .inner .contact_right .submitForm input[type="text"] {
     margin-bottom: 14px;
     width: 100%;
@@ -133,6 +131,7 @@
     font-size: 15px;
     font-weight: 500;
     border: none;
+    resize: none;
     border-bottom: 1px solid #999;
 }
 
@@ -145,13 +144,15 @@
 .contact .contact_right .submitForm .contact_btnbox .contact_btn {
     position: relative;
     display: inline-block;
-    font-size: 1.15rem;
+    font-size: 16px;
     width: 100%;
     font-weight: 300;
     padding: 0.8rem 3.5rem;
     overflow: hidden;
+    font-family: var(--korFont);
     vertical-align: top;
     z-index: 100;
+    border-radius: 3px;
     transition: 0.4s all linear;
 }
 
@@ -179,14 +180,14 @@
 
 .contact .inner .contact_right .submitForm input[type="text"]:focus,
 .contact .inner .contact_right .submitForm textarea:focus {
-    border-bottom: 2px solid #08f;
+    border-bottom: 2px solid #3772F0;
 }
 
 .contact .inner .contact_right .submitForm input[type="text"]:focus+label,
 .contact .inner .contact_right .submitForm textarea:focus+label {
     top: 0;
     font-size: 13px;
-    color: #166cea;
+    color: #3772F0;
 }
 
 textarea, input {
@@ -205,8 +206,6 @@ textarea, input {
     .inner .contact_img img {
         object-fit: cover;
     }
-
-    .contact .inner .contact_right .submitForm {}
 
     .contact .inner .contact_right .submitForm label {
         font-size: 14px;
@@ -234,7 +233,7 @@ textarea, input {
 
     .inner .contact_text .contact_title {
         margin-top: 0;
-        padding-left: 0.5rem;
+        position: relative;
     }
 
     .inner .contact_text .contact_list .items li {

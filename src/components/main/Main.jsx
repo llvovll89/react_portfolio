@@ -46,7 +46,12 @@ export const Main = () => {
             <p>
               저는 커뮤니케이션을 잘하고 밝은 에너지를 가진
               <span className="salmon"> 프론트엔드 개발자 </span>
-              입니다. 보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고 마음에 드시면 <span className='salmon'>Contact</span> 해주세요.
+              입니다. 보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고
+              마음에 드시면{' '}
+              <a className="salmon" href="#contact">
+                Contact
+              </a>{' '}
+              해주세요.
             </p>
           </div>
           <div
@@ -63,10 +68,6 @@ export const Main = () => {
             className="logo_title"
             data-aos="zoom-in"
             data-aos-duration="1000"
-            style={{
-              color: darkMode ? '#FFFFFF' : undefined,
-              borderTop: darkMode ? '1px solid  #FFFFFF' : undefined,
-            }}
           >
             <span>Front_end</span>
             <span>Developer</span>

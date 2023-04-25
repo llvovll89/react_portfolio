@@ -1,0 +1,38 @@
+.dark_container {
+    position: fixed;
+    bottom: 16px;
+    right: 76px;
+    padding: 6px 12px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 600;
+    border-radius: 20% 12% 20% 12%;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.dark_container:hover .dark_dark {
+    transform: scale(0.9);
+    transition: 0.3s all linear;
+}
+
+.dark_dark {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+
+.dark_dark svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .dark_container {
+        padding: 4px 10px;
+    }
+}

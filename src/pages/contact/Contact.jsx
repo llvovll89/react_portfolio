@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import contactImages from '../../assets/images/kimgeonho.jpg';
-import contactImg from '../../assets/images/ho1.jpg';
+import React, { useContext, useRef, useState } from 'react';
+import contactImages from '../../assets/images/contactImage.jpg';
 import { DarkContext } from '../../context/darkContext';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
@@ -15,9 +14,9 @@ export const Contact = () => {
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-  const bgColor = darkMode ? '#1A1A2E' : '#FFFFFF';
-  const initColor = darkMode ? '#FFFFFF' : '#050306';
-  const titleColor = darkMode ? '#1DE9B6' : '#050306';
+  const bgColor = darkMode ? '#FFFFFF' : '#231f20';
+  const initColor = darkMode ? '#050306' : '#FFFFFF';
+  const titleColor = darkMode ? '#050306' : '#3772F0';
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -40,8 +39,9 @@ export const Contact = () => {
         style={{
           background: bgColor,
           color: initColor,
-          transition: '0.25s all linear',
+          transition: '0.15s all linear',
         }}
+        id="contact"
       >
         <div className="inner">
           <div
@@ -146,8 +146,8 @@ export const Contact = () => {
                   <button
                     className="contact_btn"
                     style={{
-                      color: darkMode ? '#000' : '#Fff',
-                      background: darkMode ? '#FFF' : '#000',
+                      color: darkMode ? '#FFFFFF' : '#1A1A2E',
+                      background: darkMode ? '#213802' : '#FFFFFF',
                     }}
                   >
                     전송하기

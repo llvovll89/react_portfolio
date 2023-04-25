@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0 30px;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .project.dark {
@@ -14,6 +15,13 @@
     color: #FFFFFF;
 }
 
+.project.dark .title {
+    color: #FFFFFF;
+}
+
+.project.dark .title::after {
+    background: #FFFFFF;
+}
 
 .project_wrap {
     max-width: 1280px;
@@ -48,7 +56,7 @@
     width: 200px;
     margin-left: 12px;
     height: 1px;
-    background-color: #3772F0;
+    background: #3772F0;
 }
 
 .title span {
@@ -210,7 +218,7 @@
     height: 100%;
     inset: 0px;
     z-index: 3;
-    background-color: #272524;
+    background-color: #201f1f;
     mix-blend-mode: screen;
     transition: background-color 0.15s linear;
 }

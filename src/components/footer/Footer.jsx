@@ -1,20 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { social } from '../../assets/db/data';
-import { DarkContext } from '../../context/darkContext';
 import './Footer.css';
 
 export const Footer = () => {
-  const { darkMode } = useContext(DarkContext);
 
   return (
     <>
       <footer className="footer">
         <div
           className="footer_content"
-          style={{
-            background: darkMode ? '#231f20' : "#36548F",
-            color: '#FFFFFF',
-          }}
         >
           {social.map((item) => (
             <a

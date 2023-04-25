@@ -11,7 +11,7 @@ export const Arrow = () => {
   };
 
   const containerStyles = {
-    background: darkMode ? '#FFF' : '#000',
+    background: darkMode ? '#231f20' : '#FFFFFF',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -20,11 +20,11 @@ export const Arrow = () => {
   };
 
   const iconStyles = {
-    color: darkMode ? '#121111' : '#FFF',
+    color: darkMode ? '#FFFFFF' : '#231f20',
   };
 
   const textStyles = {
-    color: darkMode ? '#121111' : '#FFF',
+    color: darkMode ? '#FFFFFF' : '#231f20',
     fontWeight: 'bold',
   };
 

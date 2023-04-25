@@ -16,20 +16,25 @@ export const Navbar = () => {
       a.style.width = '40px';
     });
   });
-  
 
   const [active, setActive] = useState(false);
   const { darkMode } = useContext(DarkContext);
 
-  const bgColor = darkMode ? '#231f20' : "#36548F";
-  const toggleColor = darkMode ? "#F3f3f3" : "#FEFEFE";
-  const titleColor = darkMode ? "#F3f3f3" : "#FEFEFE";
+  const bgColor = darkMode ? '#3772F0' : '#231f20';
+  const toggleStyle = {
+    background: darkMode ? '#231f20' : '#3772F0',
+    color: darkMode ? '#F3F3F3' : '#FEFEFE',
+  };
+  const titleColor = darkMode ? '#F3f3f3' : '#FEFEFE';
 
   return (
     <>
-    <div className={`aside ${active ? 'show' : ''}${darkMode ? ' dark' : ''}`} style={{ background : bgColor }}>
+      <div
+        className={`aside ${active ? 'show' : ''}${darkMode ? ' dark' : ''}`}
+        style={{ background: bgColor }}
+      >
         <div className="aside-logo">
-          <Link to="/" title="Home 으로.." style={{color: titleColor}}>
+          <Link to="/" title="Home 으로.." style={{ color: titleColor }}>
             <span>FRONT_END</span>
             <br />
             <span data-aos="fade-left" duration="1000">
@@ -40,13 +45,11 @@ export const Navbar = () => {
         <div
           className={active ? 'aside-toggle active' : 'aside-toggle'}
           onClick={() => setActive(!active)}
-          style={{
-            background: bgColor,
-          }}
+          style={toggleStyle}
         >
-          <span style={{ background : toggleColor }}></span>
-          <span style={{ background : toggleColor }}></span>
-          <span style={{ background : toggleColor }}></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <ul
           className="aside-nav"
@@ -62,8 +65,18 @@ export const Navbar = () => {
                 duration="1000"
                 onClick={() => setActive(!active)}
               >
-                <span className="link-icons" style={{color: toggleColor}}>{link.navicon}</span>
-                <span className="link-items" style={{color: toggleColor}}> {link.navtext}</span>
+                <span
+                  className="link-icons"
+                  style={{ color: toggleStyle.color }}
+                >
+                  {link.navicon}
+                </span>
+                <span
+                  className="link-items"
+                  style={{ color: toggleStyle.color }}
+                >
+                  {link.navtext}
+                </span>
               </Link>
             </li>
           ))}

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { DarkContext } from '../../context/darkContext';
 import { projectDB } from '../../assets/db/project';
 import { FiGithub } from 'react-icons/fi';
@@ -7,27 +7,32 @@ import './Projects.css';
 
 const Projects = () => {
   const darkMode = useContext(DarkContext);
-  const aColor = darkMode.darkMode ? "#3772F0" : "#231f20"
-
+  const aColor = darkMode.darkMode ? '#3772F0' : '#FFFFFF';
 
   return (
-    <section className={darkMode.darkMode ? "project dark" : "project"}>
+    <section className={`project ${!darkMode.darkMode && 'dark'}`}>
       <div className="project_wrap">
         <h2 className="title">
           <span>02.</span> Projects
         </h2>
         <ul className="project_content">
+          s
           {projectDB &&
             projectDB.map((project) => (
-              <li className="project_items" key={project.id}>
+              <li
+                className="project_items"
+                key={project.id}
+                data-aos={project.aosAnimation}
+                data-aos-duration="1000"
+              >
                 <div className="project_contents">
                   <div>
-                    <p className="project_over">project 0{project.id}</p>
+                    <p className="project_over">{`project 0${project.id}`}</p>
                     <h3 className="project_title">
                       <a
                         href={project.link}
                         target="_blank"
-                        style={{color: aColor}}
+                        style={{ color: aColor }}
                         rel="noopener noreferrer"
                       >
                         {project.title}
@@ -39,10 +44,9 @@ const Projects = () => {
                     </div>
 
                     <ul className="project_skills">
-                      {Array.isArray(project.skill) &&
-                        project.skill.map((item, index) => (
-                          <li key={index}>{item}</li>
-                        ))}
+                      {project.skill.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                     <div className="project_links">
                       <a
@@ -56,8 +60,8 @@ const Projects = () => {
                       <a
                         href={project.link}
                         target="_blank"
-                        style={{ color: aColor}}
                         rel="noopener noreferrer"
+                        style={{ color: aColor }}
                       >
                         <AiOutlineSelect />
                       </a>
@@ -71,7 +75,11 @@ const Projects = () => {
                     rel="noopener noreferrer"
                   >
                     <div className="img_wrapper img">
-                      <img src={project.imgUrl} alt="" loading="lazy" />
+                      <img
+                        src={project.imgUrl}
+                        alt={`Screenshot of ${project.title}`}
+                        loading="lazy"
+                      />
                     </div>
                   </a>
                 </div>

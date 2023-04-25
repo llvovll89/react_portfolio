@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { CiDark, CiLight } from 'react-icons/ci';
-import { DarkContext } from '../context/darkContext';
+import { DarkContext } from '../../context/darkContext';
+import './DarkMode.css'
 
 export const DarkMode = () => {
   const { darkMode, setDarkMode } = useContext(DarkContext);
@@ -10,20 +11,20 @@ export const DarkMode = () => {
   };
 
   const containerStyles = {
-    background: darkMode ? '#FFF' : '#000',
+    background: darkMode ? '#231f20' : '#FFF',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '2.5px', 
+    gap: '2.5px',
     boxShadow: '0px 1px 2px rgba(0,0,0,0.16)',
   };
 
   const iconStyles = {
-    color: darkMode ? '#121111' : '#FFF',
+    color: darkMode ? '#FFFFFF' : '#231f20',
   };
 
   const textStyles = {
-    color: darkMode ? '#121111' : '#FFF',
+    color: darkMode ? '#FFFFFF' : '#231f20',
     fontWeight: 'bold',
   };
 
@@ -35,13 +36,13 @@ export const DarkMode = () => {
     >
       {darkMode ? (
         <>
-          <CiLight style={iconStyles} />
-          <span style={textStyles}>Light</span>
+          <CiDark style={iconStyles} />
+          <span style={textStyles}>Dark</span>
         </>
       ) : (
         <>
-          <CiDark style={iconStyles} />
-          <span style={textStyles}>Dark</span>
+          <CiLight style={iconStyles} />
+          <span style={textStyles}>Light</span>
         </>
       )}
     </div>

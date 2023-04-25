@@ -100,6 +100,7 @@
     height: 2px;
     border-radius: 4px;
     transition: 0.5s;
+    background: #FFFFFF;
 }
 
 .aside .aside-toggle span:nth-child(1) {
@@ -325,14 +326,14 @@
 
     .aside .social::after {
         border-top: 1px solid rgba(0, 0, 0, 0.07);
-        background: rgb(136, 208, 237);
+        background: #e7897e;
     }
 }
 
 @media screen and (max-width: 564px) {
     .aside.show {
         padding: 12px;
-        width: 250px;
+        width: 50vw;
         animation: none;
     }
 
