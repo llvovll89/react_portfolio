@@ -71,13 +71,13 @@
 
 .inner .contact_text .contact_list .items li span {
     cursor: initial;
-    font-size: 16px;
+    font-size: clamp(14px, 2.4vw, 16px);
     font-weight: 600;
 }
 
 .inner .contact_text .contact_list .items li span:nth-child(2),
 .inner .contact_text .contact_list .items li a {
-    font-size: 17px;
+    font-size: clamp(14px, 2.4vw, 16px);
     width: max-content;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
@@ -217,7 +217,7 @@ textarea, input {
     }
 
     .contact .inner .contact_right .submitForm textarea {
-        font-size: 16px;
+        font-size: 15px;
         height: 76px;
     }
 
