@@ -1,95 +1,98 @@
 import React, { useContext } from 'react';
-import { AboutItem } from './AboutItem';
-import AboutImage from '../../assets/images/AboutImage.png';
-import { DarkContext } from '../../context/darkContext';
 import './About.css';
+import { DarkContext } from '../../context/darkContext';
+import AboutImage from '../../assets/images/AboutImage.png';
 
-export const About = () => {
-  const { darkMode } = useContext(DarkContext);
-
-  const aboutStyles = {
-    background: darkMode ? '#1E1F21' : '#FFFFFF',
-    color: darkMode ? '#FFFFFF' : '#1E1F21',
-  };
-
-  const btnStyles = {
-    background: darkMode ? '#FFFFFF' : '#1e1f21',
-    color: darkMode ? '#1e1f21' : '#FFFFFF',
-  };
+const About = () => {
+  const darkMode = useContext(DarkContext);
+  const isLoaderInfo = window.innerWidth >= 768;
 
   return (
-    <>
-      <div className="about_container" id="about" style={aboutStyles}>
-        <div className="about_title">
-          <div
-            className="section-title "
-            data-aos="flip-right"
-            data-aos-duration="1000"
-          >
-            <h2>About Me</h2>
+    <section className={`about ${!darkMode.darkMode && 'dark'}`} id="about">
+      <div className="abouts_container">
+        <h2
+          className="about_title"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+        >
+          <span>01.</span> About Me
+        </h2>
+        <div className="about_content">
+          <div className="left">
+            <div className="items">
+              {isLoaderInfo ? (
+                <p
+                  className="info"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
+                  &nbsp;안녕하세요. 저는 항상 발전하려고 노력하는 프론트엔드
+                  개발자입니다.
+                  <br />
+                  &nbsp;현재 사용하고 있는 기술로는 React.js 이고 프론트엔드의
+                  기초를 잡기 위해 공부하고 있습니다. 제가 지향하는 개발자로서의
+                  면모는 사용자 입장에서 성능과, 사용성이 좋은 웹사이트를
+                  개발하는 개발자가 되고 싶습니다.
+                  <br /> &nbsp;또한 웹개발의 CS지식을 겸비하기 위해 공부를 하여
+                  팀원들과 협업을 위한 준비도 하고 있습니다. 이러한 준비를
+                  바탕으로 조금 먼 미래에는 백엔드 기술까지 겸비한 풀스택
+                  개발자가 되고 싶습니다.
+                </p>
+              ) : (
+                <p
+                  className="info"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
+                  &nbsp;안녕하세요, 저는 오늘보단 내일이 더 나은 개발자가 되기
+                  위해 노력하는 프론트엔드 개발자입니다.
+                  <br />
+                  &nbsp;현재 React.js를 이용해 프로젝트들을 만들어 보고 있고,
+                  프론트엔드 개발의 기초를 잡기 위해 노력하고 있습니다.
+                  <br />
+                  웹개발에 필요한 CS지식, 알고리즘, 자료구조도 준비하여 좋은
+                  개발자가 되고 싶습니다!
+                </p>
+              )}
+
+              <div>
+                <p className="skill_title info">My Skill</p>
+                <ul className="skills">
+                  <li data-aos="zoom-in-right" data-aos-duration="1000">
+                    Javascript(es6)
+                  </li>
+                  <li data-aos="zoom-in-left" data-aos-duration="1000">
+                    React.js
+                  </li>
+                  <li data-aos="zoom-in-right" data-aos-duration="1000">
+                    Redux
+                  </li>
+                  <li data-aos="zoom-in-left" data-aos-duration="1000">
+                    Node.js
+                  </li>
+                  <li data-aos="zoom-in-right" data-aos-duration="1000">
+                    git
+                  </li>
+                  <li data-aos="zoom-in-left" data-aos-duration="1000">
+                    mongoDB
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="about_contents">
-          <div className="about-content">
+          <div className="right">
             <div
-              className="about-text "
+              className="right_img"
               data-aos="flip-left"
               data-aos-duration="1000"
             >
-              <h3>저는 발전하는 개발자 입니다.</h3>
-              <ul className="on">
-                <li>
-                  저는 다양한&nbsp;
-                  <span className="col-1"> "상상력과 아이디어"</span> 를 통해
-                  무엇인가 만드는 것을 좋아하는 사람입니다.
-                </li>
-                <li>
-                  디자이너, 백엔드 개발자 또는 의사소통이 필요한 부분에서 &nbsp;
-                  <span className="col-1">"커뮤니케이션"</span> 이 활발 할 수
-                  있게 할 것 입니다.
-                </li>
-                <li>
-                  변화하는 추세에 맞추어 지식을 계속 쌓으며 회사에 실직적으로
-                  도움이 되는 프론트엔드 개발자가 되고 싶습니다.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="about_items">
-            <div className="about-info">
-              <div className="row about_row">
-                <AboutItem title="이름" info="김건호" />
-                <AboutItem title="이메일" info="svvvs5579@naver.com" />
-                <AboutItem title="학교" info="대구대학교" />
-                <AboutItem title="학과" info="컴퓨터 소프트웨어학과" />
-                <AboutItem
-                  title="Frontend"
-                  info="Javascript(es6), React, Redux, "
-                />
-                <AboutItem title="Backend" info="node.js, Firebase, mongoDB " />
-              </div>
-              <div className="btnbox">
-                <a
-                  href="https://velog.io/@llvovll89"
-                  className="about_btn"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={btnStyles}
-                >
-                  Blog Go
-                </a>
-              </div>
-            </div>
-            <div
-              className="about-img"
-              data-aos="zoom-in-right"
-              data-aos-duration="1000"
-            >
-              <img src={AboutImage} alt="AboutImage" />
+              <img src={AboutImage} alt="AboutImage.." />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
+
+export default About;

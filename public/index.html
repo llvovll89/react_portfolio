@@ -30,6 +30,11 @@
         }
       }
     }(window.location))
+
+    const themeColor = window.matchMedia('(prefers-color-scheme: dark)').matches ? '#000000' : '#FFFFFF';
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    metaThemeColor.setAttribute('content', themeColor);
+    
   </script>
 </head>
 

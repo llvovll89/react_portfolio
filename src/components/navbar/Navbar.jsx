@@ -21,6 +21,8 @@ export const Navbar = () => {
   const { darkMode } = useContext(DarkContext);
 
   const bgColor = darkMode ? '#3772F0' : '#231f20';
+  const boxShadow = darkMode ? undefined : '3.5px 0px 3.5px 0px rgba(0, 0, 0, 0.12)';
+
   const toggleStyle = {
     background: darkMode ? '#231f20' : '#3772F0',
     color: darkMode ? '#F3F3F3' : '#FEFEFE',
@@ -31,7 +33,7 @@ export const Navbar = () => {
     <>
       <div
         className={`aside ${active ? 'show' : ''}${darkMode ? ' dark' : ''}`}
-        style={{ background: bgColor }}
+        style={{ background: bgColor, boxShadow: boxShadow }}
       >
         <div className="aside-logo">
           <Link to="/" title="Home 으로.." style={{ color: titleColor }}>

@@ -28,7 +28,7 @@ html {
   --korFont: 'Chosunilbo_myungjo';
   --mainFont: 'Rajdhani', sans-serif;
   --popFont: 'Poppins', sans-serif;
-  --appleFont: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
+  --appleFont: 'Apple SD Gothic Neo', 'Malgun Gothic', arial, sans-serif;
 }
 
 * {
@@ -108,34 +108,5 @@ img {
 
   .wrap {
     padding-left: 0;
-  }
-
-  .section-title {
-    margin-bottom: 40px;
-  }
-
-  .section-title h2 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .section-title {
-    margin-bottom: 30px;
-  }
-
-  .section-title h2 {
-    font-size: 26px;
-  }
-}
-
-@media screen and (max-width: 564px) {
-  .section-title {
-    margin-bottom: 25px;
-  }
-
-  .section-title h2 {
-    font-size: 22px;
   }
 }

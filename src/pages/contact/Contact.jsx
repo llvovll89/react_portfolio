@@ -14,9 +14,9 @@ export const Contact = () => {
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-  const bgColor = darkMode ? '#FFFFFF' : '#231f20';
-  const initColor = darkMode ? '#050306' : '#FFFFFF';
-  const titleColor = darkMode ? '#050306' : '#3772F0';
+  const bgColor = darkMode ? '#FFFFFF' : '#191919';
+  const initColor = darkMode ? '#191919' : '#FFFFFF';
+  const titleColor = darkMode ? '#191919' : '#3772F0';
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -146,8 +146,8 @@ export const Contact = () => {
                   <button
                     className="contact_btn"
                     style={{
-                      color: darkMode ? '#FFFFFF' : '#1A1A2E',
-                      background: darkMode ? '#213802' : '#FFFFFF',
+                      color: darkMode ? '#1A1A2E' : '#FFFFFF',
+                      background: darkMode ? '#191919' : '#3772F0',
                     }}
                   >
                     전송하기

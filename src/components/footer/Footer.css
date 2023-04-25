@@ -5,14 +5,14 @@
 }
 
 .footer .footer_content {
-    padding: 3rem;
+    padding: 30px;
     text-align: center;
     transition: 0.3s all ease;
 }
 
 .footer .footer_content .icons {
     margin: 0 1rem;
-    font-size: clamp(20px , 3.5vw , 30px);
+    font-size: clamp(18px , 3vw , 24px);
     transition: 0.2s all ease;
     color: #FFF;
 }
@@ -23,60 +23,18 @@ footer .footer_content .icons:hover {
 
 .footer .footer_content .footer_copy {
     margin-top: 0.5rem;
-    font-size: clamp(16px, 3vw , 18px);
+    font-size: clamp(16px, 2.5vw , 18px);
     letter-spacing: 1px;
 }
 
 .footer .footer_content .footer_subtext {
     display: inline-block;
-    font-size: 14px;
+    font-size: clamp(14px, 1.5vw, 14px);
     color: #968f8f;
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        padding: 8px auto;
-    }
-
     .footer .footer_content {
-        padding: 1.5rem;
-    }
-
-    .footer .footer_content .icons {
-        margin: 0 0.8rem;
-        font-size: 1.3rem;
-    }
-
-    .footer .footer_content .footer_copy {
-        margin-top: 0.35rem;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-    }
-}
-
-@media screen and (max-width: 564px) {
-    .footer {
-        padding: 6px auto;
-    }
-
-    .footer .footer_content {
-        padding: 1.25rem;
-    }
-
-    .footer .footer_content .icons {
-        color: var(--whiteColor);
-        margin: 0 1rem;
-        font-size: 1.1rem;
-    }
-
-    .footer .footer_content .footer_copy {
-        margin-top: 0.35rem;
-        font-size: 0.85rem;
-        letter-spacing: 1px;
-    }
-
-    .footer .footer_content .footer_subtext {
-        font-size: 0.7rem;
-        margin-top: 0.66rem;
+        padding: 18px;
     }
 }

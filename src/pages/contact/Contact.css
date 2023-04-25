@@ -43,11 +43,11 @@
 .inner .contact_text {
     position: relative;
     width: 100%;
-    padding: 16px;
+    padding: 12px;
 }
 
 .inner .contact_text .contact_title {
-    font-size: clamp(30px, 5vw , 40px);
+    font-size: clamp(30px, 5vw, 40px);
     line-height: 1.5;
 }
 
@@ -149,7 +149,7 @@
     font-weight: 300;
     padding: 0.8rem 3.5rem;
     overflow: hidden;
-    font-family: var(--korFont);
+    font-family: var(--appleFont);
     vertical-align: top;
     z-index: 100;
     border-radius: 3px;
@@ -163,7 +163,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #08f;
+    background: #2EB573;
     transition: 0.4s all linear;
     transform: translateX(-100%);
     z-index: -1;
@@ -225,28 +225,19 @@ textarea, input {
         font-size: 15px;
     }
 
-    .inner .contact_img,
-    .inner .contact_text {
-        position: relative;
-        width: 100%;
-    }
-
-    .inner .contact_text .contact_title {
-        margin-top: 0;
-        position: relative;
-    }
-
     .inner .contact_text .contact_list .items li {
         gap: 4px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .inner .contact_text .contact_list .items li span {
-        font-size: 15px;
+        font-size: 14.5px;
+        font-weight: 500;
     }
 
     .inner .contact_text .contact_list .items li span:nth-child(2),
     .inner .contact_text .contact_list .items li a {
-        font-size: 14px;
+        font-size: 13.5px;
+        font-weight: 500;
     }
 }

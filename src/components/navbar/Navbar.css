@@ -255,20 +255,14 @@
 
 @media screen and (max-width: 1280px) {
     .aside {
-        transition: 0.5s all ease;
+        transition: 0.35s all ease;
         left: -300px;
     }
 
     .aside.show {
         width: 300px;
         left: 0;
-        transition: 0.5s all ease;
-        z-index: 1100;
-        background: #f0f9f9;
-        background-image: url('../../../public/images/bg-cloud.png');
-        background-position: center;
-        background-size: cover;
-        animation: movebg 40s linear infinite;
+        z-index: 1000;
     }
 
     .aside .aside-logo a::before {
@@ -321,7 +315,7 @@
         top: 10px;
         border: none;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
-        transition: 0.4s all ease;
+        transition: 0.35s all ease;
     }
 
     .aside .social::after {
@@ -334,11 +328,10 @@
     .aside.show {
         padding: 12px;
         width: 50vw;
-        animation: none;
     }
 
     .aside .aside-toggle.active {
-        left: 200px;
+        left: 38vw;
         top: 10px;
         border: none;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);

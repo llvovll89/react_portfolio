@@ -4,17 +4,17 @@ import { Main } from '../components/main/Main';
 import { Contact } from '../pages/contact/Contact';
 import { Footer } from '../components/footer/Footer';
 import { Arrow } from '../common/toparoow/Arrow';
-import AboutSection from '../components/aboutsection/AboutSection';
-import Projects from '../components/projects/Projects';
 import { DarkMode } from '../common/toggle/DarkMode';
+import About from '../pages/about/About';
+import Project from '../pages/project/Project';
 
 export const Home = () => {
   return (
     <>
       <ProgressBar />
       <Main />
-      <AboutSection />
-      <Projects />
+      <About />
+      <Project />
       <Contact />
       <DarkMode />
       <Arrow />
