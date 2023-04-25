@@ -35,13 +35,17 @@ export const Main = () => {
         <div className="main_item" data-aos="fade-up" data-aos-duration="1500">
           <p>
             저는 커뮤니케이션을 잘하고 밝은 에너지를 가진
-            <span className="salmon"> 프론트엔드 개발자 </span>
-            입니다. 보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고
-            마음에 드시면&nbsp;
+            <span className="salmon">프론트엔드 개발자</span>
+            입니다.
+          </p>
+
+          <p>
+            오늘보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고 마음에
+            드시면 저를
             <a className="salmon" href="#contact">
               Contact
             </a>
-            &nbsp;해주세요.
+            해주세요.
           </p>
         </div>
         <div

@@ -42,20 +42,20 @@
 
 .main_item h1 {
     margin: 0px 0px 30px 4px;
-    font-size: clamp(16px, 3.85vw, 20px);
+    font-size: clamp(16px, 3.5vw, 20px);
     line-height: 1.1;
 }
 
 .main_item .big_text {
-    font-size: clamp(22px, 6vw, 60px);
+    font-size: clamp(22px, 5.5vw, 60px);
 }
 
 .main_item .Typewriter {
     line-height: 0.9;
-    margin: 5px 0;
+    margin-bottom: 12px;
     font-weight: 600;
     font-family: var(--appleFont);
-    font-size: clamp(20px, 6vw, 50px);
+    font-size: clamp(20px, 4vw, 50px);
 }
 
 .main_item .Typewriter .Typewriter__wrapper {
@@ -63,10 +63,9 @@
 }
 
 .main_item p {
-    margin: 20px 0px 0px;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 21px);
     line-height: 1.35;
-    max-width: 540px;
+    max-width: 700px;
     color: #45464b;
     font-family: var(--korFont);
 }
@@ -74,6 +73,8 @@
 .main_item p > .salmon {
     padding-bottom: 2px;
     color: #FE5493;
+    margin: 0px 3.5px;
+    font-size: clamp(16px, 3.3vw, 22px);
     border-bottom: 1px solid #FE5493;
 }
 
@@ -117,17 +118,11 @@
 
 @media screen and (max-width: 768px) {
     .main_container {
-        padding: 0 36x;
+        padding: 0 36px;
     }
 
     .main_item h1 {
         margin: 0px 0px 16px 4px;
-    }
-
-    .main_item p {
-        margin: 12px 0px 0px 0px;
-        font-size: 16px;
-        line-height: 1.5;
     }
 
     .main_item .btn {

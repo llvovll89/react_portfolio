@@ -68,10 +68,15 @@
 
 .info {
     margin: 0px 0px 15px;
+}
+
+.info p {
     line-height: 1.4;
     font-weight: 500;
     font-size: clamp(16px, 3vw, 22px);
     font-family: var(--korFont);
+    letter-spacing: 0.045rem;
+    margin: 4px 0px;
 }
 
 .skill_title {

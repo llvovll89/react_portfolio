@@ -42,7 +42,7 @@ const Project = () => {
                     
                     <div className="project_desc">
                       {Array.isArray(project.desc) &&
-                        project.desc.map((desc) => <p>{desc}</p>)}
+                        project.desc.map((desc) => <p><span style={{display: "block"}}>৹</span>{desc}</p>)}
                     </div>
 
                     <ul className="project_skills">
