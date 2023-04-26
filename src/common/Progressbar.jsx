@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const ProgressBar = () => {
     const [width, setWidth] = useState(null);
+    const height = window.innerWidth >= 768 ? "4px" : "2px";
   
     const scrolling = () => {
         const winScroll =
@@ -37,8 +38,8 @@ const ProgressBar = () => {
       <div
         className="progressbar"
         style={{
-          height: '4px',
-          backgroundColor: '#08f',
+          height,
+          backgroundColor: '#5789F2',
           transitionDuration: '0.1s',
           width: width,
           margin: 0,
@@ -47,7 +48,7 @@ const ProgressBar = () => {
           top: 0,
           zIndex: 1000,
           transitionProperty: 'width',
-          transitionTimingFunction: `ease-in-out`,
+          transitionTimingFunction: `linear`,
         }}
       />
     );

@@ -2,12 +2,15 @@ import React, { useContext } from 'react';
 import { DarkContext } from '../../context/darkContext';
 import { projectDB } from '../../assets/db/project';
 import { FiGithub } from 'react-icons/fi';
-import { AiOutlineSelect } from 'react-icons/ai';
+import {
+  AiOutlineSelect,
+  AiOutlineCheck,
+} from 'react-icons/ai';
 import './Project.css';
 
 const Project = () => {
   const darkMode = useContext(DarkContext);
-  const aColor = darkMode.darkMode ? '#3772F0' : '#FFFFFF';
+  const aColor = darkMode.darkMode ? '#FEFEFE' : '#FFFFFF';
 
   return (
     <section className={`project ${!darkMode.darkMode && 'dark'}`}>
@@ -25,24 +28,30 @@ const Project = () => {
                 data-aos-duration="1000"
               >
                 <div className="project_contents">
-                  <div>
+                  <div className="mobile">
                     <p className="project_over">{`project 0${project.id}`}</p>
                     <h3 className="project_title">
                       <a
                         href={project.link}
                         target="_blank"
-                        style={{ color: aColor }}
                         rel="noopener noreferrer"
                       >
                         {project.title}
                       </a>
                     </h3>
                     <p className="sub_title">{project.subtitle}</p>
-                    <span className='dev'>{project.info}</span>
-                    
+                    <span className="dev">{project.info}</span>
+
                     <div className="project_desc">
                       {Array.isArray(project.desc) &&
-                        project.desc.map((desc) => <p><span style={{display: "block"}}>৹</span>{desc}</p>)}
+                        project.desc.map((desc) => (
+                          <p>
+                            <span>
+                              <AiOutlineCheck />
+                            </span>
+                            {desc}
+                          </p>
+                        ))}
                     </div>
 
                     <ul className="project_skills">

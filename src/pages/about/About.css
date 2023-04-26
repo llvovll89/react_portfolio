@@ -18,7 +18,7 @@
     background-color: #FFFFFF;
 }
 
-.abouts_container {
+.about_container {
     max-width: 1280px;
     min-height: 100vh;
     margin: 0 auto;
@@ -79,6 +79,11 @@
     margin: 4px 0px;
 }
 
+.info p > span {
+    color: #3772F0;
+    font-size: clamp(16px, 3.3vw, 23px);
+}
+
 .skill_title {
     position: relative;
     display: flex;
@@ -93,7 +98,7 @@
     width: 60px;
     height: 1px;
     margin-right: 12px;
-    background-color: #08f;
+    background-color: #3772F0;
 }
 
 .skills {
@@ -117,7 +122,7 @@
     content: "৹";
     position: absolute;
     left: 0px;
-    color: #09f;
+    color: #3772F0;
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
@@ -140,7 +145,7 @@
 }
 
 .right_img img {
-    background: #FFFFFF;
+    background: #FEFFEF;
     border-radius: 4px;
 }
 

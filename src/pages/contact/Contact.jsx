@@ -112,6 +112,7 @@ export const Contact = () => {
                     type="text"
                     name="from_name"
                     value={state.message}
+                    style={{color: initColor}}
                     onChange={(e) =>
                       setState({ ...state, message: e.target.value })
                     }
@@ -124,6 +125,7 @@ export const Contact = () => {
                     type="text"
                     name="e-mail"
                     value={state.mail}
+                    style={{color: initColor}}
                     onChange={(e) =>
                       setState({ ...state, mail: e.target.value })
                     }
@@ -136,6 +138,7 @@ export const Contact = () => {
                     type="text"
                     name="text"
                     value={state.textArea}
+                    style={{color: initColor}}
                     onChange={(e) =>
                       setState({ ...state, textArea: e.target.value })
                     }
@@ -146,7 +149,7 @@ export const Contact = () => {
                   <button
                     className="contact_btn"
                     style={{
-                      color: darkMode ? '#1A1A2E' : '#FFFFFF',
+                      color: darkMode ? '#FEFEFE' : '#FFFFFF',
                       background: darkMode ? '#191919' : '#3772F0',
                     }}
                   >

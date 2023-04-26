@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <section className={`about ${!darkMode.darkMode && 'dark'}`} id="about">
-      <div className="abouts_container">
+      <div className="about_container">
         <h2
           className="about_title"
           data-aos="flip-right"
@@ -27,16 +27,15 @@ const About = () => {
                   data-aos-duration="1000"
                 >
                   <p>
-                     저는 항상 발전하려고 노력하는 프론트엔드
-                    개발자입니다.
+                    &nbsp;새로운 기술을 배우는것에 흥미가있는 개발자 <span className='salmon'>김건호</span> 입니다.
                   </p>
                   <p>
-                    현재 사용하고 있는 기술로는 React.js 이고 프론트엔드 개발
-                    성장을 위해 각종 라이브러리와 스킬들을 공부하고 있습니다.
+                    &nbsp;현재 사용하고 있는 기술로는 React.js 이고 프론트엔드
+                    개발 성장을 위해 각종 라이브러리와 스킬들을 공부하고
+                    있습니다.
                   </p>
                   <p>
-                    제가 지향하는 개발자로서의 면모는 사용자 입장에서 성능과,
-                    사용성이 좋은 웹사이트를 개발하는 개발자가 되고 싶습니다.
+                    &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기 위해서 노력하겠습니다.
                   </p>
                 </div>
               ) : (
@@ -46,17 +45,16 @@ const About = () => {
                   data-aos-duration="1000"
                 >
                   <p>
-                    저는 오늘보단 내일이 더 나은 개발자가 되기 위해
-                    노력하는 프론트엔드 개발자입니다.
+                    오늘보단 내일이 더 나은 개발자가 되기 위해 노력하는
+                    <span className='salmon'>김건호</span> 입니다
                   </p>
 
                   <p>
                     현재 React.js를 이용해 프로젝트들을 만들어 보고 있고,
-                    프론트엔드 개발의 기초를 잡기 위해 노력하고 있습니다.
+                    프론트엔드 개발의 기술력을 위해 노력하고 있습니다.
                   </p>
                   <p>
-                    웹개발에 필요한 CS지식, 알고리즘, 자료구조도 준비하여 좋은
-                    개발자가 되고 싶습니다!
+                  &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기 위해서 노력하겠습니다.
                   </p>
                 </div>
               )}

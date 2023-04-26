@@ -39,9 +39,9 @@ export const Main = () => {
             입니다.
           </p>
 
+          <p>현재에 안주하지않고 계속 발전하도록 할 것 입니다.</p>
           <p>
-            오늘보다 나은 내일을 위해 끊임없이 발전 할 것 입니다! 보시고 마음에
-            드시면 저를
+            제 포트폴리오를 보시고 마음에 드시면 저를
             <a className="salmon" href="#contact">
               Contact
             </a>
