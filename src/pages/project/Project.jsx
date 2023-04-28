@@ -1,16 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { DarkContext } from '../../context/darkContext';
 import { projectDB } from '../../assets/db/project';
 import { FiGithub } from 'react-icons/fi';
-import {
-  AiOutlineSelect,
-  AiOutlineCheck,
-} from 'react-icons/ai';
+import { AiOutlineSelect, AiOutlineCheck } from 'react-icons/ai';
+import ProjectDetail from '../../components/detail/ProjectDetail';
 import './Project.css';
 
 const Project = () => {
   const darkMode = useContext(DarkContext);
-  const aColor = darkMode.darkMode ? '#FEFEFE' : '#FFFFFF';
+  const aColor = darkMode.darkMode ? '#3772F0' : '#FEFEFE';
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedId, setSelectedId] = useState(null); 
+
+    const handleProjectClick = (id) => {
+    setSelectedId(id);
+    setIsModalOpen(true);
+  };
 
   return (
     <section className={`project ${!darkMode.darkMode && 'dark'}`}>
@@ -76,6 +82,9 @@ const Project = () => {
                       >
                         <AiOutlineSelect />
                       </a>
+                      <button onClick={() => handleProjectClick(project.id)} style={{ color: aColor }}>
+                        상세보기
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -94,6 +103,10 @@ const Project = () => {
                     </div>
                   </a>
                 </div>
+
+                {isModalOpen && selectedId === project.id && (
+                  <ProjectDetail id={project.id} close={() => setIsModalOpen(false)} />
+                )}
               </li>
             ))}
         </ul>

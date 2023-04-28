@@ -8,6 +8,7 @@ import Project from './pages/project/Project';
 import About from './pages/about/About';
 import { Home } from './home/Home';
 import { Contact } from './pages/contact/Contact';
+import ProjectDetail from './components/detail/ProjectDetail';
 
 function App() {
   useEffect(() => {
@@ -21,12 +22,13 @@ function App() {
         <div className="wrap">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />}>
-              <Route path="about" element={<About />} />
-              <Route path="project" element={<Project />} />
-              <Route path="contact" element={<Contact />} />
-            </Route>
-          </Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+
         </div>
       </Router>
     </DarkContextProvider>

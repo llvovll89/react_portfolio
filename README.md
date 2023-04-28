@@ -26,7 +26,6 @@
 -> p 안에 들어가지 못할 클래스를 넣는바람에 생김으로, p를 단일 태그로 사용
 3) project & about 컴포넌트 바꿀 때 DarkMode 적용이 안되는 이슈가 있었음
 -> DarkContext로 useContext를 이용할 때 객체형식으로 받아와서 darkmode.darkmode 로 사용해야 했음
-4) 
 ```
 
 <span style="color: #07f">추가사항</span>
