@@ -150,7 +150,7 @@
     font-family: var(--korFont);
     text-align: left;
     letter-spacing: 0.04rem;
-    font-size: clamp(15px, 3vw, 16px);
+    font-size: clamp(14.5px, 2.5vw, 16px);
     margin-bottom: 3px;
 
     display: flex;
@@ -194,6 +194,7 @@
     font-family: var(--mainFont);
     white-space: nowrap;
     padding-left: 12px;
+    font-size: clamp(15px, 3vw, 17px);
 }
 
 .project_items .project_links {
@@ -204,6 +205,7 @@
     margin-top: 10px;
     margin-left: 10px;
     gap: 12px;
+    height: 36px;
 }
 
 .project_items:nth-of-type(2n + 1) .project_links {
@@ -213,17 +215,31 @@
     margin-right: 10px;
 }
 
-.project_items .project_links a, button {
+.project_items .project_links a, 
+.project_items .project_links button {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    padding: 10px;
+    padding: 6px 12px;
+    font-family: var(--korFont);
+    border-radius: 3px;
+    background: #f5f1f1;
+    color: #231f20;
+    height: 100%;
+}
+
+.project.dark .project_items .project_links a,
+.project.dark .project_items .project_links button {
+    color: #3772F0;
+    background: rgba(0, 0, 0, 0.066);
+    border: none;
 }
 
 .project_items .project_links button {
     z-index: 10;
+    letter-spacing: 0.025rem;
 }
 
 .project_items .project_links a svg {
@@ -413,4 +429,10 @@
         height: 100%;
         filter: grayscale(96%) contrast(1) brightness(50%);
     }
+
+    .project_items .project_links a, 
+.project_items .project_links button {
+    background: transparent;
+    color: #FEFEFE;
+}
 }

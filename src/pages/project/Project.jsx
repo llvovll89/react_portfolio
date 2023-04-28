@@ -8,7 +8,7 @@ import './Project.css';
 
 const Project = () => {
   const darkMode = useContext(DarkContext);
-  const aColor = darkMode.darkMode ? '#3772F0' : '#FEFEFE';
+  const aColor = darkMode.darkMode ? '#F3F3F3' : '#FEFEFE';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null); 
@@ -69,7 +69,6 @@ const Project = () => {
                       <a
                         href={project.github}
                         target="_blank"
-                        style={{ color: aColor }}
                         rel="noopener noreferrer"
                       >
                         <FiGithub />
@@ -78,11 +77,10 @@ const Project = () => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: aColor }}
                       >
                         <AiOutlineSelect />
                       </a>
-                      <button onClick={() => handleProjectClick(project.id)} style={{ color: aColor }}>
+                      <button onClick={() => handleProjectClick(project.id)} >
                         상세보기
                       </button>
                     </div>
@@ -90,7 +88,7 @@ const Project = () => {
                 </div>
                 <div className="project_img">
                   <a
-                    href="https://llvovll89.github.io/movieapp/"
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

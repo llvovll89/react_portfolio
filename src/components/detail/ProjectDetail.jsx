@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { projectDB, projectDetailDB } from '../../assets/db/project';
 import {
   AiOutlineClose,
@@ -13,6 +13,8 @@ const ProjectDetail = ({ id, close }) => {
   const [projectInfo, setProjectInfo] = useState({});
   const [projectDetails, setProjectDetails] = useState({});
 
+  const modalOutRef = useRef();
+
   const getProjectInfo = () => {
     const project = projectDB.find((p) => p.id === id);
     setProjectInfo(project);
@@ -23,38 +25,54 @@ const ProjectDetail = ({ id, close }) => {
     setProjectDetails(details);
   };
 
+  const getProjectData = () => {
+    getProjectInfo();
+    getProjectDetail();
+  };
+
   const closeHandler = () => {
     close();
   };
 
+  const handleClickOutside = (e) => {
+    if (modalOutRef.current && !modalOutRef.current.contains(e.target))
+      closeHandler();
+  };
+
   useEffect(() => {
-    getProjectInfo();
-    getProjectDetail();
+    getProjectData();
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, []);
 
   return (
     <>
-      <div className={`detail_modal${darkMode.darkMode ? '' : ' dark'}`}>
+      <div
+        className={`detail_modal${darkMode.darkMode ? '' : ' dark'}`}
+        ref={modalOutRef}
+      >
         <div className="detail_contents">
-          <div className="detail_top">
-            <p className="detail_nums">{`project 0${projectInfo.id}`}</p>
-            <h3 className="detail_name">{projectInfo.title}</h3>
+          <div className="detail_title">
+          <h3 className="detail_name">{projectInfo.title}</h3>
+          <span>{projectDetails.prupose}</span>
           </div>
-          <div className="detail_techs">
-            <h2 className="sm_title">Tech Skills</h2>
-            {projectDetails &&
-              projectDetails.techStack &&
-              projectDetails.techStack.length > 0 && (
-                <ul className="detail_tech_items">
-                  {projectDetails.techStack.map((tech) => (
-                    <li key={tech.id}>
-                      <p>{tech.name}</p>
-                      <p>{tech.icon}</p>
-                    </li>
-                  ))}
-                </ul>
-              )}
-          </div>
+
+          {projectDetails.techStack?.length > 0 && (
+            <div className="detail_techs">
+              <h2 className="sm_title">Tech Skills</h2>
+              <ul className="detail_tech_items">
+                {projectDetails.techStack.map((tech) => (
+                  <li key={tech.id}>
+                    <p>{tech.name}</p>
+                    <p>{tech.icon}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {projectDetails &&
             projectDetails.features &&
@@ -62,10 +80,10 @@ const ProjectDetail = ({ id, close }) => {
               <div className="detail_features">
                 <h2 className="sm_title">Detail features</h2>
                 <ul className="detail_items">
-                  {projectDetails.features.map((feature) => (
-                    <li key={feature.title}>
-                      <h3>৹ {feature.title}</h3>
-                      <p>{feature.description}</p>
+                  {projectDetails.features.map(({ title, description }) => (
+                    <li key={title}>
+                      <h3>৹ {title}</h3>
+                      <p>{description}</p>
                     </li>
                   ))}
                 </ul>
@@ -78,10 +96,10 @@ const ProjectDetail = ({ id, close }) => {
               <div className="detail_issue">
                 <h2 className="sm_title">Issue & Resolution</h2>
                 <ul className="detail_items">
-                  {projectDetails.issues.map((issue) => (
-                    <li key={issue.title}>
-                      <h3>৹ {issue.title}</h3>
-                      <p>{issue.description}</p>
+                  {projectDetails.issues.map(({ title, description }) => (
+                    <li key={title}>
+                      <h3>৹ {title}</h3>
+                      <p>{description}</p>
                     </li>
                   ))}
                 </ul>
@@ -91,7 +109,7 @@ const ProjectDetail = ({ id, close }) => {
           <div className="detail_links">
             <div className="links_item">
               <a
-                href={projectDetails.github}
+                href={projectInfo.github}
                 className="link_btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +117,7 @@ const ProjectDetail = ({ id, close }) => {
                 GitHub (코드저장소)
               </a>
               <a
-                href={projectDetails.link}
+                href={projectInfo.link}
                 className="link_btn"
                 target="_blank"
                 rel="noopener noreferrer"

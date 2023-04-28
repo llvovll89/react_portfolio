@@ -42,12 +42,12 @@
 
 .main_item h1 {
     margin: 0px 0px 30px 4px;
-    font-size: clamp(16px, 3.5vw, 20px);
+    font-size: clamp(15.5px, 3.5vw, 20px);
     line-height: 1.1;
 }
 
 .main_item .big_text {
-    font-size: clamp(22px, 5.5vw, 60px);
+    font-size: clamp(22px, 5vw, 60px);
 }
 
 .main_item .Typewriter {
@@ -55,7 +55,7 @@
     margin-bottom: 12px;
     font-weight: 600;
     font-family: var(--appleFont);
-    font-size: clamp(20px, 4vw, 50px);
+    font-size: clamp(18.5px, 3.5vw, 50px);
 }
 
 .main_item .Typewriter .Typewriter__wrapper {
@@ -63,7 +63,7 @@
 }
 
 .main_item p {
-    font-size: clamp(16px, 3vw, 21px);
+    font-size: clamp(14.5px, 2.5vw, 21px);
     line-height: 1.35;
     max-width: 700px;
     color: #45464b;

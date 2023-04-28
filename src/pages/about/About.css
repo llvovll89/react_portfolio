@@ -73,7 +73,7 @@
 .info p {
     line-height: 1.4;
     font-weight: 500;
-    font-size: clamp(16px, 3vw, 22px);
+    font-size: clamp(15px, 3vw, 22px);
     font-family: var(--korFont);
     letter-spacing: 0.045rem;
     margin: 4px 0px;
@@ -81,7 +81,7 @@
 
 .info p > span {
     color: #3772F0;
-    font-size: clamp(16px, 3.3vw, 23px);
+    font-size: clamp(15.5px, 3.2vw, 23px);
 }
 
 .skill_title {
