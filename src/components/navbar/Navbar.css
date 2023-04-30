@@ -7,7 +7,7 @@
     width: 240px;
     height: 100%;
     top: 0;
-    left: 0;    
+    left: 0;
     z-index: 1200;
     transition: all 0.15s linear;
 }
@@ -141,6 +141,7 @@
     text-align: center;
     border-bottom: 1px solid #9B9EA3;
 }
+
 .aside .aside-nav .border.bt {
     border-bottom: 2px solid #08f;
 }
@@ -259,7 +260,7 @@
     }
 
     .aside.show {
-        width: 300px;
+        width: 100%;
         left: 0;
         z-index: 1000;
     }
@@ -296,8 +297,8 @@
     }
 
     .aside .aside-toggle.active {
-        left: 250px;
-        top: 10px;
+        left: 90%;
+        top: 20px;
         border: none;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
         transition: 0.35s all ease;
@@ -309,13 +310,7 @@
 }
 
 @media screen and (max-width: 564px) {
-    .aside.show {
-        padding: 12px;
-        width: 50vw;
-    }
-
     .aside .aside-toggle.active {
-        left: 38vw;
         top: 10px;
         border: none;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.11);
@@ -323,7 +318,7 @@
     }
 
     .aside .aside-logo {
-        top: 70px;
+        top: 60px;
     }
 
     .aside .aside-logo a {

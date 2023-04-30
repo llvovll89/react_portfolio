@@ -225,7 +225,7 @@ textarea, input {
     }
 
     .inner .contact_text .contact_list .items {
-        gap: 4px;
+        
     }
 
     .inner .contact_text .contact_list .items li {
@@ -241,4 +241,5 @@ textarea, input {
     .inner .contact_text .contact_list .items li a {
         font-size: 13.5px;
     }
+
 }
