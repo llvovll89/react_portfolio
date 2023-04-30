@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.bffea110.css",
-    "main.js": "/react_portfolio/static/js/main.b72394cc.js",
+    "main.css": "/react_portfolio/static/css/main.f25ea0d4.css",
+    "main.js": "/react_portfolio/static/js/main.b53c3b04.js",
     "static/media/contactImage.jpg": "/react_portfolio/static/media/contactImage.c8fb9cf0940dca7e4bcb.jpg",
     "static/media/bg-cloud.png": "/react_portfolio/static/media/bg-cloud.9a15587a50dd17f15b8e.png",
     "static/media/about.png": "/react_portfolio/static/media/about.68144ba4ba2347a7d500.png",
     "index.html": "/react_portfolio/index.html",
-    "main.bffea110.css.map": "/react_portfolio/static/css/main.bffea110.css.map",
-    "main.b72394cc.js.map": "/react_portfolio/static/js/main.b72394cc.js.map"
+    "main.f25ea0d4.css.map": "/react_portfolio/static/css/main.f25ea0d4.css.map",
+    "main.b53c3b04.js.map": "/react_portfolio/static/js/main.b53c3b04.js.map"
   },
   "entrypoints": [
-    "static/css/main.bffea110.css",
-    "static/js/main.b72394cc.js"
+    "static/css/main.f25ea0d4.css",
+    "static/js/main.b53c3b04.js"
   ]
 }
