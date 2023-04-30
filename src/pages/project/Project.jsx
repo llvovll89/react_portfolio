@@ -8,8 +8,7 @@ import './Project.css';
 
 const Project = () => {
   const darkMode = useContext(DarkContext);
-  const aColor = darkMode.darkMode ? '#F3F3F3' : '#FEFEFE';
-
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null); 
 
@@ -21,7 +20,10 @@ const Project = () => {
   return (
     <section className={`project ${!darkMode.darkMode && 'dark'}`}>
       <div className="project_wrap">
-        <h2 className="title">
+        <h2 className="title" 
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+        >
           <span>02.</span> Projects
         </h2>
         <ul className="project_content">
@@ -67,18 +69,18 @@ const Project = () => {
                     </ul>
                     <div className="project_links">
                       <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FiGithub />
-                      </a>
-                      <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <AiOutlineSelect />
+                      </a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FiGithub />
                       </a>
                       <button onClick={() => handleProjectClick(project.id)} >
                         상세보기

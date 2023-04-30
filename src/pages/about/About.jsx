@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './About.css';
 import { DarkContext } from '../../context/darkContext';
-import AboutImage from '../../assets/images/AboutImage.png';
+import AboutImage from '../../assets/images/about.png';
 
 const About = () => {
   const darkMode = useContext(DarkContext);
@@ -27,7 +27,8 @@ const About = () => {
                   data-aos-duration="1000"
                 >
                   <p>
-                    &nbsp;새로운 기술을 배우는것에 흥미가있는 개발자 <span className='salmon'>김건호</span> 입니다.
+                    &nbsp;새로운 기술을 배우는것에 흥미가있는 개발자{' '}
+                    <span className="salmon">김건호</span> 입니다.
                   </p>
                   <p>
                     &nbsp;현재 사용하고 있는 기술로는 React.js 이고 프론트엔드
@@ -35,7 +36,8 @@ const About = () => {
                     있습니다.
                   </p>
                   <p>
-                    &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기 위해서 노력하겠습니다.
+                    &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기
+                    위해서 노력하겠습니다.
                   </p>
                 </div>
               ) : (
@@ -46,7 +48,7 @@ const About = () => {
                 >
                   <p>
                     오늘보단 내일이 더 나은 개발자가 되기 위해 노력하는
-                    <span className='salmon'>김건호</span> 입니다
+                    <span className="salmon">김건호</span> 입니다
                   </p>
 
                   <p>
@@ -54,7 +56,8 @@ const About = () => {
                     프론트엔드 개발의 기술력을 위해 노력하고 있습니다.
                   </p>
                   <p>
-                  &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기 위해서 노력하겠습니다.
+                    &nbsp;열심히 하는 개발자가 되기보단 잘하는 개발자가 되기
+                    위해서 노력하겠습니다.
                   </p>
                 </div>
               )}
@@ -90,7 +93,7 @@ const About = () => {
               data-aos="flip-left"
               data-aos-duration="1000"
             >
-              <img src={AboutImage} alt="AboutImage.." />
+              <img src={AboutImage} alt="AboutImage.." loading="lazy" />
             </div>
           </div>
         </div>

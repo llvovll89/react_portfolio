@@ -159,10 +159,16 @@
     background: #3772F0;
     border-radius: 3px;
     font-size: clamp(14px, 1vw, 16px);
+    transition: background 0.15s ease-in-out;
 }
 
 .detail_links .links_item a:last-of-type {
     margin-right: 0;
+}
+
+.detail_links .links_item a:hover {
+    background: transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /* detail_links-end */
@@ -183,11 +189,24 @@
     width: 36px;
     height: 36px;
     z-index: 12;
+
+    transition: all 0.15s linear;
+}
+
+.close:hover {
+    background: transparent;
+    color: #030303;
 }
 
 .detail_modal.dark .close {
     background: #FEFEFE;
     color: #030303;
+    transition: all 0.15s linear;
+}
+
+.detail_modal.dark .close:hover {
+    background: transparent;
+    color: #FEFEFE;
 }
 
 @media screen and (max-width: 768px) {
