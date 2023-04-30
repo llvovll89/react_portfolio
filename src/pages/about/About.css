@@ -10,10 +10,6 @@
     color: #ffffff;
 }
 
-.about.dark .about_title {
-    color: #FFFFFF;
-}
-
 .about.dark .about_title::before {
     background-color: #FFFFFF;
 }
@@ -58,6 +54,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 75px;
+    align-items: center;
 }
 
 .items {
@@ -79,8 +76,9 @@
     margin: 4px 0px;
 }
 
-.info p > span {
-    color: #3772F0;
+.info p > .salmon {
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #3772F0;
     font-size: clamp(15.5px, 3.2vw, 23px);
 }
 
@@ -103,8 +101,8 @@
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    gap: 0px 10px;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    gap: 8px;
     padding: 0px;
     margin: 20px 0px 0px;
     overflow: hidden;
@@ -114,8 +112,11 @@
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
-    letter-spacing: 0.015rem;
-    font-family: var(--mainFont);
+    letter-spacing: 0.025rem;
+    font-family: var(--korFont);
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
 }
 
 .skills li::before {
@@ -123,10 +124,21 @@
     position: absolute;
     left: 0px;
     color: #3772F0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 5px;
     font-size: 16px;
     line-height: 12px;
+}
+
+.skills li h3 {
+    font-family: var(--mainFont);
+    font-size: clamp(18px, 2.5vw, 24px);
+}
+
+.skills li div p {
+    line-height: 1.25;
+    font-size: clamp(13.5px, 1.8vw, 15px);
+    letter-spacing: 0.05rem;
+    /* font-weight: 600; */
 }
 
 .right {
@@ -206,6 +218,10 @@
     .right {
         margin: 70px auto 0px;
         width: 60%;
+    }
+
+    .skills {
+        display: block;
     }
 
     .skills li {

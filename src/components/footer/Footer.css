@@ -1,7 +1,17 @@
 .footer {
-    font-family: var(--mainFont);
-    background: #181818;
-    color: #FFFFFF;
+    font-family: var(--korFont);
+    background: #EDEFF3;
+    color: #181818;
+    transition: all 0.15s linear;
+}
+
+.footer.dark {
+    background: #231f20;
+    color: #FEFEFE;
+}
+
+.footer.dark .footer_content .icons {
+    color: #FEFEFE;
 }
 
 .footer .footer_content {
@@ -13,8 +23,8 @@
 .footer .footer_content .icons {
     margin: 0 1rem;
     font-size: clamp(18px , 3vw , 24px);
-    transition: 0.2s all ease;
-    color: #FFF;
+    transition: 0.15s all ease;
+    color: #181818;
 }
 
 footer .footer_content .icons:hover {
@@ -23,13 +33,13 @@ footer .footer_content .icons:hover {
 
 .footer .footer_content .footer_copy {
     margin-top: 0.5rem;
-    font-size: clamp(16px, 2.5vw , 18px);
+    font-size: clamp(15px, 2.5vw , 16px);
     letter-spacing: 1px;
 }
 
 .footer .footer_content .footer_subtext {
     display: inline-block;
-    font-size: clamp(14px, 1.5vw, 14px);
+    font-size: clamp(13px, 1.5vw, 13.5px);
     color: #968f8f;
 }
 

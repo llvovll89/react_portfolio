@@ -20,12 +20,13 @@ export const Navbar = () => {
   const [active, setActive] = useState(false);
   const { darkMode } = useContext(DarkContext);
 
-  const bgColor = darkMode ? '#3772F0' : '#231f20';
+  const bgColor = darkMode ? '#638eeb' : '#231f20';
   const boxShadow = darkMode ? undefined : '3.5px 0px 3.5px 0px rgba(0, 0, 0, 0.12)';
 
   const toggleStyle = {
-    background: darkMode ? '#231f20' : '#3772F0',
+    background: darkMode ? '#3772F0' : '#231f20',
     color: darkMode ? '#F3F3F3' : '#FEFEFE',
+    boxShadow: darkMode ? "0px 1px 1px rgba(0,0,0,0.16)" : "0px 1px 1px rgba(255,255,255,0.72)",
   };
   const titleColor = darkMode ? '#F3f3f3' : '#FEFEFE';
 

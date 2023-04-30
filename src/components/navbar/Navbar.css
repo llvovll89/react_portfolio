@@ -87,7 +87,6 @@
     left: 15px;
     top: 15px;
     border-radius: 6px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.13);
     display: none;
     align-items: center;
     cursor: pointer;
@@ -265,20 +264,6 @@
         z-index: 1000;
     }
 
-    .aside .aside-logo a::before {
-        border-top: 3px solid #FE5493;
-        border-left: 3px solid #FE5493;
-    }
-
-    .aside .aside-logo a::after {
-        border-bottom: 3px solid #FE5493;
-        border-right: 3px solid #FE5493;
-    }
-
-    .aside .aside-nav .aside .aside-nav .border {
-        border-bottom: 1px solid #FEEAFA;
-    }
-
     .aside .aside-nav {
         width: 100%;
         margin-top: 30px;
@@ -320,7 +305,6 @@
 
     .aside .social::after {
         border-top: 1px solid rgba(0, 0, 0, 0.07);
-        background: #e7897e;
     }
 }
 

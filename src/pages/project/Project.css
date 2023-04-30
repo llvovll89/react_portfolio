@@ -13,6 +13,7 @@
 
 .project.dark .project_desc {
     background: #0a0a0a;
+    transition: all 0.15s ease-in-out;
 }
 
 .project.dark .project_desc p {
@@ -24,10 +25,6 @@
     width: max-content;
     height: max-content;
     border-radius: 50%;
-}
-
-.project.dark .title {
-    color: #FFFFFF;
 }
 
 .project.dark .title::after {
@@ -133,6 +130,7 @@
     padding: 20px 16px;
     border-radius: 4px;
     background: #FEFEFE;
+    transition: all 0.15s ease-in-out;
 }
 
 .project_contents .project_desc::after {

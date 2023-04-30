@@ -71,8 +71,8 @@
 
 .inner .contact_text .contact_list .items li span {
     cursor: initial;
+    letter-spacing: 0.02rem;
     font-size: clamp(14px, 2.4vw, 16px);
-    font-weight: 600;
 }
 
 .inner .contact_text .contact_list .items li span:nth-child(2),
@@ -83,7 +83,6 @@
     padding-bottom: 0.3rem;
     letter-spacing: 0.02rem;
     font-family: var(--korFont);
-    font-weight: 600;
 }
 
 .contact .inner .contact_right {
@@ -225,6 +224,10 @@ textarea, input {
         font-size: 15px;
     }
 
+    .inner .contact_text .contact_list .items {
+        gap: 4px;
+    }
+
     .inner .contact_text .contact_list .items li {
         gap: 4px;
         margin-bottom: 10px;
@@ -232,12 +235,10 @@ textarea, input {
 
     .inner .contact_text .contact_list .items li span {
         font-size: 14.5px;
-        font-weight: 500;
     }
 
     .inner .contact_text .contact_list .items li span:nth-child(2),
     .inner .contact_text .contact_list .items li a {
         font-size: 13.5px;
-        font-weight: 500;
     }
 }

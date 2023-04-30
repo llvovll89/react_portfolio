@@ -8,6 +8,8 @@ import Project from './pages/project/Project';
 import About from './pages/about/About';
 import { Home } from './home/Home';
 import { Contact } from './pages/contact/Contact';
+import { Arrow } from './common/toparoow/Arrow';
+import { DarkMode } from './common/toggle/DarkMode'
 import ProjectDetail from './components/detail/ProjectDetail';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <Router basename="react_portfolio">
         <div className="wrap">
           <Navbar />
+          <DarkMode />
+          <Arrow />
           <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
