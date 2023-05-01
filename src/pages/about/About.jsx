@@ -106,6 +106,14 @@ const About = () => {
                       <p></p>
                     </div>
                   </li>
+                  <li data-aos="zoom-in-left" data-aos-duration="1000">
+                    <h3>FireBase</h3>
+                    <div>
+                      <p>Firebase 의 Authentication를 이용한 계정관리 프로젝트 경험이 있습니다.</p>
+                      <p>FireStore 의 DB기능을 통한 채팅앱 프로젝트 경험이 있습니다.</p>
+                      <p></p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
