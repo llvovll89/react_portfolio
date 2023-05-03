@@ -92,13 +92,16 @@
 .detail_features {}
 
 .detail_features li h3 {
+    margin-bottom: 2.5px;
     font-weight: 600;
     font-size: clamp(15px, 2vw, 18px);
 }
 
 .detail_features li p {
     padding-left: 12px;
-    font-size: clamp(13.5px, 1.5vw, 18px);
+    line-height: 1.25;
+    letter-spacing: 0.04rem;
+    font-size: clamp(13.5px, 1.5vw, 16px);
     font-family: var(--korFont);
 }
 
@@ -109,14 +112,16 @@
 .detail_issue {}
 
 .detail_issue li h3 {
+    margin-bottom: 2.5px;
     font-size: clamp(15px, 2vw, 18px);
 }
 
 .detail_issue li p {
     padding-left: 12px;
-    font-size: clamp(13.5px, 1.5vw, 18px);
+    line-height: 1.25;
+    letter-spacing: 0.04rem;
+    font-size: clamp(13.5px, 1.5vw, 16px);
     font-family: var(--korFont);
-    line-height: 1.15;
 }
 
 

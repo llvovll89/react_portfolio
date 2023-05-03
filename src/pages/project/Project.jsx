@@ -8,11 +8,11 @@ import './Project.css';
 
 const Project = () => {
   const darkMode = useContext(DarkContext);
-  
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedId, setSelectedId] = useState(null); 
 
-    const handleProjectClick = (id) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedId, setSelectedId] = useState(null);
+
+  const handleProjectClick = (id) => {
     setSelectedId(id);
     setIsModalOpen(true);
   };
@@ -20,10 +20,7 @@ const Project = () => {
   return (
     <section className={`project ${!darkMode.darkMode && 'dark'}`}>
       <div className="project_wrap">
-        <h2 className="title" 
-        data-aos="zoom-out"
-        data-aos-duration="1000"
-        >
+        <h2 className="title" data-aos="zoom-out" data-aos-duration="1000">
           <span>02.</span> Projects
         </h2>
         <ul className="project_content">
@@ -52,8 +49,8 @@ const Project = () => {
 
                     <div className="project_desc">
                       {Array.isArray(project.desc) &&
-                        project.desc.map((desc) => (
-                          <p>
+                        project.desc.map((desc, index) => (
+                          <p key={index}>
                             <span>
                               <AiOutlineCheck />
                             </span>
@@ -63,8 +60,11 @@ const Project = () => {
                     </div>
 
                     <ul className="project_skills">
-                      {project.skill.map((item, index) => (
-                        <li key={index}>{item}</li>
+                      {project.skill.map((item) => (
+                        <li key={item.name}>
+                          <p>{item.name}</p>
+                          <p>{item.icon}</p>
+                        </li>
                       ))}
                     </ul>
                     <div className="project_links">
@@ -82,7 +82,7 @@ const Project = () => {
                       >
                         <FiGithub />
                       </a>
-                      <button onClick={() => handleProjectClick(project.id)} >
+                      <button onClick={() => handleProjectClick(project.id)}>
                         상세보기
                       </button>
                     </div>
@@ -105,7 +105,10 @@ const Project = () => {
                 </div>
 
                 {isModalOpen && selectedId === project.id && (
-                  <ProjectDetail id={project.id} close={() => setIsModalOpen(false)} />
+                  <ProjectDetail
+                    id={project.id}
+                    close={() => setIsModalOpen(false)}
+                  />
                 )}
               </li>
             ))}

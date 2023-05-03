@@ -192,8 +192,19 @@
     font-family: var(--mainFont);
     white-space: nowrap;
     padding-left: 12px;
+    display: flex;
+    align-items: center;
     font-size: clamp(15px, 3vw, 17px);
+    gap: 3px;
 }
+
+.project_skills li p:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(16px, 3vw, 20px);
+}
+
 
 .project_items .project_links {
     display: flex;

@@ -2,8 +2,6 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { projectDB, projectDetailDB } from '../../assets/db/project';
 import {
   AiOutlineClose,
-  AiOutlineSelect,
-  AiOutlineCheck,
 } from 'react-icons/ai';
 import { DarkContext } from '../../context/darkContext';
 import './ProjectDetail.css';
@@ -57,15 +55,15 @@ const ProjectDetail = ({ id, close }) => {
         <div className="detail_contents">
           <div className="detail_title">
           <h3 className="detail_name">{projectInfo.title}</h3>
-          <span>{projectDetails.prupose}</span>
+          <span>{projectDetails.purpose}</span>
           </div>
 
           {projectDetails.techStack?.length > 0 && (
             <div className="detail_techs">
               <h2 className="sm_title">Tech Skills</h2>
               <ul className="detail_tech_items">
-                {projectDetails.techStack.map((tech) => (
-                  <li key={tech.id}>
+                {projectDetails.techStack.map((tech, index) => (
+                  <li key={index}>
                     <p>{tech.name}</p>
                     <p>{tech.icon}</p>
                   </li>
@@ -80,8 +78,8 @@ const ProjectDetail = ({ id, close }) => {
               <div className="detail_features">
                 <h2 className="sm_title">Detail features</h2>
                 <ul className="detail_items">
-                  {projectDetails.features.map(({ title, description }) => (
-                    <li key={title}>
+                  {projectDetails.features.map(({ title, description }, index) => (
+                    <li key={index}>
                       <h3>৹ {title}</h3>
                       <p>{description}</p>
                     </li>
@@ -96,8 +94,8 @@ const ProjectDetail = ({ id, close }) => {
               <div className="detail_issue">
                 <h2 className="sm_title">Issue & Resolution</h2>
                 <ul className="detail_items">
-                  {projectDetails.issues.map(({ title, description }) => (
-                    <li key={title}>
+                  {projectDetails.issues.map(({ title, description }, index) => (
+                    <li key={index}>
                       <h3>৹ {title}</h3>
                       <p>{description}</p>
                     </li>
