@@ -84,7 +84,7 @@ const About = () => {
                         리액트 개발과정에 필요한 각종 라이브러리를 사용할 수
                         있습니다.
                       </p>
-                      <p>styles-components를 사용한 css경험이 있습니다.</p>
+                      <p>styled-components를 사용한 css경험이 있습니다.</p>
                     </div>
                   </li>
                   <li data-aos="zoom-in-right" data-aos-duration="1000">
@@ -104,11 +104,11 @@ const About = () => {
                     <div>
                       <p>
                         React 와 Node 및 express를 이용한 서버와 클라이언트 개발
-                        경험이 있습니다.
+                        경험이 있습니다. (개인공부용)
                       </p>
                       <p>
                         express 프레임워크를 이용하여 REST API를 구현한 경험이
-                        있습니다.
+                        있습니다. (개인공부용)
                       </p>
                     </div>
                   </li>
