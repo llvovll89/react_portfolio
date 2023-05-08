@@ -21,6 +21,11 @@
     z-index: -1;
 }
 
+.main.dark .logo_title {
+    color: #3772F0;
+    border-top: 1px solid #779ae4;
+}
+
 .main_container {
     width: 100%;
     max-width: 1280px;
@@ -70,7 +75,7 @@
     font-family: var(--korFont);
 }
 
-.main_item p > .salmon {
+.main_item p>.salmon {
     padding-bottom: 2px;
     color: #FE5493;
     margin: 0px 3.5px;

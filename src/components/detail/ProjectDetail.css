@@ -62,6 +62,7 @@
 .detail_techs .detail_tech_items {
     display: flex;
     gap: 6px;
+    flex-flow: row wrap;
     font-family: var(--korFont);
 }
 
